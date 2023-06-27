@@ -40,27 +40,39 @@
                                      @csrf
                                      @method('post')
 
-                                     @if($errors)
-                                        @foreach ($errors->all() as $error )
-                                            <p class="p-2 bg-red-100 mb-2">{{ $error}}</p>
-                                        @endforeach
-                                     @endif
+                                    @error('password')
+                                    <p class="p-2 bg-red-100 mb-2">Merci de bien vouloir examiner le formulaire d'inscription afin de détecter et de corriger toute éventuelle erreur.</p>
+                                    @enderror
+                                    
+                                   
                                         <div class="step step-form">
                                             <div class="form-group">
                                                     <label class="font-weight-semibold" for="nom">NOM</label>
                                                     <input type="text" class="form-control" id="nom" required name="nom" placeholder="Votre nom" value = {{ old('nom') }}  >
+                                                    @error('nom')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="font-weight-semibold" for="prenom">PRENOM</label>
                                                     <input type="text" class="form-control" id="prenom" required name="prenom" placeholder="Votre prénom" value = {{ old('prenom') }}>
+                                                    @error('prenom')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="font-weight-semibold" for="email">EMAIL</label>
                                                     <input type="email" class="form-control" id="email" required name="email" placeholder="Votre email" value = {{ old('email') }}>
+                                                    @error('email')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="font-weight-semibold" for="telephone">NUMERO DE TELEPHONE</label>
                                                     <input type="tel" class="form-control" id="telephone" required name="telephone" placeholder="Votre numero de télephone" value = {{ old('telephone') }} >
+                                                    @error('telephone')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                                 </div>
 
                                                 <button class="btn btn-primary next-btn hover:bg-green-500 hover:border-green-500" onclick="nextStep(event)">Suivant</button>
@@ -74,22 +86,36 @@
                                         <div class="step">
                                         <div class="form-group flex flex-col">
                                                 <label class="font-weight-semibold form-label" for="civilite" >CIVILITE</label>
-                                                <select class="form-select border-2 border-indigo-200 rounded-lg py-2 " required name="civilite" id="civilite" aria-label="Default select example">
+                                                <select class="form-select border-2 border-indigo-200 rounded-lg py-2 " required name="civilite" id="civilite" aria-label="Default select example" value = {{ old('civilite') }}>
                                                     
                                                     <option value="Masculin">Masculin</option>
                                                     <option value="Féminin">Féminin</option>
                                                 </select>
+                                                @error('civilite')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
 
-                                            </div>
+                                        </div>
+                                        <div class="form-group flex flex-col">
+                                            <label for="piece" class="form-label">Ajouter une pièce d'identité</label>
+                                            <input class="form-control" required type="file" name="piece" id="piece" value = {{ old('piece') }} />
+                                            @error('piece')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                            @enderror
+
+                                    </div>
+
+
+                                       
                                         <div class="form-group flex flex-col">
                                             <label for="pays" class="form-label font-weight-semibold ">PAYS</label>
-                                            <select class="form-select border-2 border-indigo-200 rounded-lg py-2" required id="pays" name="pays" aria-label="Default select example">
-                                            <option selected>Veuillez selectionner votre pays</option>
+                                            <select class="form-select border-2 border-indigo-200 rounded-lg py-2" required id="pays" name="pays" aria-label="Default select example" value = {{ old('pays') }}>
+                                          
                                             <option value="France" >France </option>
 
                                             <option value="Afghanistan">Afghanistan </option>
                                             <option value="Afrique_Centrale">Afrique_Centrale </option>
-                                            <option value="Afrique_du_sud">Afrique_du_Sud </option>
+                                            <option value="Afrique_du_sud" >Afrique_du_Sud </option>
                                             <option value="Albanie">Albanie </option>
                                             <option value="Algerie">Algerie </option>
                                             <option value="Allemagne">Allemagne </option>
@@ -340,19 +366,26 @@
                                             <option value="Zambie">Zambie </option>
                                             <option value="Zimbabwe">Zimbabwe </option>
                                             </select>
+                                            @error('pays')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                             @enderror
                                             </div>
 
                                             <div class="form-group">
                                                 <label class="font-weight-semibold form-label" for="adresse" >ADRESSE</label>
-                                                <input type="text" class="form-control" id="adresse" required name="adresse" placeholder="Votre address">
+                                                <input type="text" class="form-control" id="adresse" required name="adresse" placeholder="Votre address" value = {{ old('adresse') }}>
                                                 
-
+                                                @error('adresse')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                             </div>
                                             <div class="form-group">
                                                 <label class="font-weight-semibold form-label" for="ville" >VILLE</label>
-                                                <input type="text" class="form-control" id="ville" required name="ville" placeholder="Ville">
+                                                <input type="text" class="form-control" id="ville" required name="ville" placeholder="Ville" value = {{ old('ville') }}>
                                                 
-
+                                                @error('ville')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                             </div>
 
                                             <div class="mb-3 flex flex-row justify-between">
@@ -369,12 +402,15 @@
                                         <div class="step">
                                             <div class="form-group flex flex-col">
                                                 <label for="devise" class="form-label font-weight-semibold ">DEVISE</label>
-                                                <select class="form-select border-2 border-indigo-200 rounded-lg py-2 " required id="devise" name="devise" aria-label="Default select example">
-                                                    <option selected>Choisissez votre device </option>
+                                                <select class="form-select border-2 border-indigo-200 rounded-lg py-2 " required id="devise" name="devise" aria-label="Default select example" >
+                                                   
                                                     <option value="EUR">EUR</option>
                                                     <option value="Dollar">Dollar</option>
                                                     <option value="XOF">BTC</option>
                                                 </select>
+                                                @error('devise')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                             
                                                 </div>
 
@@ -385,6 +421,9 @@
                                                 <div class="form-group">
                                                     <label class="font-weight-semibold" for="password_confirmation">Confirm Password:</label>
                                                     <input type="password" class="form-control" id="password_confirmation" placeholder="Confirm Password" required name="password_confirmation">
+                                                    @error('password')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                                   
                                                 </div>
                                                
@@ -393,6 +432,9 @@
                                                         <div class="checkbox mb-10">
                                                             <input id="checkbox" type="checkbox" name="check" >
                                                             <label for="checkbox"><span>I have read the <a href="">agreement</a></span></label>
+                                                        @error('check')
+                                                    <p class="p-2 bg-red-100 mb-2">{{ $message}}</p>
+                                                    @enderror
                                                         </div>
                                                         <div class="mb-3 flex flex-row justify-between">
                                                             <button class="btn bg-red-200 prev-btn" onclick="prevStep(event)">Precedent</button>

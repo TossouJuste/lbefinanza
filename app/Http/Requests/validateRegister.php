@@ -30,7 +30,8 @@ class validateRegister extends FormRequest
             'pays' => 'required',
             'devise' =>'required',
             'password' => 'required|confirmed|min:8|string',
-            'check' => 'required'
+            'check' => 'required',
+            'piece' => 'required'
         ];
     }
 
@@ -58,7 +59,8 @@ class validateRegister extends FormRequest
             'password.confirmed' => 'Les mots de passe ne sont  pas identique.',
             'password.min' => 'Votre mots de pass doit comporter au moins huit caractères',
 
-            'check'=> 'Veuillez acceptez nos conditions d\'utilisation.'
+            'check'=> 'Veuillez acceptez nos conditions d\'utilisation.',
+            'piece'=> 'Veuillez ajouter une photo de votre pièce d\'identité'
 
         ];
     }
