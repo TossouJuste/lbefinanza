@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('pays');
             $table->string('password');
             $table->string('piece')->nullable();
+            $table->timestamp('email_verified_at')->nullable();
+
             $table->timestamps();
         });
     }

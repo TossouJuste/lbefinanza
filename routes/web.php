@@ -18,10 +18,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', [AuthController::class, 'login_view'])->name('auth.login.view');
 Route::get('/register', [AuthController::class, 'register_view'])->name('auth.register.view');
 Route::post('/register', [AuthController::class, 'Inscription'])->name('auth.register');
+Route::get('/logout', [AuthController::class, 'Inscription'])->name('auth.logout');
 
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/dashboard', [ClientController::class, 'accueil_dashboard'])->name('client.dashboard');
+// dashboard client 
+Route::get('/dashboard', [ClientController::class, 'accueil_dashboard']);
+Route::get('/dashboard/account', [ClientController::class, 'my_account']);
+Route::get('/dashboard/profil', [ClientController::class, 'my_profil']);
+Route::get('/dashboard/transations', [ClientController::class, 'my_transations']);
+Route::get('/dashboard/transfert', [ClientController::class, 'new_transfert']);
+Route::get('/dashboard/virement', [ClientController::class, 'new_virement']);
+Route::get('/dashboard/chat', [ClientController::class, 'chat_view']);
 
