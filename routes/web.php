@@ -22,6 +22,7 @@ Route::get('/register', [AuthController::class, 'register_view'])->name('auth.re
 Route::post('/register', [AuthController::class, 'Inscription'])->name('auth.register');
 Route::get('/logout', [AuthController::class, 'Inscription'])->name('auth.logout');
 Route::get('/mail', [AuthController::class, 'Envoi_mail'])->name('auth.mail');
+Route::get('/forget_password', [AuthController::class, 'forget_password'])->name('auth.forget_pass');
 
 
 Route::get('/', function () {
