@@ -30,14 +30,23 @@
                                 <div class="card-body">
                                     <h2 class="m-t-20">Sign In</h2>
                                     <p class="m-b-30">Enter your credential to get access</p>
-                                    <form method="post" action="">
+                                    <form method="post" action="{{route('auth.login')}}">
                                         @csrf
                                         @method('post')
+                                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                                         <div class="form-group">
-                                            <label class="font-weight-semibold" for="userName">Email</label>
+                                            <label class="font-weight-semibold" for="email">Email</label>
                                             <div class="input-affix">
                                                 <i class="prefix-icon anticon anticon-user"></i>
-                                                <input type="text" class="form-control" id="email" placeholder="Username">
+                                                <input type="text" name="email" class="form-control" id="email" placeholder="Username">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -45,7 +54,7 @@
                                             <a class="float-right font-size-13 text-muted" href="">Forget Password?</a>
                                             <div class="input-affix m-b-10">
                                                 <i class="prefix-icon anticon anticon-lock"></i>
-                                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                                <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -54,7 +63,7 @@
                                                     Don't have an account? 
                                                     <a class="small" href="{{ route('auth.register.view')}}"> Signup</a>
                                                 </span>
-                                                <button class="btn btn-primary">Sign In</button>
+                                                <button type="submit"class="btn btn-primary">Sign In</button>
                                             </div>
                                         </div>
                                     </form>
