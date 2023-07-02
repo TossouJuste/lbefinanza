@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,4 +25,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/dashboard', [ClientController::class, 'accueil_dashboard'])->name('client.dashboard');
+
+Route::get('/admin', [AdminController::class, 'accueil_dashboard'])->name('admin.dashboard');
 

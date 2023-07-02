@@ -30,12 +30,14 @@
                                 <div class="card-body">
                                     <h2 class="m-t-20">Sign In</h2>
                                     <p class="m-b-30">Enter your credential to get access</p>
-                                    <form>
+                                    <form method="post" action="">
+                                        @csrf
+                                        @method('post')
                                         <div class="form-group">
-                                            <label class="font-weight-semibold" for="userName">Username:</label>
+                                            <label class="font-weight-semibold" for="userName">Email</label>
                                             <div class="input-affix">
                                                 <i class="prefix-icon anticon anticon-user"></i>
-                                                <input type="text" class="form-control" id="userName" placeholder="Username">
+                                                <input type="text" class="form-control" id="email" placeholder="Username">
                                             </div>
                                         </div>
                                         <div class="form-group">

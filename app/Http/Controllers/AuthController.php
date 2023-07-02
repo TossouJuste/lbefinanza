@@ -17,25 +17,22 @@ class AuthController extends Controller
     public function register_view(){
         return view('auth.pages.register');
     }
-    public function Inscription(validateRegister $request,Client $insert,User $inserte)
-    {  $pass = bcrypt('$request->password');
-        Client::create([
-            'nom' => $request->nom,
-            'prenom' => $request->prenom,
-            'email'=> $request->email,
-            'telephone'=> $request->telephone,
-            'civilite' => $request->civilite,
-            'pays' => $request->pays,
-            'devise' => $request->devise,
-            'password' => $pass,
-        ]);
+    public function Inscription(validateRegister $request,User $inserte)
+    { 
+     
+      $pass = bcrypt('$request->password');
+      
 
-        User::create([
-            'name' => $request->nom,
-            'email'=> $request->email,
-            'password' => $pass 
-            
-        ]);
-        
+      User::create([
+          'nom' => $request->nom,
+          'prenom' => $request->prenom,
+          'email'=> $request->email,
+          'telephone'=> $request->telephone,
+          'civilite' => $request->civilite,
+          'pays' => $request->pays,
+          'devise' => $request->devise,
+          'password' => $pass,
+      ]);
+      
     }
 }

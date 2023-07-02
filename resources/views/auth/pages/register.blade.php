@@ -36,7 +36,7 @@
                                 <div class="card-body">
                                     <h2 class="m-t-20">Inscription</h2>
                                     <p class="m-b-30">Veuillez remplir le formulaire ci-dessous pour vous inscrire</p>
-                                    <form id="step-form" class="step-form" onsubmit="return validateForm(event)" method="post" action="{{ route('auth.register.view')}}" >
+                                    <form id="step-form" class="step-form" onsubmit="return validateForm(event)" method="post" action="{{ route('auth.register')}}" >
                                      @csrf
                                      @method('post')
 
