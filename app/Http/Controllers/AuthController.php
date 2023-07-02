@@ -7,6 +7,7 @@ use App\Models\User;
 
 use Illuminate\Http\Request;
 use App\Models\Client;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -17,9 +18,21 @@ class AuthController extends Controller
     public function register_view(){
         return view('auth.pages.register');
     }
+    public function login(Request $request){
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+        if (Auth::attempt(request()->only(['email', 'password']))) {
+            $request->session()->regenerate();
+            return redirect('/dashboard');
+        }
+        return back()->withErrors([
+            'email' => 'Mot de passe ou email incorrect.',
+        ])->onlyInput('email');
+    }
     public function Inscription(validateRegister $request,User $inserte)
     { 
-     
       $pass = bcrypt('$request->password');
       $emails = $request->email;
       
