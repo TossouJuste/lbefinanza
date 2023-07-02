@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Enlink - Admin Dashboard Template</title>
+    <title>SeedBank - @yield('page_titre')</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
@@ -13,7 +13,11 @@
 
     <!-- Core css -->
     <link href="/assets/css/app.min.css" rel="stylesheet">
-
+    <style>
+        /* .active{
+            background-color: coral;
+        } */
+    </style>
 </head>
 
 <body>
@@ -52,6 +56,7 @@
     <!-- Core Vendors JS -->
     <script src="/assets/js/vendors.min.js"></script>
     <!-- page js -->
+    @yield('javascript')
     <script src="/assets/vendors/chartjs/Chart.min.js"></script>
     <script src="/assets/js/pages/dashboard-default.js"></script>
 

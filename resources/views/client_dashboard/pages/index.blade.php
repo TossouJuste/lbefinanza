@@ -1,4 +1,7 @@
 @extends('client_dashboard.components.app')
+@section('page_titre')
+Tableau de bord
+@endsection
 @section('page_container')
 <div class="main-content">
     <div class="row">
