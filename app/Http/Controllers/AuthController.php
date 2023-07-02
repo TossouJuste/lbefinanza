@@ -21,6 +21,7 @@ class AuthController extends Controller
     { 
      
       $pass = bcrypt('$request->password');
+      $emails = $request->email;
       
 
       User::create([
@@ -33,6 +34,13 @@ class AuthController extends Controller
           'devise' => $request->devise,
           'password' => $pass,
       ]);
+      return view('auth.pages.Envoi_mail',[
+        'email'=> $emails
+      ]);
       
+    }
+    public function Envoi_mail()
+    {
+        return view('auth.pages.Envoi_mail');
     }
 }

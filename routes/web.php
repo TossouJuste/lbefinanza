@@ -20,6 +20,7 @@ Route::get('/login', [AuthController::class, 'login_view'])->name('auth.login.vi
 Route::get('/register', [AuthController::class, 'register_view'])->name('auth.register.view');
 Route::post('/register', [AuthController::class, 'Inscription'])->name('auth.register');
 Route::get('/logout', [AuthController::class, 'Inscription'])->name('auth.logout');
+Route::get('/mail', [AuthController::class, 'Envoi_mail'])->name('auth.mail');
 
 
 Route::get('/', function () {
