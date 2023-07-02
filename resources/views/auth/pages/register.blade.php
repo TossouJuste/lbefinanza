@@ -33,16 +33,27 @@
                         </div>
                         <div class="m-l-auto col-md-5">
                             <div class="card">
+
                                 <div class="card-body">
+                                    
                                     <h2 class="m-t-20">Inscription</h2>
                                     <p class="m-b-30">Veuillez remplir le formulaire ci-dessous pour vous inscrire</p>
                                     <form id="step-form" class="step-form" onsubmit="return validateForm(event)" method="post" action="{{ route('auth.register')}}" >
                                      @csrf
                                      @method('post')
 
-                                    @error('password')
+                                    {{-- @error('password')
                                     <p class="p-2 bg-red-100 mb-2">Merci de bien vouloir examiner le formulaire d'inscription afin de détecter et de corriger toute éventuelle erreur.</p>
-                                    @enderror
+                                    @enderror --}}
+                                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                                     
                                    
                                         <div class="step step-form">

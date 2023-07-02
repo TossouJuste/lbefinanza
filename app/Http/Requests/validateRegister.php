@@ -24,7 +24,7 @@ class validateRegister extends FormRequest
         return [
             'nom'    => 'required|min:3',
             'prenom' => 'required|min:3',
-            'email'  => 'email|required',
+            'email'  => 'email|required|unique:users',
             'telephone' => 'required|min:8',
             'civilite' =>  'required',
             'pays' => 'required',
