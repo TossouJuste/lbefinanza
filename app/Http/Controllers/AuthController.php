@@ -24,16 +24,16 @@ class AuthController extends Controller
       $emails = $request->email;
       
 
-      User::create([
-          'nom' => $request->nom,
-          'prenom' => $request->prenom,
-          'email'=> $request->email,
-          'telephone'=> $request->telephone,
-          'civilite' => $request->civilite,
-          'pays' => $request->pays,
-          'devise' => $request->devise,
-          'password' => $pass,
-      ]);
+    //   User::create([
+    //       'nom' => $request->nom,
+    //       'prenom' => $request->prenom,
+    //       'email'=> $request->email,
+    //       'telephone'=> $request->telephone,
+    //       'civilite' => $request->civilite,
+    //       'pays' => $request->pays,
+    //       'devise' => $request->devise,
+    //       'password' => $pass,
+    //   ]);
       return view('auth.pages.Envoi_mail',[
         'email'=> $emails
       ]);
