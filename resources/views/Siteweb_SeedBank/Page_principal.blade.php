@@ -32,80 +32,30 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="site_web/css/style.css" rel="stylesheet" />
+    
 
   </head>
 
   <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-      <nav
-        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
-      >
-        <a
-          href=""
-          class="navbar-brand font-weight-bold text-secondary"
-          style="font-size: 50px"
-        >
-        <img src="site_web/img/logo.png" alt="">
-        
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Accueil</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Nos Services</a
-              >
-              <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="single.html" class="dropdown-item">Blog Detail</a>
-              </div>
-            </div>
-
-            <a href="team.html " class="nav-item nav-link"></a>
-            <a href="class.html" class="nav-item nav-link">Cartes</a> 
-            <a href="about.html" class="nav-item nav-link">A propos</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-            <a href="gallery.html" class="nav-item nav-link">Langue</a>
-           
-            
-          </div>
-          <a href="" class="btn btn-primary px-4">Inscription</a>
-          <a href="" class="btn btn-primary px-4">Connexion</a>
-        </div>
-      </nav>
-    </div>
-    <!-- Navbar End -->
+    <!--nav-->
+    @include('Siteweb_SeedBank.nav')
+    
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-      <div class="row align-items-center px-3">
-        <div class="col-lg-6 text-center text-lg-left">
-          <h4 class="text-white mb-4 mt-5 mt-lg-0">Kids Learning Center</h4>
-          <h1 class="display-3 font-weight-bold text-white">
-            New Approach to Kids Education
-          </h1>
+    <div class="container-fluid  px-0 px-md-5 mb-5 bg-images taille">
+      <div class="row align-items-center px-3 ">
+        <div class="col-lg-6 text-center text-lg-left" style="margin-top:100px;">
+         
+          <h3 class="display-3 font-weight-bold text-white">
+           Seed Finance !
+          </h3>
+          
           <p class="text-white mb-4">
-            Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed
-            sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed
-            ipsum at ipsum nonumy amet. Clita lorem dolore sed stet et est justo
-            dolore.
+            Votre banque spécialisée dans les crédits bancaires, assurance, épargne, transferts, investissements en crypto-monnaies... 
+            une banque présente à vos côtés, pensée pour répondre à vos besoins au quotidien.
+           
           </p>
-          <a href="" class="btn btn-secondary mt-1 py-3 px-5">Learn More</a>
+          <a href="" class="btn btn-secondary mt-1 py-3 px-4 rounded">En savoir plus </a>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
           <img class="img-fluid mt-5" src="site_web/img/header.png" alt="" />
@@ -115,6 +65,9 @@
     <!-- Header End -->
 
     <!-- Facilities Start -->
+    <div>
+        <marquee behavior="" direction="" ><Span class="font-weight-bold text-black-500">Que pouvons-nous faire pour vous ?</Span></marquee>
+    </div>
     <div class="container-fluid pt-5">
       <div class="container pb-3">
         <div class="row">
@@ -127,11 +80,13 @@
                 class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Play Ground</h4>
+                <img src="../site_web/img/bio.png" alt="" style="width:60px;height:60px;margin-bottom:15px;" c>
+                <h4>Prêt Energie-Bio</h4>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                    un prêt personnel sans frais de dossier conçu spécialement pour
+                     financer vos travaux visant à économiser l'énergie. Bénéficiez de l'accompagnement personnalisé de nos conseillers pour concrétiser votre projet.
                 </p>
+                <a href="" class="btn btn-primary px-4 mr-2 rounded"style="margin-top: 45px;">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -144,11 +99,15 @@
                 class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Music and Dance</h4>
+                <img src="../site_web/img/loan.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" c>
+                
+                <h4>Et si on préparait votre retraite ensemble ?</h4>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                    
+                     Anticipons ensemble cette nouvelle étape de vie en vous aidant à constituer un complément de revenus. Nos conseillers, spécialistes de l'épargne, 
+                     sont là pour vous accompagner et vous aider à mieux planifier votre retraite en fonction de votre situation.
                 </p>
+                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 15px;">Maintenant</a>
               </div>
             </div>
           </div>
@@ -161,11 +120,17 @@
                 class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Arts and Crafts</h4>
+                <img src="../site_web/img/assurance.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" c>
+               
+                <h4>Vos enfants sont-ils assurés pour la prochaine rentrée ?</h4>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                    Préoccupons-nous de l'avenir de vos enfants. 
+                    Faites le choix dès maintenant de l'Assurance Scolaire Seed 
+                    pour assurer leur protection à l'école et en dehors.
+                     Offrez-leur une tranquillité d'esprit totale grâce à notre assurance spécialement conçue pour leur bien-être.
                 </p>
+                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 5px;">Maintenant</a>
+             
               </div>
             </div>
           </div>
@@ -178,11 +143,18 @@
                 class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Safe Transportation</h4>
+                <img src="../site_web/img/accounting.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" c>
+               
+                <h4>Ouverture de compte</h4>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                    Ne perdez pas une minute de plus !
+                     Ouvrez votre compte bancaire chez Seed Finance dès maintenant et 
+                     profitez d'un bonus spécial réservé uniquement aux nouveaux clients.
+                      Ne manquez pas cette occasion de bénéficier d'avantages exclusifs en 
+                      rejoignant notre banque.
                 </p>
+                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 5px;">Maintenant</a>
+             
               </div>
             </div>
           </div>
@@ -195,11 +167,15 @@
                 class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Healthy food</h4>
+                <img src="../site_web/img/earning.png" alt="" style="width:40px;height:40px;margin-bottom:15px;">
+               
+                <h4>Planification d'investissement</h4>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                    N'hésitez pas à nous contacter pour toute question ou besoin en matière de planification d'investissement. Nous sommes fiers d'être parmi les meilleurs dans notre domaine et nous sommes là pour vous offrir notre expertise. 
+                    Faites confiance à notre équipe pour vous aider à atteindre vos objectifs financiers.
                 </p>
+                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 5px;">Maintenant</a>
+             
               </div>
             </div>
           </div>
@@ -212,11 +188,15 @@
                 class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Educational Tour</h4>
+                <img src="../site_web/img/cc.png" alt="" style="width:40px;height:40px;margin-bottom:15px;">
+               
+                <h4>Demande de carte</h4>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                    Pratique, gratuite et idéale pour les paiements du quotidien, commandez dès maintenant vos cartes SeedFinance. Profitez d'une expérience de paiement sans tracas avec nos cartes, acceptées partout.
+                     Simplifiez vos transactions avec SeedFinance.
                 </p>
+                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 5px;">Maintenant</a>
+             
               </div>
             </div>
           </div>
@@ -819,149 +799,10 @@
     </div>
     <!-- Blog End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a
-            href=""
-            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-            style="font-size: 40px; line-height: 40px"
-          >
-            <i class="flaticon-043-teddy-bear"></i>
-            <span class="text-white">KidKinder</span>
-          </a>
-          <p>
-            Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-            stet diam duo eos rebum ipsum diam ipsum elitr.
-          </p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Get In Touch</h3>
-          <div class="d-flex">
-            <h4 class="fa fa-map-marker-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Address</h5>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-envelope text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-phone-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Phone</h5>
-              <p>+012 345 67890</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Classes</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Teachers</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Newsletter</h3>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control border-0 py-4"
-                placeholder="Your Name"
-                required="required"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control border-0 py-4"
-                placeholder="Your Email"
-                required="required"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-primary btn-block border-0 py-3"
-                type="submit"
-              >
-                Submit Now
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div
-        class="container-fluid pt-5"
-        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
-      >
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-primary font-weight-bold" href="#">Your Site Name</a>.
-          All Rights Reserved.
+    <!--footer-->
+    @include('Siteweb_SeedBank.pied_page')
 
-          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-          Designed by
-          <a class="text-primary font-weight-bold" href="https://htmlcodex.com"
-            >HTML Codex</a
-          >
-          <br />Distributed By:
-          <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-        </p>
-      </div>
-    </div>
-    <!-- Footer End -->
+    
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary p-3 back-to-top"

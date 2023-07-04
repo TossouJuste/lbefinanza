@@ -9864,3 +9864,16 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   list-style-type: none;
 }
+.bg-images
+{
+  background-image: url('../img/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.taille
+{
+  width:100%;
+  height: 500px;;
+
+}
