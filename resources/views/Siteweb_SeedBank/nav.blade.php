@@ -24,17 +24,20 @@
         id="navbarCollapse"
       >
         <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a href="index.html" class="nav-item nav-link active">Accueil</a>
+          <a href="{{ route('Page_principal')}}" class="nav-item nav-link active">Accueil</a>
           <div class="nav-item dropdown">
             <a
-              href="#"
+              href=""
               class="nav-link dropdown-toggle"
               data-toggle="dropdown"
               >Nos Services</a
             >
             <div class="dropdown-menu rounded-0 m-0">
-              <a href="blog.html" class="dropdown-item">Blog Grid</a>
-              <a href="single.html" class="dropdown-item">Blog Detail</a>
+              <a href=" {{ route('auth.register.view')}} " class="dropdown-item">Overture compte</a>
+              <a href=" {{ route('Page_loan')}} " class="dropdown-item">Prêt</a>
+              <a href=" {{ route('Page_insurance')}} " class="dropdown-item">Assurance</a>
+              <a href=" {{ route('Page_donation')}} " class="dropdown-item">Donation</a>
+              <a href=" {{ route('Page_investmentPlanning')}} " class="dropdown-item">Planification d'investissement</a>
             </div>
           </div>
           <div class="nav-item dropdown">
@@ -45,14 +48,14 @@
               >Investir</a
             >
             <div class="dropdown-menu rounded-0 m-0">
-              <a href="blog.html" class="dropdown-item">Blog Grid</a>
-              <a href="single.html" class="dropdown-item">Blog Detail</a>
+              <a href="blog.html" class="dropdown-item">Gestion de portefeuilles</a>
+              <a href="class.html" class="dropdown-item">Blog Detail</a>
             </div>
           </div>
           
-          <a href="class.html" class="nav-item nav-link">Cartes</a>
-          <a href="about.html" class="nav-item nav-link">A propos</a>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="{{ route('Page_carte')}}" class="nav-item nav-link">Cartes</a>
+          <a href="{{ route('Page_about') }}" class="nav-item nav-link">A propos</a>
+          <a href="{{ route('Page_contact') }}"" class="nav-item nav-link">Contact</a>
           <a href="gallery.html" class="nav-item nav-link">Langue</a>
          
           

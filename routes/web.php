@@ -18,6 +18,15 @@ use Illuminate\Support\Facades\Route;
 */
 // site web
 Route::get('/',[Site_web_Controller::class, 'P_principal'])->name('Page_principal');
+Route::get('/abouts',[Site_web_Controller::class, 'P_about'])->name('Page_about');
+Route::get('/carte',[Site_web_Controller::class, 'P_carte'])->name('Page_carte');
+Route::get('/contact',[Site_web_Controller::class, 'P_contact'])->name('Page_contact');
+Route::get('/loan',[Site_web_Controller::class, 'P_loan'])->name('Page_loan');
+Route::get('/donation',[Site_web_Controller::class, 'P_donation'])->name('Page_donation');
+Route::get('/insurance',[Site_web_Controller::class, 'P_insurance'])->name('Page_insurance');
+Route::get('/investment planning',[Site_web_Controller::class, 'P_investmentPlanning'])->name('Page_investmentPlanning');
+
+
 
 /* authentication */
 Route::get('/login', [AuthController::class, 'login_view'])->name('auth.login.view');
