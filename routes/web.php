@@ -3,6 +3,7 @@
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Site_web_Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// site web
+Route::get('/',[Site_web_Controller::class, 'P_principal'])->name('Page_principal');
+
 /* authentication */
 Route::get('/login', [AuthController::class, 'login_view'])->name('auth.login.view');
 Route::post('/login', [AuthController::class, 'login_view'])->name('auth.login');
@@ -25,9 +29,6 @@ Route::get('/mail', [AuthController::class, 'Envoi_mail'])->name('auth.mail');
 Route::get('/forget_password', [AuthController::class, 'forget_password'])->name('auth.forget_pass');
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
 // dashboard client 
 Route::get('/dashboard', [ClientController::class, 'accueil_dashboard']);
 Route::get('/dashboard/account', [ClientController::class, 'my_account']);
