@@ -46,7 +46,7 @@
           <div class="col-lg-6 text-center text-lg-left" style="margin-top:100px;">
            
             <h3 class="display-3 font-weight-bold text-white">
-             Seed Finance !
+             Assurance !
             </h3>
             
             <p class="text-white mb-4">

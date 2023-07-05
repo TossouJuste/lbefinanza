@@ -40,7 +40,7 @@
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary mb-5">
+    <div class="container-fluid bg-primary mb-5" style="background-image: url('site_web/img/apropos.jpg'); background-size:cover;background-repeat:no-repeat; background-position: center; ">
       <div
         class="d-flex flex-column align-items-center justify-content-center"
         style="min-height: 400px"
@@ -55,55 +55,325 @@
     </div>
     <!-- Header End -->
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <img
-              class="img-fluid rounded mb-5 mb-lg-0"
-              src="img/about-1.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-7">
-            <p class="section-title pr-5">
-              <span class="pr-2">Learn About Us</span>
-            </p>
-            <h1 class="mb-4">Best School For Your Kids</h1>
-            <p>
-              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-              dolor
-            </p>
-            <div class="row pt-2 pb-4">
-              <div class="col-6 col-md-4">
-                <img class="img-fluid rounded" src="img/about-2.jpg" alt="" />
+      <!-- About Start -->
+      <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <img
+                class="img-fluid rounded mb-5 mb-lg-0"
+                src="site_web/img/equipe.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-7">
+              <p class="section-title pr-5">
+                <span class="pr-2">Nos objectifs</span>
+              </p>
+              <h1 class="mb-4">Nous sommes Seed Finance</h1>
+              <p>
+                Notre objectif est d'apporter une aide significative à des millions de 
+                personnes en situation de détresse en leur permettant d'obtenir des prêts 
+                pour démarrer leurs projets, résoudre des situations difficiles et bénéficier de dons ou de subventions en fin d'année. Nous offrons également des services de gestion de portefeuille et d'assurance pour les aider à sécuriser leur avenir financier. Notre mission est de fournir des solutions financières adaptées à leurs besoins spécifiques et de les accompagner dans la réalisation de leurs objectifs. Nous sommes une équipe d'experts financiers expérimentés dévoués
+                 à aider nos clients à réussir et à atteindre une situation financière stable.
+              </p>
+              <div class="row pt-2 pb-4">
+                <div class="col-6 col-md-4">
+                  <img class="img-fluid rounded" src="site_web/img/about.jpg" alt="" />
+                </div>
+                <div class="col-6 col-md-8">
+                  <ul class="list-inline m-0">
+                    <li class="py-2 border-top border-bottom">
+                      <i class="fa fa-check text-primary mr-3"></i>Assurer l'accès au financement
+                    </li>
+                    <li class="py-2 border-bottom">
+                      <i class="fa fa-check text-primary mr-3"></i>Fournir une assistance et un soutien complets
+                    </li>
+                    <li class="py-2 border-bottom">
+                      <i class="fa fa-check text-primary mr-3"></i>garantir la sécurité financière de nos clients
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-6 col-md-8">
-                <ul class="list-inline m-0">
-                  <li class="py-2 border-top border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Labore eos amet
-                    dolor amet diam
-                  </li>
-                  <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Etsea et sit
-                    dolor amet ipsum
-                  </li>
-                  <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Diam dolor diam
-                    elitripsum vero.
-                  </li>
-                </ul>
+              <a href=" {{ route('Page_loan')}} " class="btn btn-primary mt-2 py-2 px-4">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Team Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">Notre Equipe</span>
+          </p>
+          <h1 class="mb-4">Une equipe dédiée, une expérience inégalée.</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="border-radius: 100%"
+            >
+              <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
               </div>
             </div>
-            <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
+            <h4>Julia Smith</h4>
+            <i>Président/CEO </i>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="border-radius: 100%"
+            >
+              <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Jhon Doe</h4>
+            <i>Language Teacher</i>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="border-radius: 100%"
+            >
+              <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Mollie Ross</h4>
+            <i>Dance Teacher</i>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="border-radius: 100%"
+            >
+              <img class="img-fluid w-100" src="img/team-4.jpg" alt="" />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Donald John</h4>
+            <i>Art Teacher</i>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="border-radius: 100%"
+            >
+              <img class="img-fluid w-100" src="img/team-4.jpg" alt="" />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Julia Smith</h4>
+            <i>Music Teacher</i>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="border-radius: 100%"
+            >
+              <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Jhon Doe</h4>
+            <i>Language Teacher</i>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="border-radius: 100%"
+            >
+              <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Mollie Ross</h4>
+            <i>Dance Teacher</i>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div
+              class="position-relative overflow-hidden mb-4"
+              style="border-radius: 100%"
+            >
+              <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
+              <div
+                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
+              >
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center mr-2 px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light text-center px-0"
+                  style="width: 38px; height: 38px"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <h4>Donald John</h4>
+            <i>Art Teacher</i>
           </div>
         </div>
       </div>
     </div>
-    <!-- About End -->
+    <!-- Team End -->
+
 
     <!-- Facilities Start -->
     <div class="container-fluid pt-5">
