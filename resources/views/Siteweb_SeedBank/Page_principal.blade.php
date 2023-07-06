@@ -86,7 +86,7 @@
                     un prêt personnel sans frais de dossier conçu spécialement pour
                      financer vos travaux visant à économiser l'énergie. Bénéficiez de l'accompagnement personnalisé de nos conseillers pour concrétiser votre projet.
                 </p>
-                <a href="" class="btn btn-primary px-4 mr-2 rounded"style="margin-top: 55px;">En savoir plus</a>
+                <a href="{{ route('loan_personal')}}" class="btn btn-primary px-4 mr-2 rounded"style="margin-top: 55px;">En savoir plus</a>
               </div>
             </div>
           </div>

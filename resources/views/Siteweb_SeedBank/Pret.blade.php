@@ -77,8 +77,8 @@
                           
                       </div>
                       <div class="store-overlay">
-                          <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
-                          <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                          <a href="{{ route('loan_personal')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                          <a href="{{ route('form_loan_personal')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                       </div>
                   </div>
               </div>
@@ -93,8 +93,8 @@
                           
                       </div>
                       <div class="store-overlay">
-                          <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
-                          <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                          <a href="{{ route('loan_mortgage')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                          <a href="{{ route('form_loan_mortgage')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                       </div>
                   </div>
               </div>
@@ -109,8 +109,8 @@
                          
                       </div>
                       <div class="store-overlay">
-                          <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails</a>
-                          <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                          <a href="{{ route('loan_student')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails</a>
+                          <a href="{{ route('form_loan_student')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                       </div>
                   </div>
               </div>
@@ -128,8 +128,8 @@
                       
                   </div>
                   <div class="store-overlay">
-                      <a href="" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
-                      <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                      <a href="{{ route('car-loan')}}" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
+                      <a href="{{ route('form_car-loan')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                   </div>
               </div>
           </div>
@@ -144,8 +144,8 @@
                       
                   </div>
                   <div class="store-overlay">
-                      <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
-                      <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                      <a href="{{ route('commercial_loan')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                      <a href="{{ route('form_commercial_loan')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                   </div>
               </div>
           </div>
@@ -160,8 +160,8 @@
                      
                   </div>
                   <div class="store-overlay">
-                      <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
-                      <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                      <a href="{{ route('debt_consolidation_loan')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                      <a href="{{ route('form_debt_consolidation_loan')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                   </div>
               </div>
           </div>
@@ -181,8 +181,8 @@
                   
               </div>
               <div class="store-overlay">
-                  <a href="" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
-                  <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                  <a href="{{ route('loan_entreprise')}}" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
+                  <a href="{{ route('form_loan_entreprise')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
               </div>
           </div>
       </div>
@@ -197,8 +197,8 @@
                   
               </div>
               <div class="store-overlay">
-                  <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
-                  <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                  <a href="{{ route('loan_sick')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                  <a href="{{ route('form_loan_sick')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
               </div>
           </div>
       </div>
@@ -213,8 +213,8 @@
                  
               </div>
               <div class="store-overlay">
-                  <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
-                  <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                  <a href="{{ route('loan_entrepreneur')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                  <a href="{{ route('form_loan_entrepreneur')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
               </div>
           </div>
       </div>
@@ -230,8 +230,8 @@
                     
                 </div>
                 <div class="store-overlay">
-                    <a href="" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
-                    <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                    <a href="{{ route('loan_mariage')}}" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
+                    <a href="{{ route('form_loan_mariage')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                 </div>
             </div>
         </div>
@@ -246,8 +246,8 @@
                     
                 </div>
                 <div class="store-overlay">
-                    <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
-                    <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                    <a href="{{ route('loan_birth')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                    <a href="{{ route('form_loan_birth')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                 </div>
             </div>
         </div>
@@ -262,8 +262,8 @@
                    
                 </div>
                 <div class="store-overlay">
-                    <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
-                    <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                    <a href="{{ route('loan_travel')}}" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                    <a href="{{ route('form_loan_travel')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
                 </div>
             </div>
         </div>
