@@ -40,289 +40,312 @@
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary mb-5">
+    <div class="container-fluid bg-primary mb-5" style="background-image: url('site_web/img/loan5.jpg'); background-size:cover;background-repeat:no-repeat; background-position: center; ">
       <div
         class="d-flex flex-column align-items-center justify-content-center"
         style="min-height: 400px"
       >
-        <h3 class="display-3 font-weight-bold text-white">Contact Us</h3>
+        <h3 class="display-3 font-weight-bold text-white">Accord d'emprunt</h3>
         <div class="d-inline-flex text-white">
-          <p class="m-0"><a class="text-white" href="">Home</a></p>
+          <p class="m-0"><a class="text-white" href="">Accueil</a></p>
           <p class="m-0 px-2">/</p>
-          <p class="m-0">Contact Us</p>
+          <p class="m-0">Demande de financement</p>
         </div>
       </div>
     </div>
+  
     <!-- Header End -->
-
-    <!-- Contact Start -->
-    <div class="container-fluid pt-5">
+    <!-- Store Start -->
+    <div class="container-xxl py-5">
       <div class="container">
         <div class="text-center pb-2">
           <p class="section-title px-5">
-            <span class="px-2">Get In Touch</span>
+            <span class="px-2">Nos différents types de financements</span>
           </p>
-          <h1 class="mb-4">Contact Us For Any Query</h1>
+          <h1 class="mb-4">Alors qu'attendez vous ? </h1>
         </div>
-        <div class="row">
-          <div class="col-lg-7 mb-5">
-            <div class="contact-form">
-              <div id="success"></div>
-              <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required="required"
-                    data-validation-required-message="Please enter your name"
-                  />
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="control-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Your Email"
-                    required="required"
-                    data-validation-required-message="Please enter your email"
-                  />
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    placeholder="Subject"
-                    required="required"
-                    data-validation-required-message="Please enter a subject"
-                  />
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="control-group">
-                  <textarea
-                    class="form-control"
-                    rows="6"
-                    id="message"
-                    placeholder="Message"
-                    required="required"
-                    data-validation-required-message="Please enter your message"
-                  ></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div>
-                  <button
-                    class="btn btn-primary py-2 px-4"
-                    type="submit"
-                    id="sendMessageButton"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </div>
+          
+          <div class="row g-4">
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded" style="">
+                    <img src="../site_web/img/give-money.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+                    <div class="p-4">
+                          
+                          <h4 class="mb-3">Prêt personnel</h4>
+                          <p>Un prêt polyvalent qui peut être utilisé pour divers besoins personnels
+                             tels que les dépenses imprévues, les voyages, les rénovations, etc.</p>
+                          
+                      </div>
+                      <div class="store-overlay">
+                          <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                          <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+                      <img class="img-fluid" src="../site_web/img/mortgage.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+                      <div class="p-4">
+                          
+                          <h4 class="mb-3">Prêt hypothécaire</h4>
+                          <p> Un prêt sécurisé par une propriété immobilière, généralement utilisé pour 
+                            l'achat d'une maison ou le refinancement d'une hypothèque existante</p>
+                          
+                      </div>
+                      <div class="store-overlay">
+                          <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                          <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+                      <img class="img-fluid" src="../site_web/img/scholarship.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+                      <div class="p-4">
+                          
+                          <h4 class="mb-3">Prêt étudiant</h4>
+                          <p>Un prêt destiné à soutenir les étudiants dans le financement de leurs études,
+                             couvrant les frais de scolarité, les livres et autres dépenses liées à l'éducation</p>
+                         
+                      </div>
+                      <div class="store-overlay">
+                          <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails</a>
+                          <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                      </div>
+                  </div>
+              </div>
+             
+          
+
+        <div class="row g-4" style="margin-top: 50px;">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+                <img src="../site_web/img/car-loan.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+                <div class="p-4">
+                      
+                      <h4 class="mb-3">Prêt automobile </h4>
+                      <p> Un prêt conçu pour financer l'achat d'un véhicule neuf ou d'occasion.</p>
+                      
+                  </div>
+                  <div class="store-overlay">
+                      <a href="" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
+                      <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                  </div>
+              </div>
           </div>
-          <div class="col-lg-5 mb-5">
-            <p>
-              Labore sea amet kasd diam justo amet ut vero justo. Ipsum ut et
-              kasd duo sit, ipsum sea et erat est dolore, magna ipsum et magna
-              elitr. Accusam accusam lorem magna, eos et sed eirmod dolor est
-              eirmod eirmod amet.
-            </p>
-            <div class="d-flex">
-              <i
-                class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Address</h5>
-                <p>123 Street, New York, USA</p>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+                  <img class="img-fluid" src="../site_web/img/coin-stack.png" alt=""style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+                  <div class="p-4">
+                      
+                      <h4 class="mb-3">Prêt commercial</h4>
+                      <p> Un prêt destiné aux entreprises
+                         pour financer leurs activités, leur croissance ou leurs investissements.</p>
+                      
+                  </div>
+                  <div class="store-overlay">
+                      <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                      <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                  </div>
               </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Email</h5>
-                <p>info@example.com</p>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+                  <img class="img-fluid" src="../site_web/img/debt-consolidation.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+                  <div class="p-4">
+                      
+                      <h4 class="mb-3">Prêt de consolidation de dettes</h4>
+                      <p>Un prêt permettant de regrouper plusieurs dettes en une seule, simplifiant 
+                        ainsi les remboursements et potentiellement réduire les frais d'intérêts.</p>
+                     
+                  </div>
+                  <div class="store-overlay">
+                      <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                      <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                  </div>
               </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Phone</h5>
-                <p>+012 345 67890</p>
+          </div>
+         
+      </div>
+    </div>
+    <div class="row g-4" style="margin-top: 50px;">
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+            <img src="../site_web/img/entrepreneur.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+            <div class="p-4">
+                  
+                  <h4 class="mb-3">Prêt entreprise </h4>
+                  <p> Obtenez un financement adapté aux besoins de votre entreprise grâce à
+                     notre prêt entreprise. Que ce soit pour l'expansion, l'achat d'équipement, 
+                     le refinancement de dettes ou tout autre besoin de financement commercial, nous sommes là pour vous aider à réaliser vos projets.</p>
+                  
               </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Opening Hours</h5>
-                <strong>Sunday - Friday:</strong>
-                <p class="m-0">08:00 AM - 05:00 PM</p>
+              <div class="store-overlay">
+                  <a href="" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
+                  <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
               </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+              <img class="img-fluid" src="../site_web/img/sick.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+              <div class="p-4">
+                  
+                  <h4 class="mb-3">Prêt maladie</h4>
+                  <p> Faites face aux dépenses médicales imprévues avec notre prêt maladie. Que ce soit pour couvrir les frais médicaux, les traitements spécialisés, les médicaments ou les frais liés à une hospitalisation, notre prêt maladie vous offre un soutien 
+                    financier pour faire face aux situations de santé difficiles.</p>
+                  
+              </div>
+              <div class="store-overlay">
+                  <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                  <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+              <img class="img-fluid" src="../site_web/img/entrepreneur.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+              <div class="p-4">
+                  
+                  <h4 class="mb-3">Prêt entrepreneur</h4>
+                  <p> Si vous êtes un entrepreneur cherchant à lancer ou développer votre entreprise, notre prêt entrepreneur est conçu spécialement pour vous. Obtenez les fonds nécessaires pour démarrer ou faire croître votre entreprise, investir dans de nouveaux équipements,
+                     embaucher du personnel ou développer de nouvelles opportunités d'affaires.</p>
+                 
+              </div>
+              <div class="store-overlay">
+                  <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                  <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+              </div>
+          </div>
+      </div>
+      <div class="row g-4" style="margin-top: 50px;">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+              <img src="../site_web/img/mariage.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+              <div class="p-4">
+                    
+                    <h4 class="mb-3">Credit mariage</h4>
+                    <p> Financer votre mariage n'a jamais été aussi facile avec notre crédit mariage sur mesure. Obtenez les fonds nécessaires
+                       pour réaliser le mariage de vos rêves et créez des souvenirs inoubliables.</p>
+                    
+                </div>
+                <div class="store-overlay">
+                    <a href="" class="btn btn-primary rounded py-2 px-4 m-2">Plus de détails </a>
+                    <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+                <img class="img-fluid" src="../site_web/img/naissance.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+                <div class="p-4">
+                    
+                    <h4 class="mb-3">Credit naissance</h4>
+                    <p> Préparez l'arrivée de votre bébé en toute sérénité avec notre crédit naissance personnalisé. Obtenez les fonds nécessaires pour couvrir les dépenses liées à la venue de votre enfant et assurez-vous
+                       un départ heureux dans cette nouvelle étape de votre vie de famille.</p>
+                    
+                </div>
+                <div class="store-overlay">
+                    <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                    <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="store-item position-relative text-center bg-light shadow-sm border-top rounded">
+                <img class="img-fluid" src="../site_web/img/travel.png" alt="" style="width:40px;height:40px;margin-bottom:10px;margin-top:15px;">
+                <div class="p-4">
+                    
+                    <h4 class="mb-3">Credit special voyage</h4>
+                    <p>Réservez votre voyage de rêve dès maintenant grâce à notre crédit spécial voyage. Profitez de taux avantageux et obtenez les fonds nécessaires pour explorer de nouveaux horizons, créer des souvenirs
+                      inoubliables et vivre des expériences uniques à travers le monde.</p>
+                   
+                </div>
+                <div class="store-overlay">
+                    <a href="" class="btn btn-primary  rounded py-2 px-4 m-2">Plus de détails </a>
+                    <a href="" class="btn btn-dark  rounded py-2 px-4 m-2">Faire une Demande </a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+  
+     
+  </div>
+</div>
+    
+
+      </div>
+  </div>
+  <!-- Store End -->
+   <!-- Gallery Start -->
+   <div class="container-fluid pt-5 pb-3">
+    <div class="container">
+      <div class="text-center pb-2">
+        <p class="section-title px-5">
+          <span class="px-2">Seed Finance ,le credit pour tous.</span>
+        </p>
+        <h1 class="mb-4">Ils se sont confiés à nous.</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mb-2">
+          <ul class="list-inline mb-4" id="portfolio-flters">
+            <li class="btn btn-outline-primary m-1 active" data-filter="*">
+             Ils nous ont faire confiance
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="row portfolio-container">
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-1.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-2.jpg" alt="" />
+           
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-3.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-4.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-5.jpg" alt="" />
+           
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-6.jpg" alt="" />
+            
           </div>
         </div>
       </div>
     </div>
-    <!-- Contact End -->
+  </div>
+  <!-- Gallery End -->
+  
+
+    
 
     <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a
-            href=""
-            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-            style="font-size: 40px; line-height: 40px"
-          >
-            <i class="flaticon-043-teddy-bear"></i>
-            <span class="text-white">KidKinder</span>
-          </a>
-          <p>
-            Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-            stet diam duo eos rebum ipsum diam ipsum elitr.
-          </p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Get In Touch</h3>
-          <div class="d-flex">
-            <h4 class="fa fa-map-marker-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Address</h5>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-envelope text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-phone-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Phone</h5>
-              <p>+012 345 67890</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Classes</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Teachers</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Newsletter</h3>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control border-0 py-4"
-                placeholder="Your Name"
-                required="required"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control border-0 py-4"
-                placeholder="Your Email"
-                required="required"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-primary btn-block border-0 py-3"
-                type="submit"
-              >
-                Submit Now
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div
-        class="container-fluid pt-5"
-        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
-      >
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-primary font-weight-bold" href="#">Your Site Name</a>.
-          All Rights Reserved.
-
-          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-          Designed by
-          <a class="text-primary font-weight-bold" href="https://htmlcodex.com"
-            >HTML Codex</a
-          >
-          <br />Distributed By:
-          <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-        </p>
-      </div>
-    </div>
+   
     <!-- Footer End -->
-
+    @include('Siteweb_SeedBank.pied_page')
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary p-3 back-to-top"
       ><i class="fa fa-angle-double-up"></i
