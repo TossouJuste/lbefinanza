@@ -30,7 +30,7 @@ Route::get('/investment planning',[Site_web_Controller::class, 'P_investmentPlan
 
 //page formulaire
 Route::get('/car-loan',[Site_web_Controller::class, 'car_loan'])->name('car-loan');
-Route::get('/commercial-loan',[Site_web_Controller::class, 'commercial_loan'])->name('commercial-loan');
+Route::get('/commercial-loan',[Site_web_Controller::class, 'commercial_loan'])->name('commercial_loan');
 Route::get('/debt-consolidation-loan',[Site_web_Controller::class, 'debt_consolidation_loan'])->name('debt_consolidation_loan');
 Route::get('/loan-entrepreneur',[Site_web_Controller::class, 'loan_entrepreneur'])->name('loan_entrepreneur');
 Route::get('/loan-entreprise',[Site_web_Controller::class, 'loan_entreprise'])->name('loan_entreprise');
