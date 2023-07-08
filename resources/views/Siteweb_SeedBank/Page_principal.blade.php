@@ -143,7 +143,7 @@
                 class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <img src="../site_web/img/accounting.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" c>
+                <img src="../site_web/img/accounting.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" >
                
                 <h4>Ouverture de compte</h4>
                 <p class="m-0">

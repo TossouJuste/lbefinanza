@@ -40,18 +40,7 @@
               <a href=" {{ route('Page_investmentPlanning')}} " class="dropdown-item">Planification d'investissement</a>
             </div>
           </div>
-          <div class="nav-item dropdown">
-            <a
-              href="team.html"
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-              >Investir</a
-            >
-            <div class="dropdown-menu rounded-0 m-0">
-              <a href="blog.html" class="dropdown-item">Gestion de portefeuilles</a>
-              <a href="class.html" class="dropdown-item">Blog Detail</a>
-            </div>
-          </div>
+          
           
           <a href="{{ route('Page_carte')}}" class="nav-item nav-link">Cartes</a>
           <a href="{{ route('Page_about') }}" class="nav-item nav-link">A propos</a>

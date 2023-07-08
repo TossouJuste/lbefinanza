@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>KidKinder - Kindergarten Website Template</title>
+    <title>Donation</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free HTML Templates" name="keywords" />
     <meta content="Free HTML Templates" name="description" />
@@ -40,288 +40,131 @@
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary mb-5">
-      <div
-        class="d-flex flex-column align-items-center justify-content-center"
-        style="min-height: 400px"
-      >
-        <h3 class="display-3 font-weight-bold text-white">Contact Us</h3>
-        <div class="d-inline-flex text-white">
-          <p class="m-0"><a class="text-white" href="">Home</a></p>
-          <p class="m-0 px-2">/</p>
-          <p class="m-0">Contact Us</p>
+      <div class="container-fluid bg-primary mb-5" style="background-image: url('site_web/img/donation.jpg'); background-size:cover;background-repeat:no-repeat; background-position: center; ">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center"
+          style="min-height: 500px"
+        >
+          <h3 class="display-3 font-weight-bold text-white">Donation</h3>
+          <div class="d-inline-flex text-white">
+            <p class="m-0"><a class="text-white" href="">Accueil</a></p>
+            <p class="m-0 px-2">/</p>
+            <p class="m-0">Participer a nos  dons de fin d'année </p>
+          </div>
         </div>
       </div>
-    </div>
     <!-- Header End -->
+    
+		<!-- start banner Area -->
+		
+				<div class="container">
+						<div class="row fullscreen align-items-center justify-content-center" >
+              <div class="text-center pb-2">
 
-    <!-- Contact Start -->
-    <div class="container-fluid pt-5">
-      <div class="container">
-        <div class="text-center pb-2">
-          <p class="section-title px-5">
-            <span class="px-2">Get In Touch</span>
-          </p>
-          <h1 class="mb-4">Contact Us For Any Query</h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-7 mb-5">
-            <div class="contact-form">
-              <div id="success"></div>
-              <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required="required"
-                    data-validation-required-message="Please enter your name"
-                  />
-                  <p class="help-block text-danger"></p>
+                <p class="section-title px-5">
+                  <span class="px-2">Formulaire de demande</span>
+                </p>
+                
+              </div>
+							<div class="banner-content col-lg-12 col-md-12">
+								
+                <p>
+                  Nous vous invitons à participer à nos dons de fin d'année et à vous joindre à notre effort collectif pour apporter un soutien et une aide précieuse à ceux qui en ont le plus besoin. En cette période festive, où la générosité et la solidarité occupent une place centrale, nous avons l'opportunité de faire une réelle différence dans la vie des personnes vulnérables et des communautés qui traversent des difficultés.
+
+                  En contribuant à nos dons de fin d'année, vous avez la possibilité d'avoir un impact significatif en permettant la réalisation de projets sociaux, l'assistance aux familles dans le besoin, la fourniture de repas chauds et de vêtements aux sans-abri, l'accès à l'éducation pour les enfants défavorisés, et bien d'autres actions porteuses de solidarité.
+
+                  Votre participation est essentielle pour créer un effet d'entraînement et inspirer d'autres personnes à se joindre à cette cause noble. Ensemble, nous pouvons faire la différence et créer un monde plus juste, plus équitable et plus bienveillant. 
+                </p>
+                <div class="text-center pb-2">
+                  <p class="section-title px-5">
+                    <span class="px-2">Démarche a suivre</span>
+                  </p>
+                  
                 </div>
-                <div class="control-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Your Email"
-                    required="required"
-                    data-validation-required-message="Please enter your email"
-                  />
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    placeholder="Subject"
-                    required="required"
-                    data-validation-required-message="Please enter a subject"
-                  />
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="control-group">
-                  <textarea
-                    class="form-control"
-                    rows="6"
-                    id="message"
-                    placeholder="Message"
-                    required="required"
-                    data-validation-required-message="Please enter your message"
-                  ></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div>
-                  <button
-                    class="btn btn-primary py-2 px-4"
-                    type="submit"
-                    id="sendMessageButton"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-5 mb-5">
-            <p>
-              Labore sea amet kasd diam justo amet ut vero justo. Ipsum ut et
-              kasd duo sit, ipsum sea et erat est dolore, magna ipsum et magna
-              elitr. Accusam accusam lorem magna, eos et sed eirmod dolor est
-              eirmod eirmod amet.
-            </p>
-            <div class="d-flex">
-              <i
-                class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Address</h5>
-                <p>123 Street, New York, USA</p>
               </div>
             </div>
-            <div class="d-flex">
-              <i
-                class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Email</h5>
-                <p>info@example.com</p>
+            <div class="row d-flex ">
+              <div class="col-lg-12 contact-left">
+                <div class="single-info">
+                  
+                  <p>
+                    Pour bénéficier de notre don de fin d'année, veuillez suivre les étapes suivantes :
+    
+                        <br>1. Remplissez le formulaire de demande disponible sur notre site web. Assurez-vous de fournir toutes les informations requises avec précision.
+                            
+                            <br>2. Un agent de notre équipe se chargera de traiter votre demande. Pour protéger vos informations sensibles, vous pouvez choisir de les transmettre par mail sécurisé ou via notre système sécurisé de communication avec la banque.
+                            
+                            <br>3. L'agent en charge de votre demande examinera attentivement vos informations et évaluera votre éligibilité pour bénéficier du don. Si des informations supplémentaires sont nécessaires, vous serez contacté par l'agent pour les fournir.
+                            
+                            <br>4. Une fois votre demande approuvée, vous serez informé des prochaines étapes. Cela peut inclure la confirmation de votre don et la procédure pour recevoir les fonds.
+                            
+                            <br>Nous mettons tout en œuvre pour assurer la sécurité de vos informations et garantir la confidentialité de votre demande. Si vous avez des préoccupations concernant la transmission des informations sensibles, n'hésitez pas à contacter notre équipe de support client pour obtenir des clarifications supplémentaires.
+                            
+                            Nous vous remercions de votre intérêt pour notre don de fin d'année et nous nous engageons à vous accompagner tout au long du processus pour que votre demande soit traitée de manière transparente et sécurisée.
+                  </p>
+                </div>
+					
+							</div>
+						</div>
+				</div>
+
+        
+          
+			<!-- End banner Area -->
+      <section class="donate-area relative section-gap  col-lg-12 " id="donate">
+				
+				<div class="container justify-content-center col-lg-12">
+					
+							
+						<div class="col-lg-12">
+              <div class="text-center pb-2">
+
+                <p class="section-title px-5">
+                  <span class="px-2">Formulaire de demande</span>
+                </p>
+                
               </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Phone</h5>
-                <p>+012 345 67890</p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Opening Hours</h5>
-                <strong>Sunday - Friday:</strong>
-                <p class="m-0">08:00 AM - 05:00 PM</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Contact End -->
+							<form class="booking-form" id="myForm" action="donate.php">
+								 	<div class="row">
+								 		<div class="col-lg-6 d-flex flex-column" style="margin-top:15px;">
+							 				<select name="type" class="app-select form-control" required>
+												<option data-display="Nos differents type de don">Nos differents type de don</option>
+												<option value="1">Dons financiers </option>
+												<option value="2">Dons en natures </option>
+												<option value="3">Dons de compétences </option>
+											</select>
+								 		</div>
+							 			<div class="col-lg-6 d-flex flex-column" style="margin-top:15px;">
+											<input name="fname" placeholder="Votre nom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" required="" type="text" required>
+										</div>
+                    <div class="col-lg-6 d-flex flex-column" style="margin-top:15px;">
+											<input name="pname" placeholder="Votre prenom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="form-control mt-20" required="" type="text" required>
+										</div>
+										<div class="col-lg-6 d-flex flex-column" style="margin-top:15px;">
+											<input name="email" placeholder="votre email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="form-control mt-20" required="" type="email">
+										</div>
+                    <div class="col-lg-6 d-flex flex-column" style="margin-top:15px;">
+											<input name="tel" placeholder="Numero de telephone" class="form-control mt-20" required="" type="telephone">
+										</div>
+										
+
+                    <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top:15px;">Demander</a>
+       
+
+										
+									</div>
+					  		</form>
+					  		
+						</div>
+					
+				</div>
+			</section>
+      
 
     <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a
-            href=""
-            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-            style="font-size: 40px; line-height: 40px"
-          >
-            <i class="flaticon-043-teddy-bear"></i>
-            <span class="text-white">KidKinder</span>
-          </a>
-          <p>
-            Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-            stet diam duo eos rebum ipsum diam ipsum elitr.
-          </p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Get In Touch</h3>
-          <div class="d-flex">
-            <h4 class="fa fa-map-marker-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Address</h5>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-envelope text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-phone-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Phone</h5>
-              <p>+012 345 67890</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Classes</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Teachers</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Newsletter</h3>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control border-0 py-4"
-                placeholder="Your Name"
-                required="required"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control border-0 py-4"
-                placeholder="Your Email"
-                required="required"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-primary btn-block border-0 py-3"
-                type="submit"
-              >
-                Submit Now
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div
-        class="container-fluid pt-5"
-        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
-      >
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-primary font-weight-bold" href="#">Your Site Name</a>.
-          All Rights Reserved.
-
-          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-          Designed by
-          <a class="text-primary font-weight-bold" href="https://htmlcodex.com"
-            >HTML Codex</a
-          >
-          <br />Distributed By:
-          <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-        </p>
-      </div>
-    </div>
+    @include('Siteweb_SeedBank.pied_page')
     <!-- Footer End -->
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary p-3 back-to-top"
@@ -343,5 +186,6 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
+ 
 </html>
 
