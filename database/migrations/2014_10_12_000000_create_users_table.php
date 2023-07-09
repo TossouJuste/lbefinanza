@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('piece')->nullable();
             $table->string('password');
             $table->string('admin_validation')->nullable(); // admin validation
+            $table->string('confirmation_token')->nullable(); // client ou admin
             $table->string('admin')->nullable(); // client ou admin
             $table->rememberToken();
             $table->timestamps();

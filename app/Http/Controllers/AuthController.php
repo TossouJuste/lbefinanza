@@ -8,6 +8,10 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Client;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use App\Notifications\ConfirmationNotification;
+
 
 class AuthController extends Controller
 {
@@ -33,24 +37,28 @@ class AuthController extends Controller
     }
     public function Inscription(validateRegister $request,User $inserte)
     { 
-      $pass = bcrypt('$request->password');
       $emails = $request->email;
-      
+      $token=Str::random(16);
+      $user= User::create([
+          'nom' => $request->nom,
+          'prenom' => $request->prenom,
+          'email'=> $request->email,
+          'telephone'=> $request->telephone,
+          'civilite' => $request->civilite,
+          'pays' => $request->pays,
+          'devise' => $request->devise,
+          'confirmation_token'=>$token,
+          'password' =>  Hash::make($request->password)
+      ]);
 
-    //   User::create([
-    //       'nom' => $request->nom,
-    //       'prenom' => $request->prenom,
-    //       'email'=> $request->email,
-    //       'telephone'=> $request->telephone,
-    //       'civilite' => $request->civilite,
-    //       'pays' => $request->pays,
-    //       'devise' => $request->devise,
-    //       'password' => $pass,
-    //   ]);
+$user->notify(new ConfirmationNotification($token) );
       return view('auth.pages.Envoi_mail',[
         'email'=> $emails
       ]);
       
+    }
+    public function confirmation($token){
+
     }
     public function Envoi_mail()
     {

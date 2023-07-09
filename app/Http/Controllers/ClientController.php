@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ClientController extends Controller
 {
@@ -28,4 +29,9 @@ class ClientController extends Controller
     public function chat_view(){
         return view('client_dashboard.pages.chat');
     }
+    public function chat_admin_view(){
+        
+        return view('client_dashboard.pages.chat_admin');
+    }
+    
 }

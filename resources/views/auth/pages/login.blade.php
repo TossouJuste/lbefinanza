@@ -30,40 +30,44 @@
                                 <div class="card-body">
                                     <h2 class="m-t-20">Sign In</h2>
                                     <p class="m-b-30">Enter your credential to get access</p>
-                                    <form method="post" action="{{route('auth.login')}}">
+                                    <form method="post" action="{{ route('auth.login') }}">
                                         @csrf
                                         @method('post')
                                         @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
+                                            <div class="alert alert-danger">
+                                                <ul>
+                                                    @foreach ($errors->all() as $error)
+                                                        <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        @endif
                                         <div class="form-group">
                                             <label class="font-weight-semibold" for="email">Email</label>
                                             <div class="input-affix">
                                                 <i class="prefix-icon anticon anticon-user"></i>
-                                                <input type="text" name="email" class="form-control" id="email" placeholder="Username">
+                                                <input type="text" name="email" class="form-control" id="email"
+                                                    placeholder="Username">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-semibold" for="password">Password:</label>
-                                            <a class="float-right font-size-13 text-muted" href="">Forget Password?</a>
+                                            <a class="float-right font-size-13 text-muted" href="">Forget
+                                                Password?</a>
                                             <div class="input-affix m-b-10">
                                                 <i class="prefix-icon anticon anticon-lock"></i>
-                                                <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                                                <input type="password" name="password" class="form-control"
+                                                    id="password" placeholder="Password">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <span class="font-size-13 text-muted">
-                                                    Don't have an account? 
-                                                    <a class="small" href="{{ route('auth.register.view')}}"> Signup</a>
+                                                    Don't have an account?
+                                                    <a class="small" href="{{ route('auth.register.view') }}">
+                                                        Signup</a>
                                                 </span>
-                                                <button type="submit"class="btn btn-primary">Sign In</button>
+                                                <button type="submit" class="btn btn-primary">Sign In</button>
                                             </div>
                                         </div>
                                     </form>
@@ -90,7 +94,7 @@
         </div>
     </div>
 
-    
+
     <!-- Core Vendors JS -->
     <script src="/assets/js/vendors.min.js"></script>
 

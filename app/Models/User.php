@@ -29,6 +29,7 @@ class User extends Authenticatable
         'piece',
         'admin_validation',
         'admin',
+        'confirmation_token'
     ];
 
     /**

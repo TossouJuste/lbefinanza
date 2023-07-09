@@ -8,7 +8,7 @@ Mon compte
     <div class="main-content">
         <div class="page-header">
             <h2 class="header-title">Mon compte</h2>
-            
+            <p>Bonjour: {{Auth::user()->civilite}}  {{Auth::user()->nom}} </p>
         </div>
 
         <!-- Content goes Here -->
