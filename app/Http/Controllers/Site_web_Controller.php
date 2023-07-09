@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\formulaire;
+use App\Models\pretpersonel;
 
 class Site_web_Controller extends Controller
 {
@@ -134,6 +136,32 @@ class Site_web_Controller extends Controller
     {
         return view('Siteweb_SeedBank.formulaire.Credit_special_voyage');
     }
+
+
+
+
+
+
+    //formulaire-post
+
+    public function post_car_loan(formulaire $request,pretpersonnel $model)
+    {
+       pretpersonels::create([
+        'nom' => $request->nom,
+        'prenom' => $request->prenom,
+        'email'=> $request->email,
+        'telephone'=> $request->telephone,
+        'pays' => $request->pays,
+        'montant' => $request->montant,
+        'statut' => $request->statut,
+        'adresse' => $request->adresse,
+        'ville' => $request->ville,
+
+       ]);
+    }
+
+
+
    
    
 }

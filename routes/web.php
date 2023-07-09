@@ -59,6 +59,9 @@ Route::get('/form-loan-mariage',[Site_web_Controller::class, 'form_loan_mariage'
 Route::get('/form-loan-birth',[Site_web_Controller::class, 'form_loan_birth'])->name('form_loan_birth');
 Route::get('/form-loan-travel',[Site_web_Controller::class, 'form_loan_travel'])->name('form_loan_travel');
 
+//formulaire-post
+Route::post('/form-car-loan',[Site_web_Controller::class, 'post_car_loan'])->name('form_car-loan');
+
 
 
 

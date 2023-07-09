@@ -55,15 +55,101 @@
     </div>
     <!-- Header End -->
 
-    <div class="text-center pb-2">
+    
+    <div class="container pb-2 justify-content-center">
+      <div class="text-center pb-2 ">
+
+        <p class="section-title px-5">
+          <span class="px-2"> L'activité d'investissement</span>
+        </p>
+        <p class="align-items-start">c’est un processus régulier du traitement de l’information aux fins de l’élaboration du projet,
+           qui définit d’avance les indices pour l’atteinte du but.</p>
+       
 
       <p class="section-title px-5">
-        <span class="px-2"> L'activité d'investissement</span>
+        <span class="px-1"> Alors Qu'attendez vous pour nous rejoindre ?</span>
       </p>
-      <p>c’est un processus régulier du traitement de l’information aux fins de l’élaboration du projet,
-         qui définit d’avance les indices pour l’atteinte du but.</p>
-      
+
+     <p>Nous sommes une équipe spécialisée dans la gestion de 
+      portefeuilles de crypto-actifs, et nous utilisons des stratégies commerciales stratégiques ainsi que le staking pour optimiser les rendements. Notre objectif principal est de vous aider à réaliser des bénéfices significatifs.
+
+        En investissant avec nous, nous vous garantissons une marge de 17 % 
+        sur le total de votre portefeuille chaque mois. Cela signifie que vous pouvez éventuellement augmenter votre portefeuille de plus de 170 % sur une année complète.
+        
+        Notre approche repose sur une analyse approfondie du marché des 
+        crypto-actifs et l'identification des métiers stratégiques à fort
+         potentiel de croissance. Nous prenons également en compte les opportunités
+          de staking, qui permettent de générer des revenus passifs en détenant certaines 
+          crypto-monnaies dans votre portefeuille.En nous rejoignant, vous devenez membre de la famille Seed, où nous travaillerons en étroite collaboration pour vous aider à atteindre vos objectifs financiers. Notre équipe est disponible pour répondre à toutes vos questions et vous fournir un soutien personnalisé.
+       Contacter dès aujourd'hui pour discuter de vos besoins spécifiques et pour obtenir de plus amples informations sur la façon dont nous  pouvons vous aider à générer des bénéfices grâce à votre portefeuille de crypto-actifs.</p>
     </div>
+
+    <a href="" class="btn btn-primary px-4 mr-2 rounded">Demander une gestion de portefeuille</a>
+       
+
+    </div>  
+
+    <!-- Gallery Start -->
+   <div class="container-fluid pt-5 pb-3">
+    <div class="container">
+      <div class="text-center pb-2">
+        <p class="section-title px-5">
+          <span class="px-2">Seed Finance ,le credit pour tous.</span>
+        </p>
+        <h1 class="mb-4">Ils se sont confiés à nous.</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mb-2">
+          <ul class="list-inline mb-4" id="portfolio-flters">
+            <li class="btn btn-outline-primary m-1 active" data-filter="*">
+             Ils nous ont faire confiance
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="row portfolio-container">
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-1.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-2.jpg" alt="" />
+           
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-3.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-4.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-5.jpg" alt="" />
+           
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/clients-6.jpg" alt="" />
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery End -->
+  
 
     
 
