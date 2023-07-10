@@ -99,7 +99,15 @@
                     </ul>
                 </div>
                 @endif
-            
+                
+                <div class="form-group col-lg-6 d-none">
+                    <label for="typepret">Type de pret </label>
+                <select id="typepret" name="typepret" class="form-control" required>
+                    
+                    <option value="Maladie">Prêt Maladie</option>
+                 
+                </select>
+                </div>
                 <div class="form-group col-lg-6">
                     <label for="nom">Nom </label>
                     <input type="text" name="nom" id="nom" class="form-control" required>

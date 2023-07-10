@@ -89,7 +89,7 @@
           
             
             
-            <form method="POST"  id="step-form" class="step-form" onsubmit="return validateForm(event)" action="{{ route('get_carte')}}">
+            <form method="POST"  id="step-form" class="step-form" onsubmit="return validateForm(event)" action="{{ route('get_carte') }}">
                 @csrf
                 @method('post')
                 @if ($errors->any())

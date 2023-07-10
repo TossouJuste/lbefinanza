@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('duree');
             $table->string('montant');
 
-
+            $table->string('typepret');
             $table->string('statut')->nullable();
             $table->string('raison')->nullable();
             $table->string('secteur')->nullable();

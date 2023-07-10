@@ -86,6 +86,7 @@ Route::get('/forget_password', [AuthController::class, 'forget_password'])->name
 
 
 // dashboard client 
+
 Route::get('/dashboard', [ClientController::class, 'accueil_dashboard']);
 Route::get('/dashboard/account', [ClientController::class, 'my_account']);
 Route::get('/dashboard/profil', [ClientController::class, 'my_profil']);
@@ -96,3 +97,7 @@ Route::get('/dashboard/chat', [ClientController::class, 'chat_view']);
 
 Route::get('/admin', [AdminController::class, 'accueil_dashboard'])->name('admin.dashboard');
 
+
+// admin
+Route::get('/dashboard/demande', [AdminController::class, 'demande_pret']);
+Route::get('/dashboard/demande/{id}', [AdminController::class, 'demande_pret_control'])->name('vue');

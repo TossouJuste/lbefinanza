@@ -124,7 +124,8 @@
                 </p>
                 
               </div>
-							<form class="booking-form" id="myForm" action="{{ route('demande_donations') }}">
+							<form class="booking-form" id="myForm" action="{{ route('demande_donations') }}" method="POST"  id="step-form" >
+                
                 @csrf
                 @method('post')
 								 	<div class="row">

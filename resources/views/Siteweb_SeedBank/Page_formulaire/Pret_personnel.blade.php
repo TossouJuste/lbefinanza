@@ -70,7 +70,7 @@
                 
                 Lorsque vous choisissez un prêt personnel chez Seed Finance, vous bénéficiez d'un service personnalisé, d'une transparence totale et d'une assistance dédiée pour vous aider à atteindre vos objectifs financiers. Faite votre dès aujourd'hui pour en savoir plus sur notre offre de prêt personnel et obtenir une solution sur mesure pour vos besoins.</p>
         </div>
-        <a href="{{ route('form_loan_entreprise')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire Demande </a>
+        <a href="{{ route('form_loan_personal')}}" class="btn btn-dark  rounded py-2 px-4 m-2">Faire Demande </a>
         
         
     </div>    

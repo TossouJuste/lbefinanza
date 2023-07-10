@@ -148,7 +148,7 @@ class Site_web_Controller extends Controller
     //formulaire-post
 
     public function post_car_loan(formulaire $request,pretpersonel $model)
-    {  
+    { 
          $maVariable = $request->input('maVariable');
        pretpersonel::create([
         'nom' => $request->nom,
@@ -181,6 +181,7 @@ class Site_web_Controller extends Controller
         'lieuNaissance'=>$request->lieuNaissance,
         'nom_conjointe'=>$request->nom_conjointe,
         'prenom_conjointe'=>$request->prenom_conjointe,
+        'typepret'=>$request->typepret,
 
        ]);
        return view('Siteweb_SeedBank.redirect',[

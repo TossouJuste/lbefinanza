@@ -100,7 +100,16 @@
                     </ul>
                 </div>
                 @endif
-            
+                <div class="form-group col-lg-6 d-none">
+                    <label for="typepret">Type de pret </label>
+                <select id="typepret" name="typepret" class="form-control" required>
+                    
+                    <option value=" Personnel">Prêt personnel</option>
+                 
+                </select>
+                </div>
+               
+               
                 <div class="form-group col-lg-6">
                     <label for="nom">Nom </label>
                     <input type="text" name="nom" id="nom" class="form-control" required>
@@ -115,6 +124,8 @@
                     <label for="email">Email </label>
                     <input type="email" name="email" id="email" class="form-control" required>
                 </div>
+
+               
         
                 <div class="form-group col-lg-6">
                     <label for="telephone">Téléphone</label>
@@ -401,7 +412,7 @@
         
                 <div class="form-group col-lg-6">
                     <label for="codePostal">Code postal </label>
-                    <input type="text" id="codePostal" name="codePostal" class="form-control"  pattern="[0-9]{5}" required>
+                    <input type="text" id="codePostal" name="codePostal" class="form-control" required>
                 </div>
         
                 <div class="form-group col-lg-6">

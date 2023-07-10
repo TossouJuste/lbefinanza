@@ -24,6 +24,7 @@ class pretpersonnel extends Controller
         'ville' => $request->ville,
         'duree' =>$request->duree,
         'piece' =>$request->peice,
+        'typepret'=>$request->typepret,
 
        ]);
        return view('Siteweb_SeedBank.redirect',[
