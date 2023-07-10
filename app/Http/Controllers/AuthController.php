@@ -52,6 +52,7 @@ class AuthController extends Controller
       ]);
 
 $user->notify(new ConfirmationNotification($token) );
+     
       return view('auth.pages.Envoi_mail',[
         'email'=> $emails
       ]);
@@ -63,5 +64,10 @@ $user->notify(new ConfirmationNotification($token) );
     public function Envoi_mail()
     {
         return view('auth.pages.Envoi_mail');
+    }
+    public function forget_password()
+    
+    {
+        return view('auth.pages.password_forget');
     }
 }

@@ -20,6 +20,12 @@ return new class extends Migration
             $table->string('telephone');
             $table->string('civilite');
             $table->string('pays');
+            $table->string('code_bic');
+            $table->string('code_banque');
+            $table->string('numero_compte');
+            $table->string('code_bic');
+            $table->string('devise');
+            $table->string('iban')->nullable();
             $table->string('piece')->nullable();
             $table->string('password');
             $table->string('admin_validation')->nullable(); // admin validation
