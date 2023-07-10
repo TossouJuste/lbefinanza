@@ -77,7 +77,7 @@
                   </p>
                 </div>
                 
-                <a href="" class="btn btn-primary px-4 mx-auto mb-4">Demander</a>
+                <a href="{{ route('get_carte')}}" class="btn btn-primary px-4 mx-auto mb-4">Demander</a>
               </div>
             </div>
             <div class="col-lg-4 mb-5">
@@ -91,7 +91,7 @@
                     avantages et privilèges réservés aux titulaires de cette carte haut de gamme. </p>
                 </div>
                 
-                <a href="" class="btn btn-primary px-4 mx-auto mb-4">Demander</a>
+                <a href="{{ route('get_carte')}}" class="btn btn-primary px-4 mx-auto mb-4">Demander</a>
               </div>
             </div>
             <div class="col-lg-4 mb-5">
@@ -105,7 +105,7 @@
                     haut de gamme pour une expérience de voyage et de shopping inégalée.  </p>
                 </div>
                 
-                <a href="" class="btn btn-primary px-4 mx-auto mb-4">Demander</a>
+                <a href="{{ route('get_carte')}}" class="btn btn-primary px-4 mx-auto mb-4">Demander</a>
               </div>
             </div>
           </div>

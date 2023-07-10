@@ -41,6 +41,7 @@ Route::get('/loan-personal',[Site_web_Controller::class, 'loan_personal'])->name
 Route::get('/loan-mariage',[Site_web_Controller::class, 'loan_mariage'])->name('loan_mariage');
 Route::get('/loan-birth',[Site_web_Controller::class, 'loan_birth'])->name('loan_birth');
 Route::get('/loan-travel',[Site_web_Controller::class, 'loan_travel'])->name('loan_travel');
+Route::get('/get-carte',[Site_web_Controller::class, 'demande_cartes'])->name('get_carte');
 
 
 
@@ -58,9 +59,13 @@ Route::get('/form-loan-personal',[Site_web_Controller::class, 'form_loan_persona
 Route::get('/form-loan-mariage',[Site_web_Controller::class, 'form_loan_mariage'])->name('form_loan_mariage');
 Route::get('/form-loan-birth',[Site_web_Controller::class, 'form_loan_birth'])->name('form_loan_birth');
 Route::get('/form-loan-travel',[Site_web_Controller::class, 'form_loan_travel'])->name('form_loan_travel');
+Route::get('/form-investmentPlanning',[Site_web_Controller::class, 'demande_gestion_portefeuilles'])->name('demande_gestion_portefeuilles');
 
 //formulaire-post
 Route::post('/form-car-loan',[Site_web_Controller::class, 'post_car_loan'])->name('form_car-loan');
+Route::post('/get-carte',[Site_web_Controller::class, 'demande_carte'])->name('get_carte');
+Route::post('/form-donation',[Site_web_Controller::class, 'demande_donation'])->name('demande_donations');
+Route::post('/form-investmentPlanning',[Site_web_Controller::class, 'demande_gestion_portefeuille'])->name('demande_gestion_portefeuilles');
 
 
 

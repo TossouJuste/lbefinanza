@@ -29,27 +29,31 @@
                         <div class="col-md-6">
                             <div class="p-v-30">
                               
+                              <p>
+
+
+                                Cher <span class="text-primary">{{ $nom }} </span>,
+
+                                Merci d'avoir soumis une demande de gestion de portefeuille à Seed Finance. Nous vous remercions de l'intérêt que vous portez à nos services.
                                 
-                                    Cher <span class="text-primary">{{ $nom }}</span>,
-
-                                    Nous vous remercions d'avoir soumis votre demande de prêt. Nous avons bien reçu votre demande et nous sommes ravis de vous informer que nous avons entamé l'examen de votre dossier.
-
-                                    Nos agents experts en demandes de prêt sont en train d'étudier attentivement les informations que vous avez fournies.
-                                    Dans le but de garantir la confidentialité et la sécurité de vos informations sensibles, le reste des informations sensibles sera pris par e-mail ou via notre chat bancaire .
-                                     Nous tenons à vous assurer que nous traitons votre demande avec la plus grande attention et que nous nous efforçons de vous fournir une réponse dans les plus brefs délais.
-
-                                    Nous comprenons que l'obtention d'un prêt est une étape importante pour vous et nous nous engageons à vous tenir informé(e) tout au long du processus. Vous recevrez un e-mail sur <span class="text-primary">{{ $email }}</span> dans les prochaines 48 heures avec les détails de notre évaluation de votre demande de prêt personnel.
-
-                                    Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Notre équipe se fera un plaisir de vous aider.
-
-                                    Nous vous remercions de votre patience et de votre confiance en notre institution financière. Nous faisons tout notre possible pour vous offrir un service de qualité et vous aider à réaliser vos projets financiers.
-                                    <br>
+                                Nous tenons à vous informer que nous avons bien reçu votre demande et nous l'examinons attentivement. Notre équipe dédiée à la gestion de portefeuille évalue les informations que vous avez fournies afin de répondre au mieux à vos besoins financiers.
+                                Dans le but de garantir la confidentialité et la sécurité de vos informations sensibles, le reste des informations sensibles sera pris par e-mail ou via notre chat bancaire .
+                                
+                                Nous comprenons l'importance d'une réponse rapide et nous vous contacterons sur votre e-mail <span class="text-primary">{{$email}}</span> dans les plus brefs délais pour discuter de votre demande de gestion de portefeuille. Nous sommes impatients de vous offrir notre expertise et de vous aider à atteindre vos objectifs financiers.
+                                
+                                Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Notre équipe est là pour vous aider.
+                                
+                                <br>
                                     Cordialement,
 
                                     <span class="text-primary"><br>Equipe Seed Finance
                                         <br>
                                         
                                         Seed Finance</span> <br>
+                               
+                                
+                             </p> 
+                              
                                <div class="flex flex-row flex-wrap">
                             
                                 <a href="{{ route('Page_principal')}}" class="btn btn-primary btn-tone mt-2">Retour </a>
@@ -61,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                
+               
             </div>
         </div>
     </div>

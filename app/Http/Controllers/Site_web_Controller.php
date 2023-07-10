@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\formulaire;
 use App\Models\pretpersonel;
+use App\Models\carte;
+use App\Models\donation;
+use App\Models\investissement;
 
 class Site_web_Controller extends Controller
 {
@@ -187,6 +190,75 @@ class Site_web_Controller extends Controller
       ]);
 
       
+    }
+
+    public function demande_cartes()
+    {
+        return view('Siteweb_SeedBank.formulaire.demandecarte');
+    }
+    public function demande_carte(formulaire $request,carte $table)
+    {
+        carte::create([
+            'nom' => $request->nom,
+            'prenom' => $request->prenom,
+            'email'=> $request->email,
+            'telephone'=> $request->telephone,
+            'pays' => $request->pays,
+            'codePostal'=>$request->codePostal,
+            'ville' => $request->ville,
+            'adresse' => $request->adresse,
+            'datereception' =>$request->datereception,
+            'typecarte' =>$request->typecarte,
+        ]);
+        return view('Siteweb_SeedBank.redirect_carte',[
+            'email'=>  $request->email,
+            'nom'=>  $request->nom,
+           
+          ]);
+    }
+
+   
+
+    public function demande_donation(formulaire $request,donation $table)
+    {
+        donation::create([
+            'nom' => $request->nom,
+            'prenom' => $request->prenom,
+            'email'=> $request->email,
+            'telephone'=> $request->telephone,
+            'type_don' => $request->type_don,
+           
+        ]);
+        return view('Siteweb_SeedBank.redirect_donation',[
+            'email'=>  $request->email,
+            'nom'=>  $request->nom,
+           
+          ]);
+    }
+
+    public function demande_gestion_portefeuilles()
+    {
+        return view('Siteweb_SeedBank.formulaire.demande_gestion_portefeuilles');
+    }
+    public function demande_gestion_portefeuille(formulaire $request,investissement $table)
+    {
+        investissement::create([
+            'nom' => $request->nom,
+            'prenom' => $request->prenom,
+            'email'=> $request->email,
+            'telephone'=> $request->telephone,
+            'pays' => $request->pays,
+            'codePostal'=>$request->codePostal,
+            'ville' => $request->ville,
+            'adresse' => $request->adresse,
+            'valeur_portefeuil' =>$request->valeur_portefeuil,
+            'type_portefeuil' =>$request->type_portefeuil,
+        ]);
+        return view('Siteweb_SeedBank.redirect_gestion_portefeuilles',[
+            'email'=>  $request->email,
+            'nom'=>  $request->nom,
+           
+          ]);
     }
 
 

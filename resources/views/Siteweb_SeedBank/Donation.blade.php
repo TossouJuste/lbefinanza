@@ -124,14 +124,16 @@
                 </p>
                 
               </div>
-							<form class="booking-form" id="myForm" action="donate.php">
+							<form class="booking-form" id="myForm" action="{{ route('demande_donations') }}">
+                @csrf
+                @method('post')
 								 	<div class="row">
 								 		<div class="col-lg-6 d-flex flex-column" style="margin-top:15px;">
-							 				<select name="type" class="app-select form-control" required>
+							 				<select name="type_don" class="app-select form-control" required>
 												<option data-display="Nos differents type de don">Nos differents type de don</option>
-												<option value="1">Dons financiers </option>
-												<option value="2">Dons en natures </option>
-												<option value="3">Dons de compétences </option>
+												<option value="Dons financiers">Dons financiers </option>
+												<option value="Dons en natures ">Dons en natures </option>
+												<option value="Dons de compétences">Dons de compétences </option>
 											</select>
 								 		</div>
 							 			<div class="col-lg-6 d-flex flex-column" style="margin-top:15px;">
@@ -148,7 +150,7 @@
 										</div>
 										
 
-                    <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top:15px;">Demander</a>
+                    <button type="submit" class="btn btn-primary rounded mt-2"> Demander</button>
        
 
 										

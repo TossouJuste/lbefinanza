@@ -29,27 +29,28 @@
                         <div class="col-md-6">
                             <div class="p-v-30">
                               
-                                
-                                    Cher <span class="text-primary">{{ $nom }}</span>,
+                                <p>
+                                    Cher <span class="text-primary">{{ $nom }} </span>,
 
-                                    Nous vous remercions d'avoir soumis votre demande de prêt. Nous avons bien reçu votre demande et nous sommes ravis de vous informer que nous avons entamé l'examen de votre dossier.
+                                    Nous tenons à vous remercier d'avoir soumis une demande de donation auprès de notre organisation. Votre générosité et votre engagement envers notre cause sont grandement appréciés.
 
-                                    Nos agents experts en demandes de prêt sont en train d'étudier attentivement les informations que vous avez fournies.
-                                    Dans le but de garantir la confidentialité et la sécurité de vos informations sensibles, le reste des informations sensibles sera pris par e-mail ou via notre chat bancaire .
-                                     Nous tenons à vous assurer que nous traitons votre demande avec la plus grande attention et que nous nous efforçons de vous fournir une réponse dans les plus brefs délais.
+                                    Nous avons bien reçu votre demande de donation et nous tenons à vous informer que votre demande est en cours d'examen. Notre équipe dédiée examine attentivement chaque demande de donation que nous recevons.
 
-                                    Nous comprenons que l'obtention d'un prêt est une étape importante pour vous et nous nous engageons à vous tenir informé(e) tout au long du processus. Vous recevrez un e-mail sur <span class="text-primary">{{ $email }}</span> dans les prochaines 48 heures avec les détails de notre évaluation de votre demande de prêt personnel.
+                                    Veuillez noter que nous recevons un grand nombre de demandes de donation et que notre processus de sélection peut prendre du temps. Nous évaluons chaque demande avec soin afin de maximiser l'impact de nos dons et de les attribuer de manière équitable.
 
-                                    Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Notre équipe se fera un plaisir de vous aider.
+                                    Nous tenons à vous assurer que nous étudions votre demande avec toute l'attention qu'elle mérite. Une fois que nous aurons examiné votre demande plus en détail, nous vous informerons par e-mail(<span class="text-primary"> {{ $email }} </span>) de la suite qui sera donnée à votre demande de donation.
 
-                                    Nous vous remercions de votre patience et de votre confiance en notre institution financière. Nous faisons tout notre possible pour vous offrir un service de qualité et vous aider à réaliser vos projets financiers.
-                                    <br>
-                                    Cordialement,
+                                    Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Nous sommes là pour vous aider et vous fournir les informations dont vous avez besoin.
+
+                                    Nous vous remercions sincèrement de votre intérêt pour notre cause et de votre soutien à notre organisation. Votre engagement fait une réelle différence dans la réalisation de nos projets et nous sommes reconnaissants de votre confiance.
+
+                                    <br>Cordialement,
 
                                     <span class="text-primary"><br>Equipe Seed Finance
                                         <br>
                                         
                                         Seed Finance</span> <br>
+                                </p>
                                <div class="flex flex-row flex-wrap">
                             
                                 <a href="{{ route('Page_principal')}}" class="btn btn-primary btn-tone mt-2">Retour </a>
@@ -61,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                
+               
             </div>
         </div>
     </div>

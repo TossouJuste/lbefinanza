@@ -29,27 +29,28 @@
                         <div class="col-md-6">
                             <div class="p-v-30">
                               
-                                
-                                    Cher <span class="text-primary">{{ $nom }}</span>,
+                                <p>
+                                    Cher <span class="text-primary">{{ $nom }} </span>,
 
-                                    Nous vous remercions d'avoir soumis votre demande de prêt. Nous avons bien reçu votre demande et nous sommes ravis de vous informer que nous avons entamé l'examen de votre dossier.
+                                    Nous tenons à vous remercier d'avoir soumis une demande de carte auprès de notre institution financière. Nous avons bien reçu votre demande et nous apprécions votre intérêt pour nos services.
 
-                                    Nos agents experts en demandes de prêt sont en train d'étudier attentivement les informations que vous avez fournies.
-                                    Dans le but de garantir la confidentialité et la sécurité de vos informations sensibles, le reste des informations sensibles sera pris par e-mail ou via notre chat bancaire .
-                                     Nous tenons à vous assurer que nous traitons votre demande avec la plus grande attention et que nous nous efforçons de vous fournir une réponse dans les plus brefs délais.
+                                    Nous tenons à vous informer que votre demande de carte a été prise en compte et est en cours de traitement. Dans le but de garantir la confidentialité et la sécurité de vos informations sensibles, le reste des informations sensibles sera pris par e-mail ou via notre chat bancaire .Notre équipe dédiée examine attentivement votre demande afin de vous fournir une réponse dans les plus brefs délais.
 
-                                    Nous comprenons que l'obtention d'un prêt est une étape importante pour vous et nous nous engageons à vous tenir informé(e) tout au long du processus. Vous recevrez un e-mail sur <span class="text-primary">{{ $email }}</span> dans les prochaines 48 heures avec les détails de notre évaluation de votre demande de prêt personnel.
+                                    Une fois que votre demande aura été évaluée, vous recevrez une réponse par e-mail sur <span class="text-primary"> {{ $email }} </span> l'approbation ou le rejet de votre demande de carte. Si des informations supplémentaires sont nécessaires, notre équipe vous contactera pour les obtenir.
 
-                                    Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Notre équipe se fera un plaisir de vous aider.
+                                    Nous comprenons que l'obtention d'une carte est importante pour vous, et nous nous engageons à vous offrir un service de qualité et à traiter votre demande avec diligence.
 
-                                    Nous vous remercions de votre patience et de votre confiance en notre institution financière. Nous faisons tout notre possible pour vous offrir un service de qualité et vous aider à réaliser vos projets financiers.
-                                    <br>
-                                    Cordialement,
+                                    Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Notre équipe est là pour vous aider.
+
+                                    Nous vous remercions de votre patience et de votre confiance en notre institution financière. Nous sommes impatients de vous fournir la réponse à votre demande de carte dans les meilleurs délais.
+
+                                    <br>Cordialement,
 
                                     <span class="text-primary"><br>Equipe Seed Finance
                                         <br>
                                         
                                         Seed Finance</span> <br>
+                                </p>
                                <div class="flex flex-row flex-wrap">
                             
                                 <a href="{{ route('Page_principal')}}" class="btn btn-primary btn-tone mt-2">Retour </a>
@@ -61,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                
+               
             </div>
         </div>
     </div>
