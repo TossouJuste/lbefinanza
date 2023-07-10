@@ -449,11 +449,11 @@
                 <div class="form-group col-lg-6">
                     <label for="duree">Durée du Crédit</label>
                     <select id="duree" name="duree" class="form-control" >
-                        <option value="12">12 mois</option>
-                        <option value="24">24 mois</option>
-                        <option value="36">36 mois</option>
-                        <option value="48">48 mois</option>
-                        <option value="60">60 mois</option>
+                        <option value="1">1 an</option>
+                        <option value="2">2 ans</option>
+                        <option value="3">3 ans</option>
+                        <option value="4">4 ans</option>
+                        <option value="5">5 ans</option>
                     </select>
                 </div>
               

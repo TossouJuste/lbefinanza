@@ -57,9 +57,127 @@ Mon compte
 
                             @if (strlen($donnees->duree)>0)
 
-                            <p> Duree du prêt: {{ $donnees->duree}}</p>
+                            <p> Duree du prêt: {{ $donnees->duree}} ans </p>
                             @endif
-                            <a href=" {{ route('vue',$donnees->id)}} " class="btn btn-primary px-4 rounded mb-3">Vue</a>
+
+                            @if (strlen($donnees->duree)>0)
+
+                            <p> Montant du prêt: {{ $donnees->montant}}</p>
+                            @endif
+
+                            @if (strlen($donnees->statut)>0)
+
+                            <p> Statut: {{ $donnees->statut}}</p>
+                            @endif
+
+                            @if (strlen($donnees->raison)>0)
+
+                            <p> Raison de demande: {{ $donnees->raison}}</p>
+                            @endif
+
+                            @if (strlen($donnees->secteur)>0)
+
+                            <p> Secteur: {{ $donnees->secteur}}</p>
+                            @endif
+
+                            @if (strlen($donnees->description)>0)
+
+                            <p> Description: {{ $donnees->description}}</p>
+                            @endif
+
+                            @if (strlen($donnees->chiffreAffaires)>0)
+
+                            <p> Chiffre D'affaires: {{ $donnees->chiffreAffaires}}</p>
+                            @endif
+
+                            @if (strlen($donnees->propriete)>0)
+
+                            <p> Propriete: {{ $donnees->propriete}}</p>
+                            @endif
+
+                            @if (strlen($donnees->montantDette)>0)
+
+                            <p> Montant Dette: {{ $donnees->montantDette}}</p>
+                            @endif
+
+                            @if (strlen($donnees->creanciers)>0)
+
+                            <p> Creanciers: {{ $donnees->creanciers}}</p>
+                            @endif
+
+                            @if (strlen($donnees->mensualiteActuelle)>0)
+
+                            <p> Mensualite Actuelle: {{ $donnees->mensualiteActuelle}}</p>
+                            @endif
+
+                            @if (strlen($donnees->marquee)>0)
+
+                            <p> Marque voiture: {{ $donnees->marque}}</p>
+                            @endif
+
+                            @if (strlen($donnees->modele)>0)
+
+                            <p> Modele voiture: {{ $donnees->modele}}</p>
+                            @endif
+
+                            @if (strlen($donnees->annee)>0)
+
+                            <p> Annee voiture: {{ $donnees->annee}}</p>
+                            @endif
+
+                            @if (strlen($donnees->dureeVoyage)>0)
+
+                            <p> Duree Voyage: {{ $donnees->dureeVoyage}}</p>
+                            @endif
+
+                            @if (strlen($donnees->dateDepart)>0)
+
+                            <p> Date Depart: {{ $donnees->dateDepart}}</p>
+                            @endif
+
+                            @if (strlen($donnees->destination)>0)
+
+                            <p> Destination: {{ $donnees->destination}}</p>
+                            @endif
+
+                            @if (strlen($donnees->lieuNaissance)>0)
+
+                            <p> Lieu de Naissance: {{ $donnees->lieuNaissance}}</p>
+                            @endif
+
+                            @if (strlen($donnees->dateNaissance)>0)
+
+                            <p> Date de Naissance: {{ $donnees->dateNaissance}}</p>
+                            @endif
+
+                            
+                            @if (strlen($donnees->nom_conjointe)>0)
+
+                            <p> Nom conjointe: {{ $donnees->nom_conjointe}}</p>
+                            @endif
+
+                            @if (strlen($donnees->prenom_conjointe)>0)
+
+                            <p> Prenom conjointe: {{ $donnees->prenom_conjointe}}</p>
+                            @endif
+
+                            @if (strlen($donnees->nom_conjointe)>0)
+
+                            <p> Nom conjoint: {{ $donnees->nom_conjoint}}</p>
+                            @endif
+
+                            @if (strlen($donnees->prenom_conjointe)>0)
+
+                            <p> Prenom conjoint: {{ $donnees->prenom_conjoint}}</p>
+                            @endif
+
+
+
+
+
+
+
+                            <a href=" {{ route('vue',$donnees->id)}} " class="btn btn-primary px-4 rounded mb-3" >Vue</a>
 
                        </div>
                        
@@ -73,6 +191,8 @@ Mon compte
 
         <!-- Content goes Here -->
     </div>
+
+    
     <!-- Content Wrapper END -->
 
     <!-- Footer START -->
