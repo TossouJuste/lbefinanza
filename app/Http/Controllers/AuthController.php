@@ -44,6 +44,10 @@ class AuthController extends Controller
           'telephone'=> $request->telephone,
           'civilite' => $request->civilite,
           'pays' => $request->pays,
+          'codePostal'=>$request->codePostal,
+          'ville' => $request->ville,
+          'adresse' => $request->adresse,
+          'pays' => $request->pays,
           'devise' => $request->devise,
           'password' => $pass,
       ]);

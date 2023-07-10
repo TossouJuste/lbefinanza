@@ -20,6 +20,10 @@ return new class extends Migration
             $table->string('telephone');
             $table->string('civilite');
             $table->string('pays');
+            $table->string('adresse');
+            $table->string('ville');
+            $table->string('codePostal');
+            $table->string('devise');
             $table->string('piece')->nullable();
             $table->string('password');
             $table->string('admin_validation')->nullable(); // admin validation
