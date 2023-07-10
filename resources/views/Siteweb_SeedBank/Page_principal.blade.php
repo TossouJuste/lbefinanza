@@ -195,7 +195,7 @@
                     Pratique, gratuite et idéale pour les paiements du quotidien, commandez dès maintenant vos cartes SeedFinance. Profitez d'une expérience de paiement sans tracas avec nos cartes, acceptées partout.
                      Simplifiez vos transactions avec SeedFinance.
                 </p>
-                  <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 60px;">Maintenant</a>
+                  <a href="{{route('Page_carte')}}" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 60px;">Maintenant</a>
              
               </div>
             </div>

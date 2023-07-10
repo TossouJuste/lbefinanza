@@ -32,7 +32,7 @@
                                 
                                 Cher <span class="text-primary">{{ $nom }}</span>,
 
-Nous vous remercions d'avoir soumis votre demande de {{ $mavariable }}. Nous avons bien reçu votre demande et nous sommes ravis de vous informer que nous avons entamé l'examen de votre dossier.
+Nous vous remercions d'avoir soumis votre demande de prêt. Nous avons bien reçu votre demande et nous sommes ravis de vous informer que nous avons entamé l'examen de votre dossier.
 
 Nos agents experts en demandes de prêt sont en train d'étudier attentivement les informations que vous avez fournies. Nous tenons à vous assurer que nous traitons votre demande avec la plus grande attention et que nous nous efforçons de vous fournir une réponse dans les plus brefs délais.
 
