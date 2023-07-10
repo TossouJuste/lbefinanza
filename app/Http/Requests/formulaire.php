@@ -28,6 +28,7 @@ class formulaire extends FormRequest
             'email'  => 'email|required|unique:users',
             'telephone' => 'required|min:8',
             'pays' => 'required',
+            'codePostal' => 'required|min:5',
 
         ];
     }
@@ -49,6 +50,9 @@ class formulaire extends FormRequest
 
            
             'pays.required' => 'Le champ pays est requis',
+
+            'codePostal.min' => 'Le codePostal doit contenir au moins cinq chiffres',
+            'codePostal.required' => 'Le champs code postal est requis',
           
 
             

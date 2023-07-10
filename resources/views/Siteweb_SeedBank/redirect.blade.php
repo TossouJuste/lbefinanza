@@ -29,16 +29,28 @@
                         <div class="col-md-6">
                             <div class="p-v-30">
                               
-                                <div class="flex ">
-                                    <h2 class="font-bold text-2xl">Verification de votre mail</h2>
-                                    <img src="assets/images/logo/envelope-solid.svg" class="w-8 h-8 ml-2" alt="">
-                                </div>
-                                <p class="lead m-b-30 text-lg">Un mail a été envoyer a <span class="text-blue-600">{{ $email}}</span></p>
+                                
+                                Cher <span class="text-primary">{{ $nom }}</span>,
 
-                                <h4 class=" text-xl mb-6">Veuillez vérifier votre adresse e-mail et poursuivre l'activation de votre compte.</h4>
+Nous vous remercions d'avoir soumis votre demande de {{ $mavariable }}. Nous avons bien reçu votre demande et nous sommes ravis de vous informer que nous avons entamé l'examen de votre dossier.
+
+Nos agents experts en demandes de prêt sont en train d'étudier attentivement les informations que vous avez fournies. Nous tenons à vous assurer que nous traitons votre demande avec la plus grande attention et que nous nous efforçons de vous fournir une réponse dans les plus brefs délais.
+
+Nous comprenons que l'obtention d'un prêt est une étape importante pour vous et nous nous engageons à vous tenir informé(e) tout au long du processus. Vous recevrez un e-mail sur <span class="text-primary">{{ $email }}</span> dans les prochaines 48 heures avec les détails de notre évaluation de votre demande de prêt personnel.
+
+Si vous avez des questions supplémentaires ou si vous souhaitez fournir des informations complémentaires, n'hésitez pas à nous contacter à l'adresse e-mail Contact@SeedFinance.com ou par téléphone au +33 757 824 762. Notre équipe se fera un plaisir de vous aider.
+
+Nous vous remercions de votre patience et de votre confiance en notre institution financière. Nous faisons tout notre possible pour vous offrir un service de qualité et vous aider à réaliser vos projets financiers.
+<br>
+Cordialement,
+
+<span class="text-primary"><br>Equipe Seed Finance
+    <br>
+    
+    Seed Finance</span> <br>
                                <div class="flex flex-row flex-wrap">
-                                <a href="" class="btn btn-primary btn-tone mr-2 mt-2">Renvoyer l'email</a>
-                                <a href="" class="btn btn-primary btn-tone mt-2">Retour à la connexion</a>
+                            
+                                <a href="{{ route('Page_principal')}}" class="btn btn-primary btn-tone mt-2">Retour à la connexion</a>
                                </div>
                             </div>
                         </div>

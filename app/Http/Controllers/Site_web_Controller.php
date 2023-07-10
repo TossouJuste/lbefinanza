@@ -144,20 +144,49 @@ class Site_web_Controller extends Controller
 
     //formulaire-post
 
-    public function post_car_loan(formulaire $request,pretpersonnel $model)
-    {
-       pretpersonels::create([
+    public function post_car_loan(formulaire $request,pretpersonel $model)
+    {  
+         $maVariable = $request->input('maVariable');
+       pretpersonel::create([
         'nom' => $request->nom,
         'prenom' => $request->prenom,
         'email'=> $request->email,
         'telephone'=> $request->telephone,
         'pays' => $request->pays,
+        'codePostal'=>$request->codePostal,
         'montant' => $request->montant,
         'statut' => $request->statut,
         'adresse' => $request->adresse,
+        'raison' => $request->raison,
+        'piece'  => $request->piece,
         'ville' => $request->ville,
+        'duree'=> $request->duree,
+        'propriete' =>$request->propriete,
+        'chiffreAffaires'=>$request->chiffreAffaires,
+        'description'=>$request->description, 
+        'secteur'=>$request->secteur,
+        'montantDette'=>$request->montantDette,
+        'creanciers'=>$request->creanciers,
+        'mensualiteActuelle' =>$request->mensualiteActuelle,
+        'marque' =>$request->marque,
+        'modele' =>$request->modele,
+        'annee' =>$request->annee,
+        'dureeVoyage' =>$request->dureeVoyage,
+        'dateDepart'=>$request->dateDepart,
+        'destination'=>$request->destination,
+        'dateNaissance'=>$request->dateNaissance,
+        'lieuNaissance'=>$request->lieuNaissance,
+        'nom_conjointe'=>$request->nom_conjointe,
+        'prenom_conjointe'=>$request->prenom_conjointe,
 
        ]);
+       return view('Siteweb_SeedBank.redirect',[
+        'email'=>  $request->email,
+        'nom'=>  $request->nom,
+        'mavariable'=>$maVariable ,
+      ]);
+
+      
     }
 
 

@@ -32,6 +32,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="site_web/css/style.css" rel="stylesheet" />
+    <script src="/assets/js/sign-up.js"></script>
+    <link rel="stylesheet" href="/assets/css/sign-up.css">
     <style>
         .form-group {
             margin-bottom: 20px;
@@ -71,7 +73,7 @@
     <!-- Navbar Start -->
     @include('Siteweb_SeedBank.nav')
     <!-- Navbar End -->
-    <div class="text-center pb-2">
+    <div class="text-center pb-2 mt-2" style="margin-top:15px;">
         <p class="section-title px-5">
           <span class="px-2">Prêt personnel</span>
         </p>
@@ -85,7 +87,7 @@
           
             
             
-            <form method="POST" action="{{ route('form_car-loan')}}">
+            <form method="POST" id="step-form" class="step-form" onsubmit="return validateForm(event)"  action="{{ route('form_car-loan')}}">
                 @csrf
                 @method('post')
                 @if ($errors->any())
@@ -116,13 +118,13 @@
         
                 <div class="form-group col-lg-6">
                     <label for="telephone">Téléphone</label>
-                    <input type="tel" id="telephone" name="telephone" required>
+                    <input type="tel" id="telephone" name="telephone" class="form-control" required>
         
                 </div>
         
                 <div class="form-group flex flex-col col-lg-6">
                     <label for="pays" class="form-label font-weight-semibold ">PAYS</label>
-                    <select class="form-select border-2 border-indigo-200 rounded-lg py-2" required id="pays" name="pays" aria-label="Default select example" value = {{ old('pays') }}>
+                    <select class="form-select border-2 border-indigo-200 rounded-lg py-2 form-control" required id="pays" name="pays" aria-label="Default select example" value = {{ old('pays') }}>
                   
                     <option value="France" >France </option>
         
@@ -399,12 +401,12 @@
         
                 <div class="form-group col-lg-6">
                     <label for="codePostal">Code postal </label>
-                    <input type="text" id="codePostal" name="codePostal" pattern="[0-9]{5}" required>
+                    <input type="text" id="codePostal" name="codePostal" class="form-control"  pattern="[0-9]{5}" required>
                 </div>
         
                 <div class="form-group col-lg-6">
                     <label for="statut">Êtes-vous Locataire ou Propriétaire ?</label>
-                <select id="statut" name="statut">
+                <select id="statut" class="form-control" name="statut">
                     <option value="locataire">Locataire</option>
                     <option value="proprietaire">Propriétaire</option>
                 </select>
@@ -412,6 +414,11 @@
                 <div class="form-group col-lg-6">
                     <label for="montant">Montant souhaité </label>
                     <input type="text" name="montant" id="montant" class="form-control" required>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="duree">Durée du prêt (en années) </label>
+                    <input type="number" id="duree" class="form-control" name="duree" required>
+                    <br>
                 </div>
             
                 <div class="form-group col-lg-6">

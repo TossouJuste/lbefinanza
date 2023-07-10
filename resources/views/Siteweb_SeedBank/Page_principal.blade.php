@@ -107,7 +107,7 @@
                      Anticipons ensemble cette nouvelle étape de vie en vous aidant à constituer un complément de revenus. Nos conseillers, spécialistes de l'épargne, 
                      sont là pour vous accompagner et vous aider à mieux planifier votre retraite en fonction de votre situation.
                 </p>
-                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 25px;">Maintenant</a>
+                <a href="{{ route('Page_contact')}}" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 25px;">Maintenant</a>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
                     pour assurer leur protection à l'école et en dehors.
                      Offrez-leur une tranquillité d'esprit totale grâce à notre assurance spécialement conçue pour leur bien-être.
                 </p>
-                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 5px;">Maintenant</a>
+                <a href="{{ route('Page_contact')}}" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 5px;">Maintenant</a>
              
               </div>
             </div>
@@ -153,7 +153,7 @@
                       Ne manquez pas cette occasion de bénéficier d'avantages exclusifs en 
                       rejoignant notre banque.
                 </p>
-                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 60px;">Maintenant</a>
+                <a href="{{ route('auth.register.view')}}" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 60px;">Maintenant</a>
              
               </div>
             </div>
@@ -174,7 +174,7 @@
                     N'hésitez pas à nous contacter pour toute question ou besoin en matière de planification d'investissement. Nous sommes fiers d'être parmi les meilleurs dans notre domaine et nous sommes là pour vous offrir notre expertise. 
                     Faites confiance à notre équipe pour vous aider à atteindre vos objectifs financiers.
                 </p>
-                <a href="" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 15px;">Maintenant</a>
+                <a href="{{ route('Page_investmentPlanning')}}" class="btn btn-primary px-4 mr-2 rounded" style="margin-top: 15px;">Maintenant</a>
              
               </div>
             </div>
@@ -248,7 +248,7 @@
                 </ul>
               </div>
             </div>
-            <a href="" class="btn btn-primary mt-2 py-2 px-4">En savoir plus</a>
+            <a href="{{ route('Page_about')}}" class="btn btn-primary mt-2 py-2 px-4">En savoir plus</a>
           </div>
         </div>
       </div>
@@ -301,7 +301,7 @@
                   <div class="col-6 py-1">9700 $</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Participer</a>
+              <a href="{{route('Page_donation')}}" class="btn btn-primary px-4 mx-auto mb-4">Participer</a>
             </div>
           </div>
           <div class="col-lg-4 mb-5">
@@ -340,7 +340,7 @@
                   <div class="col-6 py-1">45000 $</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Je faire ma demande</a>
+              <a href="{{route('loan_entrepreneur')}}" class="btn btn-primary px-4 mx-auto mb-4">Je faire ma demande</a>
             </div>
           </div>
           <div class="col-lg-4 mb-5">
@@ -382,7 +382,7 @@
                   <div class="col-6 py-1">60000 $</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Je faire ma demande</a>
+              <a href="{{ route('loan_personal')}}" class="btn btn-primary px-4 mx-auto mb-4">Je faire ma demande</a>
             </div>
           </div>
         </div>
