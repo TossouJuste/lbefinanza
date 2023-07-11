@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('virements', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
+            $table->string('user_id')->references('id')->on('users');
             $table->string('pays');
             $table->string('banque');
             $table->string('iban');
@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('valide')->default(false);
             $table->double('montant');
             $table->integer('pourcentage')->default(0);
-            $table->foreign('user_id')->references('id')->on('users'); 
+            
             $table->timestamps();
         });
     }

@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('transations', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id');
+            $table->bigInteger('user_id')->references('id')->on('users');
             $table->string('id_transation_banque');
             $table->string('nom_banque');
             $table->dateTime('date_heure');
             $table->string('motif');
             $table->double('montant');
-            $table->foreign('user_id')->references('id')->on('users'); 
+            
             $table->timestamps();
         });
     }

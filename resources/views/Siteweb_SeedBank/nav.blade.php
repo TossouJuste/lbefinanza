@@ -50,7 +50,7 @@
           
         </div>
         <a href="{{ route('auth.register.view')}}" class="btn btn-primary px-4 mr-2 rounded">Devenir client</a>
-        <a href=" {{ route('auth.login.view')}} " class="btn btn-primary px-4 rounded">Connexion</a>
+        <a href=" {{ route('login')}} " class="btn btn-primary px-4 rounded">Connexion</a>
       </div>
     </nav>
   </div>
