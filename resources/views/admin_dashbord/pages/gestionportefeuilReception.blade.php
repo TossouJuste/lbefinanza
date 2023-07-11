@@ -21,7 +21,7 @@ Mon compte
                         style="background-color: white;">
                             @if (strlen($donnees->nom)>0)
 
-                            <p class="mb-1 mt-2"> <span class="text-primary"> TYPE DE PRÊT:</span> {{$donnees->typepret}}</p>
+                            <p class="mb-1 mt-2"> <span class="text-primary"> Gestion portefeuille</p>
                             <p> Nom : {{ $donnees->nom}}</p>
                             @endif
 

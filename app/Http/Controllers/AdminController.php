@@ -71,9 +71,9 @@ class AdminController extends Controller
        
     }
 
-    public function gestion(donation $table)
+    public function gestion(investissement $table)
     {
-        $donnee = donation::where('lue','false')->get();
+        $donnee = investissement::where('lue','false')->get();
 
         return view('admin_dashbord.pages.gestionportefeuilReception', compact('donnee'));
     }
@@ -85,6 +85,24 @@ class AdminController extends Controller
         $donne->save();
         $donnee = investissement::where('lue','false')->get();
         return view('admin_dashbord.pages.gestionportefeuilReception', compact('donnee'));
+       
+    }
+
+    
+    public function carte(carte $table)
+    {
+        $donnee = carte::where('lue','false')->get();
+
+        return view('admin_dashbord.pages.Demandecarte', compact('donnee'));
+    }
+
+    public function carte_control(carte $table,$id)
+    {
+        $donne = carte::find($id);
+        $donne->lue = true;
+        $donne->save();
+        $donnee = carte::where('lue','false')->get();
+        return view('admin_dashbord.pages.Demandecarte', compact('donnee'));
        
     }
 }

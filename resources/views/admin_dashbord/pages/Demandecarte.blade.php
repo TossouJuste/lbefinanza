@@ -7,7 +7,7 @@ Mon compte
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">Liste des demandes de donation</h2>
+            <h2 class="header-title">Liste des demandes de cartes</h2>
             
         </div>
 
@@ -21,8 +21,8 @@ Mon compte
                         style="background-color: white;">
                             @if (strlen($donnees->nom)>0)
 
-                            <p class="mb-1 mt-2"> <span class="text-primary">Demande de don</p>
-                            <p> Nom  {{ $donnees->nom}}</p>
+                            <p class="mb-1 mt-2"> <span class="text-primary"> Demande Carte</p>
+                            <p> Nom : {{ $donnees->nom}}</p>
                             @endif
 
                             @if (strlen($donnees->prenom)>0)
@@ -40,17 +40,37 @@ Mon compte
                             <p> telephone: {{ $donnees->telephone}}</p>
                             @endif
 
-                            @if (strlen($donnees->type_don)>0)
+                            @if (strlen($donnees->pays)>0)
 
-                            <p> Type de Don: {{ $donnees->type_don}}</p>
+                            <p> Pays: {{ $donnees->pays}}</p>
                             @endif
 
-                            
+                            @if (strlen($donnees->adresse)>0)
 
+                            <p> Adresse: {{ $donnees->adresse}}</p>
+                            @endif
 
+                            @if (strlen($donnees->ville)>0)
 
+                            <p> Ville: {{ $donnees->ville}}</p>
+                            @endif
 
-                            <a href=" {{ route('vue_donation',$donnees->id)}} " class="btn btn-primary px-4 rounded mb-3" >Vue</a>
+                            @if (strlen($donnees->codePostal)>0)
+
+                            <p> CodePostal: {{ $donnees->codePostal}}</p>
+                            @endif
+
+                            @if (strlen($donnees->datereception)>0)
+
+                            <p> Date de Reception: {{ $donnees->datereception}}</p>
+                            @endif
+
+                            @if (strlen($donnees->typecarte)>0)
+
+                            <p> Type de carte: {{ $donnees->typecarte}}</p>
+                            @endif
+
+                            <a href=" {{ route('vue_gestion',$donnees->id)}} " class="btn btn-primary px-4 rounded mb-3" >Vue</a>
 
                        </div>
                        

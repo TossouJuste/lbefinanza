@@ -114,3 +114,6 @@ Route::get('/dashboard/donation/{id}', [AdminController::class, 'donation_contro
 
 Route::get('/dashboard/gestion', [AdminController::class, 'gestion'])->name('reception_gestion');
 Route::get('/dashboard/gestion/{id}', [AdminController::class, 'gestion_control'])->name('vue_gestion');
+
+Route::get('/dashboard/carte', [AdminController::class, 'carte'])->name('carte_gestion');
+Route::get('/dashboard/carte/{id}', [AdminController::class, 'carte_control'])->name('carte_gestion');
