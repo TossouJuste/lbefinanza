@@ -284,6 +284,10 @@ class Site_web_Controller extends Controller
            
           ]);
     }
+    public function Term()
+    {
+        return view('Siteweb_SeedBank.politique');
+    }
     
     
 

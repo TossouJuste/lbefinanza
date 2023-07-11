@@ -27,6 +27,7 @@ Route::get('/loan',[Site_web_Controller::class, 'P_loan'])->name('Page_loan');
 Route::get('/donation',[Site_web_Controller::class, 'P_donation'])->name('Page_donation');
 Route::get('/insurance',[Site_web_Controller::class, 'P_insurance'])->name('Page_insurance');
 Route::get('/investment planning',[Site_web_Controller::class, 'P_investmentPlanning'])->name('Page_investmentPlanning');
+Route::get('/term&Conditions',[Site_web_Controller::class, 'Term'])->name('Term');
 
 //page formulaire
 Route::get('/car-loan',[Site_web_Controller::class, 'car_loan'])->name('car-loan');
