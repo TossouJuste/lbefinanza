@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('codePostal');
             $table->string('type_portefeuil');
             $table->string('valeur_portefeuil');
+            $table->boolean('lue')->default(false);
             $table->timestamps();
         });
     }

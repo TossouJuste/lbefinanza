@@ -454,7 +454,7 @@
             
                
                 <button class="btn btn-danger  rounded prev-btn mb-2"  onclick="prevStep(event)">Precedent</button>
-                <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                <button type="submit" class="btn btn-primary mb-2 rounded">Envoyer la demande</button>
 
             </div>
             </form>

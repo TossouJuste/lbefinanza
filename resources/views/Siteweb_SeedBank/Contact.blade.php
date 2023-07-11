@@ -68,12 +68,15 @@
           <div class="col-lg-7 mb-5">
             <div class="contact-form">
               <div id="success"></div>
-              <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <form name="sentMessage" id="contactForm"  action="{{ route('contacts')}}>
+                @csrf
+                @method('post')
                 <div class="control-group">
                   <input
                     type="text"
                     class="form-control"
                     id="name"
+                    name="nom"
                     placeholder="Votre nom"
                     required="required"
                     data-validation-required-message="Please enter your name"
@@ -85,6 +88,7 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="Votre e-mail"
                     required="required"
                     data-validation-required-message="Please enter your email"
@@ -95,10 +99,11 @@
                   <input
                     type="text"
                     class="form-control"
+                    name="subject"
                     id="subject"
                     placeholder="Sujet"
                     required="required"
-                    data-validation-required-message="Please enter a subject"
+                    data-validation-required-message="Sujet"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -107,21 +112,16 @@
                     class="form-control"
                     rows="6"
                     id="message"
+                    name="message"
                     placeholder="Message"
                     required="required"
-                    data-validation-required-message="Please enter your message"
+                    data-validation-required-message="Entrez votre message"
                   ></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
-                <div>
-                  <button
-                    class="btn btn-primary py-2 px-4"
-                    type="submit"
-                    id="sendMessageButton"
-                  >
-                    Send Message
-                  </button>
-                </div>
+               
+                  <button type="submit" class="btn btn-primary mb-2 rounded">Envoyer</button>
+                
               </form>
             </div>
           </div>

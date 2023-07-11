@@ -66,6 +66,7 @@ Route::post('/form-car-loan',[Site_web_Controller::class, 'post_car_loan'])->nam
 Route::post('/get-carte',[Site_web_Controller::class, 'demande_carte'])->name('get_carte');
 Route::post('/form-donation',[Site_web_Controller::class, 'demande_donation'])->name('demande_donations');
 Route::post('/form-investmentPlanning',[Site_web_Controller::class, 'demande_gestion_portefeuille'])->name('demande_gestion_portefeuilles');
+Route::post('/contact',[Site_web_Controller::class, 'contact'])->name('contacts');
 
 
 
@@ -99,5 +100,17 @@ Route::get('/admin', [AdminController::class, 'accueil_dashboard'])->name('admin
 
 
 // admin
-Route::get('/dashboard/demande', [AdminController::class, 'demande_pret']);
+
+Route::get('/dashboard/demande', [AdminController::class, 'demande_pret'])->name('reception_pret');
 Route::get('/dashboard/demande/{id}', [AdminController::class, 'demande_pret_control'])->name('vue');
+
+Route::get('/dashboard/contact', [AdminController::class, 'contact'])->name('reception_contact');
+Route::get('/dashboard/contact/{id}', [AdminController::class, 'contact_control'])->name('vue_contact');
+
+
+Route::get('/dashboard/donation', [AdminController::class, 'donation'])->name('reception_donation');
+Route::get('/dashboard/donation/{id}', [AdminController::class, 'donation_control'])->name('vue_donation');
+
+
+Route::get('/dashboard/gestion', [AdminController::class, 'gestion'])->name('reception_gestion');
+Route::get('/dashboard/gestion/{id}', [AdminController::class, 'gestion_control'])->name('vue_gestion');

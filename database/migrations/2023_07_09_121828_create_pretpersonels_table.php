@@ -45,9 +45,7 @@ return new class extends Migration
             $table->string('dateNaissance')->nullable();
             $table->string('nom_conjointe')->nullable();
             $table->string('prenom_conjointe')->nullable();
-            $table->string('nom_conjoint')->nullable();
-            $table->string('prenom_conjoint')->nullable();
-
+            
 
             $table->boolean('lue')->default(false);
             $table->timestamps();
