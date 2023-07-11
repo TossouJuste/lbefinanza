@@ -15,7 +15,7 @@
                         <img src="/assets/images/avatars/thumb-3.jpg" alt="">
                     </div>
                     <div class="media-body m-l-15">
-                        <h4 class="m-b-0">Bienvenue, {{ Auth::user()->nom }}!</h4>
+                        <h4 class="m-b-0">Bienvenue, {{ Auth::user()->nom }} !</h4>
                         <span class="text-gray">Espace client</span>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                             <div>
                                 <p class="m-b-0">Solde</p>
                                 <h2 class="m-b-0">
-                                    <span>$14,966</span>
+                                    <span> {{ Auth::user()->devise }} {{ Auth::user()->solde }} </span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-blue">
@@ -49,7 +49,7 @@
                             <div>
                                 <p class="m-b-0">Numero de compte</p>
                                 <h2 class="m-b-0">
-                                    <span>2012554549685298</span>
+                                    <span>{{ Auth::user()->numero_compte }}</span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-cyan">
@@ -66,7 +66,14 @@
                             <div>
                                 <p class="m-b-0">Numero IBAN</p>
                                 <h2 class="m-b-0">
-                                    <span>Pas mentionné</span>
+                                    <span>
+                                        @if(Auth::user()->iban!=null)
+                                    
+                                        {{ Auth::user()->iban }}
+                                        @else
+                                            Non mentionné
+                                        @endif
+                                    </span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-gold">
@@ -85,7 +92,7 @@
                             <div>
                                 <p class="m-b-0">Code BIC</p>
                                 <h2 class="m-b-0">
-                                    <span>102</span>
+                                    <span>{{ Auth::user()->code_bic }}</span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-blue">
@@ -102,7 +109,7 @@
                             <div>
                                 <p class="m-b-0">Code Guichet</p>
                                 <h2 class="m-b-0">
-                                    <span>102</span>
+                                    <span>{{ Auth::user()->code_guichet }}</span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-cyan">
@@ -119,7 +126,7 @@
                             <div>
                                 <p class="m-b-0">Code Banque</p>
                                 <h2 class="m-b-0">
-                                    <span>587</span>
+                                    <span>{{ Auth::user()->code_banque }}</span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-gold">

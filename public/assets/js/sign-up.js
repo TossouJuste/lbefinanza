@@ -17,13 +17,7 @@ function prevStep(event) {
 }
 
 function validateForm(event) {
-  var inputs = steps[currentStep].getElementsByTagName("input");
-  for (var i = 0; i < inputs.length; i++) {
-    if (inputs[i].value === "") {
-      alert("Veuillez remplir tous les champs !");
-      return false;
-    }
-  }
+ 
   return true;
 }
 

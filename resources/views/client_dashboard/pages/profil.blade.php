@@ -10,6 +10,15 @@
             <h2 class="header-title">Mon profil</h2>
         </div>
         <div class="container">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="card">
                 <div class="card-body">
                     <div class="row align-items-center">
@@ -19,6 +28,13 @@
                                     <div class="avatar avatar-image" style="width: 150px; height:150px">
                                         <img src="/assets/images/avatars/thumb-3.jpg" alt="">
                                     </div>
+                                    <form method="post" id="form_avatar" enctype="multipart/form-data" action="/dashboard/profil/avatar">
+                                        @csrf
+                                        <input type="file" onchange="form_submit(event)" hidden name="photo_profil"
+                                            id="photo_profil">
+                                        <label for="photo_profil" class="btn btn-dark bg-black"> <i
+                                                class="fa  text-white fa-camera"></i> </label>
+                                    </form>
                                 </div>
                                 <div class="text-center text-sm-left m-v-15 p-l-30">
                                     <h2 class="m-b-5">{{ Auth::user()->prenom }} {{ Auth::user()->nom }}</h2>
@@ -26,6 +42,8 @@
                                     <p class="text-dark m-b-20">{{ Auth::user()->email }}</p>
                                     <button class="btn btn-primary btn-tone" data-toggle="modal"
                                         data-target="#profile_change_widget">Modifier</button>
+                                        
+
                                 </div>
                             </div>
                         </div>
@@ -70,6 +88,20 @@
                                             <p class="col font-weight-semibold"> {{ Auth::user()->pays }}</p>
                                         </li>
                                         <li class="row">
+                                            <p class="col-sm-4 col-4 font-weight-semibold text-dark m-b-5">
+                                                <i class="m-r-10 text-primary anticon anticon-phone"></i>
+                                                <span>Adresse: </span>
+                                            </p>
+                                            <p class="col font-weight-semibold"> {{ Auth::user()->adresse }}</p>
+                                        </li>
+                                        <li class="row">
+                                            <p class="col-sm-4 col-4 font-weight-semibold text-dark m-b-5">
+                                                <i class="m-r-10 text-primary anticon anticon-phone"></i>
+                                                <span>Code postal: </span>
+                                            </p>
+                                            <p class="col font-weight-semibold"> {{ Auth::user()->code_postal }}</p>
+                                        </li>
+                                        <li class="row">
                                             <p class="col-sm-4 col-5 font-weight-semibold text-dark m-b-5">
                                                 <i class="m-r-10 text-primary anticon anticon-compass"></i>
                                                 <span>Civilite: </span>
@@ -95,22 +127,22 @@
     <!-- Button trigger modal -->
 
     <!-- Modal -->
-    <form method="post" action="/profil/update">
+    <form method="post" action="/dashboard/profil">
         @csrf
-    <div class="modal fade" id="profile_change_widget">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">Modifier mon profil</h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <i class="anticon anticon-close"></i>
-                    </button>
-                </div>
-                
-                <div class="modal-body">
-                    <div class="card">
-                        <div class="card-body">
-                            
+        <div class="modal fade" id="profile_change_widget">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modifier mon profil</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="anticon anticon-close"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="card-body">
+
                                 @method('post')
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
@@ -449,18 +481,18 @@
                                 </div>
 
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                    <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</form>
+    </form>
     {{-- fin modal  --}}
     <!-- Content goes Here -->
     </div>
@@ -470,4 +502,15 @@
 
     <!-- Footer END -->
 
+    <script>
+        const form_avatar = document.getElementById('form_avatar');
+
+        function form_submit(event) {
+            if (event.target.files.length > 0) {
+
+                form_avatar.submit()
+
+            }
+        }
+    </script>
 @endsection

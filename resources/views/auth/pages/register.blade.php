@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Enlink - Admin Dashboard Template</title>
+    <title>Register Seed Finance</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
@@ -38,7 +38,7 @@
 
                                     <h2 class="m-t-20">Inscription</h2>
                                     <p class="m-b-30">Veuillez remplir le formulaire ci-dessous pour vous inscrire</p>
-                                    <form id="step-form" class="step-form" onsubmit="return validateForm(event)"
+                                    <form id="step-form" class="step-form" enctype="multipart/form-data" onsubmit="return validateForm(event)"
                                         method="post" action="{{ route('auth.register') }}">
                                         @csrf
                                         @method('post')
@@ -472,7 +472,7 @@
                                                     <div class="checkbox mb-10">
                                                         <input id="checkbox" required type="checkbox" name="check">
                                                         <label for="checkbox"><span>I have read the <a
-                                                                    href="">agreement</a></span></label>
+                                                                    href="#">agreement</a></span></label>
                                                         @error('check')
                                                             <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
                                                         @enderror

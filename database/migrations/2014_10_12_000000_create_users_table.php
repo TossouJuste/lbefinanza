@@ -19,18 +19,23 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('telephone');
             $table->string('civilite');
+            $table->string('photo_profil')->default('default.png');
             $table->string('pays');
+            $table->double('solde')->default(0);
+            $table->string('code_guichet');
             $table->string('code_bic');
             $table->string('code_banque');
             $table->string('numero_compte');
-            $table->string('code_bic');
             $table->string('devise');
             $table->string('iban')->nullable();
+            $table->string('adresse');
+            $table->string('ville');
+            $table->string('codePostal')->nullable();
             $table->string('piece')->nullable();
             $table->string('password');
-            $table->string('admin_validation')->nullable(); // admin validation
+            $table->integer('admin_validation')->default(0); // admin validation
             $table->string('confirmation_token')->nullable(); // client ou admin
-            $table->string('admin')->nullable(); // client ou admin
+            $table->integer('admin')->default(0); // client ou admin
             $table->rememberToken();
             $table->timestamps();
         });

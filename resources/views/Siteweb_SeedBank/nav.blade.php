@@ -44,13 +44,13 @@
           
           <a href="{{ route('Page_carte')}}" class="nav-item nav-link">Cartes</a>
           <a href="{{ route('Page_about') }}" class="nav-item nav-link">A propos</a>
-          <a href="{{ route('Page_contact') }}"" class="nav-item nav-link">Contact</a>
+          <a href="{{ route('Page_contact') }}" class="nav-item nav-link">Contact</a>
           <a href="gallery.html" class="nav-item nav-link">Langue</a>
          
           
         </div>
-        <a href="" class="btn btn-primary px-4 mr-2 rounded">Devenir client</a>
-        <a href="" class="btn btn-primary px-4 rounded">Connexion</a>
+        <a href="{{ route('auth.register.view')}}" class="btn btn-primary px-4 mr-2 rounded">Devenir client</a>
+        <a href=" {{ route('auth.login.view')}} " class="btn btn-primary px-4 rounded">Connexion</a>
       </div>
     </nav>
   </div>

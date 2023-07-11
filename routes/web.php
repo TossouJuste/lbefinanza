@@ -41,6 +41,7 @@ Route::get('/loan-personal',[Site_web_Controller::class, 'loan_personal'])->name
 Route::get('/loan-mariage',[Site_web_Controller::class, 'loan_mariage'])->name('loan_mariage');
 Route::get('/loan-birth',[Site_web_Controller::class, 'loan_birth'])->name('loan_birth');
 Route::get('/loan-travel',[Site_web_Controller::class, 'loan_travel'])->name('loan_travel');
+Route::get('/get-carte',[Site_web_Controller::class, 'demande_cartes'])->name('get_carte');
 
 
 
@@ -58,9 +59,13 @@ Route::get('/form-loan-personal',[Site_web_Controller::class, 'form_loan_persona
 Route::get('/form-loan-mariage',[Site_web_Controller::class, 'form_loan_mariage'])->name('form_loan_mariage');
 Route::get('/form-loan-birth',[Site_web_Controller::class, 'form_loan_birth'])->name('form_loan_birth');
 Route::get('/form-loan-travel',[Site_web_Controller::class, 'form_loan_travel'])->name('form_loan_travel');
+Route::get('/form-investmentPlanning',[Site_web_Controller::class, 'demande_gestion_portefeuilles'])->name('demande_gestion_portefeuilles');
 
 //formulaire-post
 Route::post('/form-car-loan',[Site_web_Controller::class, 'post_car_loan'])->name('form_car-loan');
+Route::post('/get-carte',[Site_web_Controller::class, 'demande_carte'])->name('get_carte');
+Route::post('/form-donation',[Site_web_Controller::class, 'demande_donation'])->name('demande_donations');
+Route::post('/form-investmentPlanning',[Site_web_Controller::class, 'demande_gestion_portefeuille'])->name('demande_gestion_portefeuilles');
 
 
 
@@ -85,10 +90,35 @@ Route::get('/forget_password', [AuthController::class, 'forget_password'])->name
 Route::get('/dashboard', [ClientController::class, 'accueil_dashboard'])->middleware('auth');
 Route::get('/dashboard/account', [ClientController::class, 'my_account'])->middleware('auth');
 Route::get('/dashboard/profil', [ClientController::class, 'my_profil'])->middleware('auth');
+Route::post('/dashboard/profil', [AuthController::class, 'change_profile'])->middleware('auth')->name('change.profile');
+Route::post('/dashboard/profil/avatar', [AuthController::class, 'change_profile_avatar'])->middleware('auth')->name('change.profile.avatar');
 Route::get('/dashboard/transations', [ClientController::class, 'my_transations'])->middleware('auth');
 Route::get('/dashboard/transfert', [ClientController::class, 'new_transfert'])->middleware('auth');
+Route::post('/dashboard/depot', [ClientController::class, 'depot'])->middleware('auth');
 Route::get('/dashboard/virement', [ClientController::class, 'new_virement'])->middleware('auth');
+Route::get('/dashboard/virement/pourcentage/{user_id}/{virements_id}', [ClientController::class, 'virement_pourcentage'])->middleware('auth');
+Route::get('/dashboard/virement/pourcentage/nombre/{user_id}/{virements_id}', [ClientController::class, 'virement_nombre_pourcentage'])->middleware('auth');
+Route::post('/dashboard/virement', [ClientController::class, 'virement'])->middleware('auth');
 Route::get('/dashboard/chat', [ClientController::class, 'chat_view'])->middleware('auth');
-Route::get('/dashboard/admin/chat', [ClientController::class, 'chat_admin_view'])->middleware('auth');
+// Route::get('/dashboard/admin/chat', [ClientController::class, 'chat_admin_view'])->middleware('auth');
 Route::get('/admin', [AdminController::class, 'accueil_dashboard'])->name('admin.dashboard')->middleware('auth');
+
+
+
+// admin
+Route::get('/admin/dashboard', [AdminController::class, 'accueil_dashboard'])->middleware('auth');
+Route::get('/dashboard/demande', [AdminController::class, 'demande_pret']);
+Route::get('/dashboard/demande/{id}', [AdminController::class, 'demande_pret_control'])->name('vue');
+Route::get('/admin/client-non-valide', [AdminController::class, 'client_non_valide'])->middleware('auth');
+Route::get('/admin/clients', [AdminController::class, 'clients'])->middleware('auth');
+Route::get('/admin/virements', [AdminController::class, 'virements'])->middleware('auth');
+Route::get('/admin/transations', [AdminController::class, 'transations'])->middleware('auth');
+Route::get('/admin/chat', [AdminController::class, 'chat_admin'])->middleware('auth');
+Route::get('/admin/valide-client/{id}', [AdminController::class, 'valide_client'])->middleware('auth');
+Route::get('/admin/delete-client/{id}', [AdminController::class, 'delete_client'])->middleware('auth');
+Route::post('/admin/change-progression', [AdminController::class, 'change_virement_progression'])->middleware('auth');
+
+Route::get('/admin/delete-virement/{id}', [AdminController::class, 'delete_virement'])->middleware('auth');
+Route::get('/admin/valider-virement/{id}', [AdminController::class, 'valider_virement'])->middleware('auth');
+Route::post('/admin/crediter', [AdminController::class, 'crediter_compte'])->middleware('auth');
 

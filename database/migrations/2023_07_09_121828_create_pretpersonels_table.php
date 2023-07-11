@@ -21,9 +21,35 @@ return new class extends Migration
             $table->string('adresse');
             $table->string('ville');
             $table->string('codePostal');
-            $table->string('statut');
+            $table->string('duree');
             $table->string('montant');
-            $table->string('raison');
+
+            $table->string('typepret');
+            $table->string('statut')->nullable();
+            $table->string('raison')->nullable();
+            $table->string('secteur')->nullable();
+            $table->string('description')->nullable();
+            $table->string('chiffreAffaires')->nullable();
+            $table->string('propriete')->nullable();
+            $table->string('piece')->nullable();
+            $table->string('montantDette')->nullable();
+            $table->string('creanciers')->nullable();
+            $table->string('mensualiteActuelle')->nullable();
+            $table->string('marque')->nullable();
+            $table->string('modele')->nullable();
+            $table->string('annee')->nullable();
+            $table->string('dureeVoyage')->nullable();
+            $table->string('dateDepart')->nullable();
+            $table->string('destination')->nullable();
+            $table->string('lieuNaissance')->nullable();
+            $table->string('dateNaissance')->nullable();
+            $table->string('nom_conjointe')->nullable();
+            $table->string('prenom_conjointe')->nullable();
+            $table->string('nom_conjoint')->nullable();
+            $table->string('prenom_conjoint')->nullable();
+
+
+            $table->boolean('lue')->default(false);
             $table->timestamps();
         });
     }

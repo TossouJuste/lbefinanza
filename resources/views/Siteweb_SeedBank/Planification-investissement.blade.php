@@ -84,7 +84,7 @@
        Contacter dès aujourd'hui pour discuter de vos besoins spécifiques et pour obtenir de plus amples informations sur la façon dont nous  pouvons vous aider à générer des bénéfices grâce à votre portefeuille de crypto-actifs.</p>
     </div>
 
-    <a href="" class="btn btn-primary px-4 mr-2 rounded">Demander une gestion de portefeuille</a>
+    <a href="{{ route('demande_gestion_portefeuilles')}}" class="btn btn-primary px-4 mr-2 rounded">Demander une gestion de portefeuille</a>
        
 
     </div>  
@@ -94,15 +94,15 @@
     <div class="container">
       <div class="text-center pb-2">
         <p class="section-title px-5">
-          <span class="px-2">Seed Finance ,le credit pour tous.</span>
+          <span class="px-2">Gallery</span>
         </p>
-        <h1 class="mb-4">Ils se sont confiés à nous.</h1>
+        <h1 class="mb-4">La réalisation d'un travail exceptionnel suscite une grande joie.</h1>
       </div>
       <div class="row">
         <div class="col-12 text-center mb-2">
           <ul class="list-inline mb-4" id="portfolio-flters">
             <li class="btn btn-outline-primary m-1 active" data-filter="*">
-             Ils nous ont faire confiance
+             Alors qu'attendez-vous ?
             </li>
            
           </ul>
@@ -111,40 +111,59 @@
       <div class="row portfolio-container">
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
           <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="site_web/img/clients-1.jpg" alt="" />
+            <img class="img-fluid w-100" src="site_web/img/wallet11.jpg" alt="" />
             
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
           <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="site_web/img/clients-2.jpg" alt="" />
+            <img class="img-fluid w-100" src="site_web/img/wallet2.jpg" alt="" />
            
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
           <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="site_web/img/clients-3.jpg" alt="" />
+            <img class="img-fluid w-100" src="site_web/img/wallet13.jpg" alt="" />
             
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
           <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="site_web/img/clients-4.jpg" alt="" />
+            <img class="img-fluid w-100" src="site_web/img/wallet4.jpg" alt="" />
             
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
           <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="site_web/img/clients-5.jpg" alt="" />
+            <img class="img-fluid w-100" src="site_web/img/wallet5.jpg" alt="" />
            
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
           <div class="position-relative overflow-hidden mb-2">
-            <img class="img-fluid w-100" src="site_web/img/clients-6.jpg" alt="" />
+            <img class="img-fluid w-100" src="site_web/img/wallet6.jpg" alt="" />
             
           </div>
         </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/wallet7.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/wallet8.jpg" alt="" />
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+          <div class="position-relative overflow-hidden mb-2">
+            <img class="img-fluid w-100" src="site_web/img/wallet10.jpg" alt="" />
+            
+          </div>
+        </div>
+       
       </div>
     </div>
   </div>

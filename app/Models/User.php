@@ -4,6 +4,7 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -21,6 +22,15 @@ class User extends Authenticatable
         'nom',
         'prenom', 
         'email',
+        'iban',
+        'code_banque',
+        'code_bic', 
+        'numero_compte',
+        'code_guichet',
+        'adresse',
+        'devise',
+        'ville',
+        'codePostal',
         'email_verified_at',
         'telephone',
         'civilite',
@@ -51,4 +61,17 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function transations(): HasMany
+    {
+        return $this->hasMany(Transation::class);
+    }
+    public function virements(): HasMany
+    {
+        return $this->hasMany(Virement::class);
+    }
+    public function depots(): HasMany
+    {
+        return $this->hasMany(Depot::class);
+    }
 }
