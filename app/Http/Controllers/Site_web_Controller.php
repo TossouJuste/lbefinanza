@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\formulaire;
 use App\Models\pretpersonel;
 use App\Models\carte;
+use App\Models\contact;
 use App\Models\donation;
 use App\Models\investissement;
 
@@ -227,6 +228,10 @@ class Site_web_Controller extends Controller
             'prenom' => $request->prenom,
             'email'=> $request->email,
             'telephone'=> $request->telephone,
+            'pays' => $request->pays,
+            'codePostal'=>$request->codePostal,
+            'ville' => $request->ville,
+            'adresse' => $request->adresse,
             'type_don' => $request->type_don,
            
         ]);
@@ -262,6 +267,29 @@ class Site_web_Controller extends Controller
           ]);
     }
 
+    public function contact(Request $request,contact $table)
+    {
+        contact::create([
+            'nom' => $request->nom,
+            
+            'email'=> $request->email,
+          
+            'subject' => $request->subject,
+            'message' => $request->message,
+           
+        ]);
+        return view('Siteweb_SeedBank.redirect_contact',[
+            'email'=>  $request->email,
+            'nom'=>  $request->nom,
+           
+          ]);
+    }
+    public function Term()
+    {
+        return view('Siteweb_SeedBank.politique');
+    }
+    
+    
 
 
    

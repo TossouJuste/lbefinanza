@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('codePostal');
             $table->date('datereception');
             $table->string('typecarte');
+            $table->boolean('lue')->default(false);
             $table->timestamps();
         });
     }

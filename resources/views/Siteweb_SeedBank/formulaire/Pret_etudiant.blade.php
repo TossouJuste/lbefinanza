@@ -95,7 +95,7 @@
                 @method('post')
                 @if ($errors->any())
                 <div class="alert alert-danger">
-                    <p class="p-2 bg-red-100 mb-2">Merci de bien vouloir examiner le formulaire d'inscription afin de détecter et de corriger toute éventuelle erreur.</p>
+                    <p class="p-2 bg-red-100 mb-2">Merci de bien vouloir examiner le formulaire  afin de détecter et de corriger toute éventuelle erreur.</p>
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -454,7 +454,7 @@
             
                
                 <button class="btn btn-danger  rounded prev-btn mb-2"  onclick="prevStep(event)">Precedent</button>
-                <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                <button type="submit" class="btn btn-primary mb-2 rounded">Envoyer la demande</button>
 
             </div>
             </form>

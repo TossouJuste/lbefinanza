@@ -79,14 +79,19 @@
               <i
                 class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
               ></i>
-              <div class="pl-4">
-                <img src="../site_web/img/bio.png" alt="" style="width:60px;height:60px;margin-bottom:15px;" c>
-                <h4>Prêt Energie-Bio</h4>
-                <p class="m-0">
+              <div >
+
+                <div class="text-center">
+                  <img src="../site_web/img/bio.png" alt="" style="width:60px;height:60px;margin-bottom:15px; " >
+             
+
+                </div>
+                <h4 style="text-align: start;">Prêt Energie-Bio</h4>
+                <p class="m-0" style="text-align: start;">
                     un prêt personnel sans frais de dossier conçu spécialement pour
                      financer vos travaux visant à économiser l'énergie. Bénéficiez de l'accompagnement personnalisé de nos conseillers pour concrétiser votre projet.
                 </p>
-                <a href="{{ route('loan_personal')}}" class="btn btn-primary px-4 mr-2 rounded"style="margin-top: 55px;">En savoir plus</a>
+                <a href="{{ route('loan_personal')}}" class="btn btn-primary px-4 mr-2 rounded"style="margin-top: 55px;text-align:left;">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -98,8 +103,11 @@
               <i
                 class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"
               ></i>
-              <div class="pl-4">
-                <img src="../site_web/img/loan.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" c>
+              <div class="">
+                <div class="text-center">
+                  <img src="../site_web/img/loan.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" c>
+               
+                </div>
                 
                 <h4>Et si on préparait votre retraite ensemble ?</h4>
                 <p class="m-0">
@@ -119,9 +127,12 @@
               <i
                 class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"
               ></i>
-              <div class="pl-4">
-                <img src="../site_web/img/assurance.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" c>
+              <div class="">
+                <div class="text-center">
+                  <img src="../site_web/img/assurance.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" c>
                
+                </div>
+                
                 <h4>Vos enfants sont-ils assurés pour la prochaine rentrée ?</h4>
                 <p class="m-0">
                     Préoccupons-nous de l'avenir de vos enfants. 
@@ -142,9 +153,12 @@
               <i
                 class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"
               ></i>
-              <div class="pl-4">
-                <img src="../site_web/img/accounting.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" >
+              <div class="">
+                <div class="text-center">
+                  <img src="../site_web/img/accounting.png" alt="" style="width:40px;height:40px;margin-bottom:15px;" >
                
+                </div>
+                
                 <h4>Ouverture de compte</h4>
                 <p class="m-0">
                     Ne perdez pas une minute de plus !
@@ -166,8 +180,11 @@
               <i
                 class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"
               ></i>
-              <div class="pl-4">
-                <img src="../site_web/img/earning.png" alt="" style="width:40px;height:40px;margin-bottom:15px;">
+              <div class="">
+                <div class="text-center">
+                  <img src="../site_web/img/earning.png" alt="" style="width:40px;height:40px;margin-bottom:15px;">
+               
+                </div>
                
                 <h4>Planification d'investissement</h4>
                 <p class="m-0">
@@ -187,9 +204,12 @@
               <i
                 class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"
               ></i>
-              <div class="pl-4">
-                <img src="../site_web/img/cc.png" alt="" style="width:40px;height:40px;margin-bottom:15px;">
+              <div class="">
+                <div class="text-center">
+                  <img src="../site_web/img/cc.png" alt="" style="width:40px;height:40px;margin-bottom:15px;">
                
+                </div>
+                
                 <h4>Demande de carte</h4>
                 <p class="m-0">
                     Pratique, gratuite et idéale pour les paiements du quotidien, commandez dès maintenant vos cartes SeedFinance. Profitez d'une expérience de paiement sans tracas avec nos cartes, acceptées partout.
