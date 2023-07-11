@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>KidKinder - Kindergarten Website Template</title>
+    <title>Contact</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free HTML Templates" name="keywords" />
     <meta content="Free HTML Templates" name="description" />
@@ -60,41 +60,46 @@
       <div class="container">
         <div class="text-center pb-2">
           <p class="section-title px-5">
-            <span class="px-2">Entrer en Contact</span>
+            <span class="px-2">Entrez en Contact</span>
           </p>
           <h1 class="mb-4">Contactez-nous pour toute question ou demande</h1>
         </div>
+         
+      
         <div class="row">
           <div class="col-lg-7 mb-5">
             <div class="contact-form">
               <div id="success"></div>
-              <form name="sentMessage" id="contactForm"  action="{{ route('contacts')}}>
+              <form method="POST" id="step-form" class="step-form"action="{{ route('contacts')}}">
                 @csrf
                 @method('post')
-                <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="nom"
-                    placeholder="Votre nom"
-                    required="required"
-                    data-validation-required-message="Please enter your name"
-                  />
-                  <p class="help-block text-danger"></p>
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <p class="p-2 bg-red-100 mb-2">Merci de bien vouloir examiner le formulaire afin de détecter et de corriger toute éventuelle erreur.</p>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
                 </div>
-                <div class="control-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Votre e-mail"
-                    required="required"
-                    data-validation-required-message="Please enter your email"
-                  />
-                  <p class="help-block text-danger"></p>
+                @endif
+               
+              
+              
+                <div class="form-group col-lg-6">
+                    <label for="nom">Nom </label>
+                    <input type="text" name="nom" id="nom" class="form-control" required>
                 </div>
+            
+                
+        
+              <div class="form-group col-lg-6">
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+    
+              
+        
                 <div class="control-group">
                   <input
                     type="text"
@@ -107,6 +112,7 @@
                   />
                   <p class="help-block text-danger"></p>
                 </div>
+                
                 <div class="control-group">
                   <textarea
                     class="form-control"
@@ -119,10 +125,17 @@
                   ></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
+        
+        
+        
+              
+        
                
-                  <button type="submit" class="btn btn-primary mb-2 rounded">Envoyer</button>
-                
-              </form>
+            
+               
+            
+                <button type="submit" class="btn btn-primary rounded">Envoyer la demande</button>
+            </form>
             </div>
           </div>
           <div class="col-lg-5 mb-5">

@@ -94,7 +94,7 @@
                 @method('post')
                 @if ($errors->any())
                 <div class="alert alert-danger">
-                    <p class="p-2 bg-red-100 mb-2">Merci de bien vouloir examiner le formulaire d'inscription afin de détecter et de corriger toute éventuelle erreur.</p>
+                    <p class="p-2 bg-red-100 mb-2">Merci de bien vouloir examiner le formulaire afin de détecter et de corriger toute éventuelle erreur.</p>
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -395,7 +395,8 @@
                     </div>
                     <div class="form-group col-lg-6">
                         <label for="codePostal">Code postal </label>
-                        <input type="text" id="codePostal" name="codePostal" class="form-control"  required>
+                        <input type="text" id="codePostal" name="codePostal" class="form-control" 
+                         required>
                     </div>
             
                     <div class="form-group col-lg-6">

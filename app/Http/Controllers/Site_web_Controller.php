@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\formulaire;
 use App\Models\pretpersonel;
 use App\Models\carte;
+use App\Models\contact;
 use App\Models\donation;
 use App\Models\investissement;
 
@@ -266,7 +267,7 @@ class Site_web_Controller extends Controller
           ]);
     }
 
-    public function contact(formulaire $request,contact $table)
+    public function contact(Request $request,contact $table)
     {
         contact::create([
             'nom' => $request->nom,
@@ -284,6 +285,7 @@ class Site_web_Controller extends Controller
           ]);
     }
 
+   
 
 
    

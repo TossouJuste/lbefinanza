@@ -7,7 +7,7 @@ Mon compte
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">Liste des demandes de prêt</h2>
+            <h2 class="header-title">Liste des demandes de donation</h2>
             
         </div>
 
