@@ -59,15 +59,15 @@
     <div class="container pb-2 justify-content-center">
       <div class="text-start pb-2 ">
 
-        <p class="section-title px-5">
-          <span class="px-2"> L'activité d'investissement</span>
+        <p class="section-title px-5 text-center">
+          <span class="px-2 text-center"> L'activité d'investissement</span>
         </p>
         <p class="align-items-start">c’est un processus régulier du traitement de l’information aux fins de l’élaboration du projet,
            qui définit d’avance les indices pour l’atteinte du but.</p>
        
 
-      <p class="section-title px-5">
-        <span class="px-1"> Alors Qu'attendez vous pour nous rejoindre ?</span>
+      <p class="section-title px-5 text-center">
+        <span class="px-1 text-center"> Alors Qu'attendez vous pour nous rejoindre ?</span>
       </p>
 
      <p>Nous sommes une équipe spécialisée dans la gestion de 
