@@ -85,7 +85,7 @@
             
             
             <li class="nav-item">
-                <a class="" href="/dashboard/chat">
+                <a class="" href="/admin/chat">
                     <span class="icon-holder">
                         <i class="anticon anticon-message"></i>
                     </span>

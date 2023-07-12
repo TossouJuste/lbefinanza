@@ -57,73 +57,10 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="dropdown dropdown-animated scale-left">
-                                    <a class="text-dark font-size-20" href="javascript:void(0);" data-toggle="dropdown">
-                                        <i class="anticon anticon-setting"></i>
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <button class="dropdown-item" type="button">Action</button>
-                                        <button class="dropdown-item" type="button">Another action</button>
-                                        <button class="dropdown-item" type="button">Something else here</button>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="conversation-body" id="conversation_body">
-                                {{-- <div class="msg justify-content-center">
-                                    <div class="font-weight-semibold font-size-12"> 7:57PM </div>
-                                </div>
-                                <div class="msg msg-recipient">
-                                    <div class="m-r-10">
-                                        <div class="avatar avatar-image">
-                                            <img src="/assets/images/avatars/thumb-1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bubble">
-                                        <div class="bubble-wrapper">
-                                            <span>Hey, let me show you something nice!</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-sent">
-                                    <div class="bubble">
-                                        <div class="bubble-wrapper">
-                                            <span>Oh! What is it?</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-recipient">
-                                    <div class="m-r-10">
-                                        <div class="avatar avatar-image">
-                                            <img src="/assets/images/avatars/thumb-1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bubble">
-                                        <div class="bubble-wrapper p-5">
-                                            <img src="https://s3.envato.com/files/249796117/preview.__large_preview.png" alt="https://s3.envato.com/files/249796117/preview.__large_preview.png">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-recipient">
-                                    <div class="bubble m-l-50">
-                                        <div class="bubble-wrapper">
-                                            <span>Applicator - Bootstrap 4 Admin Template</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-recipient">
-                                    <div class="bubble m-l-50">
-                                        <div class="bubble-wrapper">
-                                            <span>A creative, responsive and highly customizable admin template</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-sent">
-                                    <div class="bubble">
-                                        <div class="bubble-wrapper">
-                                            <span>Wow, that was cool!</span>
-                                        </div>
-                                    </div>
-                                </div> --}}
+                                
                                 <div id="derniere_div"></div>
                             </div>
                             <div class="conversation-footer">
@@ -182,13 +119,19 @@
         let messages = {};
         const token = document.getElementById("my_token").value;
         const exp_id = 0;
-        let dest_id = 0;
+        var dest_id = 0;
         const message_input = document.getElementById("message_input");
         const imageDiv = document.getElementById("image_div");
         const derniere_div = document.getElementById("derniere_div");
         let message_file;
         const message_onchange = (event) => {
+            var key = event.key || event.keyCode;
+            if (key === "Enter" || key === 13) {
+                envoie_message();
+  }
+
             message_content = event.target.value;
+
         }
         const envoie_message = async () => {
             if (message_file) {
@@ -198,33 +141,32 @@
                 await envoie_message_text();
             }
         }
+        
         const envoie_message_text = async () => {
-            if (message_content != '' && token != '') {
-                try {
-                    const res = await fetch('/api/messages', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': 'Bearer ' +
-                                token // Remplace 'token' par ton véritable jeton d'authentification
-                        },
-                        body: JSON.stringify({
-                            message: message_content,
-                            exp_id,
-                            dest_id
-                        })
-                    });
-                    message_input.value = '';
-                    imageDiv.innerHTML = '<span></span>';
-                    message_content = '';
-                    const data = await res.json();
-                    console.log(data); // Fais quelque chose avec la réponse JSON retournée
-                } catch (error) {
-                    message_input.value = error;
-                    console.error(error);
-                }
+        if (message_content != '' && token!=''   ) {
+            try {
+                const res = await fetch('/api/messages', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + token // Remplace 'token' par ton véritable jeton d'authentification
+                    },
+                    body: JSON.stringify({ message: message_content,exp_id,dest_id })
+                });
+            
+
+                message_input.value='';
+                imageDiv.innerHTML='<span></span>';
+                message_content='';
+                const data = await res.text();
+                
+                console.log(data); // Fais quelque chose avec la réponse JSON retournée
+            } catch (error) {
+                alert(error);
+                console.error(error);
             }
-        };
+        }
+    };
 
 
         const image_choose = (event) => {

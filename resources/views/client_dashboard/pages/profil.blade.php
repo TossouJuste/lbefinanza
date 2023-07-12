@@ -26,7 +26,7 @@
                             <div class="d-md-flex align-items-center">
                                 <div class="text-center text-sm-left ">
                                     <div class="avatar avatar-image" style="width: 150px; height:150px">
-                                        <img src="/assets/images/avatars/thumb-3.jpg" alt="">
+                                        <img src="@if(Auth::user()->photo_profil=='default.png') /{{ Auth::user()->photo_profil}} @else {{Storage::url(Auth::user()->photo_profil)}} @endif" alt="">
                                     </div>
                                     <form method="post" id="form_avatar" enctype="multipart/form-data" action="/dashboard/profil/avatar">
                                         @csrf

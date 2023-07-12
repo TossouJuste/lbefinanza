@@ -74,7 +74,7 @@
             <li class="dropdown dropdown-animated scale-left">
                 <div class="pointer" data-toggle="dropdown">
                     <div class="avatar avatar-image  m-h-10 m-r-15">
-                        <img src="@if(Auth::user()->photo_profil=='default.png') {{ Auth::user()->photo_profil}} @else {{Storage::url(Auth::user()->photo_profil)}} @endif "  alt="photo_profil">
+                        <img src="@if(Auth::user()->photo_profil=='default.png') /{{ Auth::user()->photo_profil}} @else {{Storage::url(Auth::user()->photo_profil)}} @endif "  alt="photo_profil">
                     </div>
                 </div>
                 <div class="p-b-15 p-t-20 dropdown-menu pop-profile">

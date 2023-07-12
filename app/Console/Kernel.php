@@ -4,7 +4,7 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-
+use App\Console\commands\PortefeuilleCommande;
 class Kernel extends ConsoleKernel
 {
     /**
@@ -12,6 +12,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
+        $schedule->command('portefeuille:commande')
+             ->daily();
         // $schedule->command('inspire')->hourly();
     }
 
@@ -24,4 +26,7 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
+    protected $commands = [
+        PortefeuilleCommande::class,
+    ];
 }

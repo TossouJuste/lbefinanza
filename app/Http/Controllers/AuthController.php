@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\validateRegister;
 use App\Models\User;
+use App\Models\Portefeuille;
 
 use Illuminate\Http\Request;
 use App\Models\Client;
@@ -42,7 +43,7 @@ class AuthController extends Controller
         auth()->logout();
         return redirect('/login');
     }
-    public function Inscription(validateRegister $request,User $inserte)
+    public function Inscription(validateRegister $request,User $inserte )
     { 
       $piece=$request->file('piece')->store('public/users/users_validation_pieces');
       $emails = $request->email;
@@ -70,6 +71,12 @@ class AuthController extends Controller
           'confirmation_token'=>$token,
           'password' =>  Hash::make($request->password)
       ]);
+
+     $portefeuille= new Portefeuille();
+     $portefeuille->user_id=$user->id;
+     $portefeuille->save();
+
+
 
 $user->notify(new ConfirmationNotification($token) );
      

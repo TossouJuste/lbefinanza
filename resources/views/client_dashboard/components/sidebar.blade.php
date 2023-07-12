@@ -34,6 +34,14 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="" href="/dashboard/portefeuille">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-idcard"></i>
+                    </span>
+                    <span class="title">Portefeuille</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="" href="/dashboard/transfert">
                     <span class="icon-holder">
                         <i class="anticon anticon-credit-card"></i>

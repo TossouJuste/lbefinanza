@@ -91,6 +91,7 @@ Route::get('/forget_password', [AuthController::class, 'forget_password'])->name
 // dashboard client 
 Route::get('/dashboard', [ClientController::class, 'accueil_dashboard'])->middleware('auth');
 Route::get('/dashboard/portefeuille', [ClientController::class, 'portefeuille_dashboard'])->middleware('auth')->name('portefeuille');
+Route::post('/dashboard/portefeuille/retrait', [ClientController::class, 'portefeuille_retrait'])->middleware('auth')->name('portefeuille');
 Route::get('/dashboard/account', [ClientController::class, 'my_account'])->middleware('auth');
 Route::get('/dashboard/profil', [ClientController::class, 'my_profil'])->middleware('auth');
 Route::post('/dashboard/profil', [AuthController::class, 'change_profile'])->middleware('auth')->name('change.profile');
@@ -117,8 +118,8 @@ Route::get('/admin/transations', [AdminController::class, 'transations'])->middl
 Route::get('/admin/chat', [AdminController::class, 'chat_admin'])->middleware('auth')->middleware('admin');
 Route::get('/admin/valide-client/{id}', [AdminController::class, 'valide_client'])->middleware('auth')->middleware('admin');
 Route::get('/admin/delete-client/{id}', [AdminController::class, 'delete_client'])->middleware('auth')->middleware('admin');
+Route::post('/admin/portefeuille/depot', [AdminController::class, 'portefeuille_depot'])->middleware('auth')->middleware('admin');
 Route::post('/admin/change-progression', [AdminController::class, 'change_virement_progression'])->middleware('auth')->middleware('admin');
-
 Route::get('/admin/delete-virement/{id}', [AdminController::class, 'delete_virement'])->middleware('auth')->middleware('admin');
 Route::get('/admin/valider-virement/{id}', [AdminController::class, 'valider_virement'])->middleware('auth')->middleware('admin');
 Route::post('/admin/crediter', [AdminController::class, 'crediter_compte'])->middleware('auth')->middleware('admin');

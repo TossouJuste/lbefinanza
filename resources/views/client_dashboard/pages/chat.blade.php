@@ -182,6 +182,10 @@ Messagérie
     const derniere_div = document.getElementById("derniere_div");
     let message_file;
     const message_onchange=(event)=>{
+        var key = event.key || event.keyCode;
+            if (key === "Enter" || key === 13) {
+                envoie_message();
+  }
       message_content=event.target.value;
     }
     const envoie_message=async ()=>{

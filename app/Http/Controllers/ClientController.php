@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Depot;
 use App\Models\User;
 use App\Models\Virement;
-use App\Models\portefeuille;
+use App\Models\Portefeuille;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -64,10 +64,11 @@ class ClientController extends Controller
 
         return view('client_dashboard.pages.chat_admin');
     }
-    public function portefeuille_dashboard()
-    {
+    public function portefeuille_dashboard(Portefeuille $port)
+    {  
+       
 
-        return view('client_dashboard.pages.portefeuille');
+        return view('client_dashboard.pages.portefeuille',);
     }
 
 
@@ -122,7 +123,42 @@ class ClientController extends Controller
         }
     }
 
+public function portefeuille_retrait(Request $request){
+    $credientials=$request->validate([
+        'numero_compte'=>['required','exists:users,numero_compte'],
+        'montant'=>['required','int']
+    ]);
 
+    $portefeuille_a=auth()->user()->portefeuilles()->first();
+    $user=User::find(auth()->user()->id);
+    $portefeuille=Portefeuille::find($portefeuille_a->id);
+
+    if($request->montant < $portefeuille->val_solde){
+        
+    if( $portefeuille->benef>500){
+           $portefeuille->val_solde-=$request->montant;
+           $portefeuille->benef-=$request->montant;
+           if($portefeuille->benef<0){
+            $portefeuille->solde_p+=$portefeuille->benef;
+            $portefeuille->benef=0;
+           }
+           $portefeuille->save();
+           $user->solde+=$request->montant;
+           $user->save();
+           return back()->with(
+            ['success' => 'Operation effectuée avec succès.']
+        );
+    }else{
+        return back()->withErrors(
+            'Votre solde doit etre superieur à 500 .',
+        );
+    }
+    }else{
+        return back()->withErrors(
+            'Votre solde est insuffisant pour cette opération.',
+        );
+    }
+}
 
     // effectuer un virement 
 

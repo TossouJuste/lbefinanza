@@ -12,6 +12,7 @@ use App\Models\investissement;
 use App\Models\contact;
 use App\Models\carte;
 use App\Models\Virement;
+use App\Models\Portefeuille;
 
 class AdminController extends Controller
 {
@@ -62,6 +63,22 @@ class AdminController extends Controller
             'clients' => $clients
         ]);
     }
+    public function portefeuille_depot(Request $request){
+        $credientials=$request->validate([
+            'user_id'=>['required','exists:users,id'],
+            'montant'=>['required','int']
+        ]);
+        $user=User::find($request->user_id);
+
+        $portefeuille=Portefeuille::find($user->portefeuilles()->first()->id);
+       
+              $portefeuille->solde_p+=$request->montant;
+                   $portefeuille->save();
+                   return back()->with(
+                    ['success' => 'Operation effectuée avec succès.']
+                );
+            }
+
     public function virements()
     {
         $virements = Virement::all();

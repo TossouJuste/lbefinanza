@@ -74,5 +74,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(Depot::class);
     }
-    
+    public function portefeuilles(): HasMany
+    {
+        return $this->hasMany(Portefeuille::class);
+    }
 }

@@ -9,22 +9,7 @@
             <h2 class="header-title">Transfert</h2>
 
         </div>
-        <div class="page-header no-gutters">
-            <div class="d-md-flex align-items-md-center justify-content-between">
-                <div class="media m-v-10 align-items-center">
-                    <div class="avatar avatar-image avatar-lg">
-                        <img src="/assets/images/avatars/thumb-3.jpg" alt="">
-                    </div>
-                    <div class="media-body m-l-15">
-                        <h4 class="m-b-0">Bienvenue, {{ Auth::user()->nom }}!</h4>
-                        <span class="text-gray">Espace client</span>
-                    </div>
-                </div>
-                <div class="d-md-flex align-items-center d-none">
-
-                </div>
-            </div>
-        </div>
+        
 
         <div class="row">
             <div class="col-md-12">
