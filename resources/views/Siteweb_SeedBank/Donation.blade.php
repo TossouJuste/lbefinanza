@@ -128,7 +128,7 @@
               </div>
               <section class="donate-area relative section-gap  col-lg-12 " id="donate">
 				
-                <div class="container justify-content-center ">
+                <div class="justify-content-center ">
                     
                   
                     
