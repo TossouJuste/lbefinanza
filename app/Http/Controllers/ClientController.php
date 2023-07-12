@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Depot;
 use App\Models\User;
 use App\Models\Virement;
+use App\Models\portefeuille;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -63,6 +64,12 @@ class ClientController extends Controller
 
         return view('client_dashboard.pages.chat_admin');
     }
+    public function portefeuille_dashboard()
+    {
+
+        return view('client_dashboard.pages.portefeuille');
+    }
+
 
 
 

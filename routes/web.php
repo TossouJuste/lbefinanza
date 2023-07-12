@@ -90,6 +90,7 @@ Route::get('/forget_password', [AuthController::class, 'forget_password'])->name
 
 // dashboard client 
 Route::get('/dashboard', [ClientController::class, 'accueil_dashboard'])->middleware('auth');
+Route::get('/dashboard/portefeuille', [ClientController::class, 'portefeuille_dashboard'])->middleware('auth')->name('portefeuille');
 Route::get('/dashboard/account', [ClientController::class, 'my_account'])->middleware('auth');
 Route::get('/dashboard/profil', [ClientController::class, 'my_profil'])->middleware('auth');
 Route::post('/dashboard/profil', [AuthController::class, 'change_profile'])->middleware('auth')->name('change.profile');
