@@ -34,9 +34,10 @@
             >
             <div class="dropdown-menu rounded-0 m-0">
               <a href=" {{ route('auth.register.view')}} " class="dropdown-item">Overture compte</a>
-              <a href=" {{ route('Page_loan')}} " class="dropdown-item">Prêt</a>
-              <a href=" {{ route('Page_insurance')}} " class="dropdown-item">Assurance</a>
               <a href=" {{ route('Page_donation')}} " class="dropdown-item">Donation</a>
+              <a href=" {{ route('Page_loan')}} " class="dropdown-item">Prêt</a>
+             
+             
               <a href=" {{ route('Page_investmentPlanning')}} " class="dropdown-item">Planification d'investissement</a>
             </div>
           </div>
