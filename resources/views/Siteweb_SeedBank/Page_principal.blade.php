@@ -58,7 +58,7 @@
           <a href="{{ route('Page_about')}}" class="btn btn-secondary mt-1 py-3 px-4 rounded">En savoir plus </a>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
-          <img class="img-fluid mt-5" src="site_web/img/header-min.png" alt="" />
+          <img class="img-fluid mt-5" src="site_web/img/header-min.jpg" alt="" />
         </div>
       </div>
     </div>
