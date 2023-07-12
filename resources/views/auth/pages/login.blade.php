@@ -61,13 +61,13 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center justify-content-between flex-wrap">
                                                 <span class="font-size-13 text-muted">
-                                                    Don't have an account?
+                                                    Vous n'avez pas de compte ?
                                                     <a class="small" href="{{ route('auth.register.view') }}">
-                                                        Signup</a>
+                                                        Inscrivez-vous</a>
                                                 </span>
-                                                <button type="submit" class="btn btn-primary">Sign In</button>
+                                                <button type="submit" class="btn btn-primary">Connectez-vous</button>
                                             </div>
                                         </div>
                                     </form>
@@ -79,17 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-flex  p-h-40 justify-content-between">
-                    <span class="">© 2019 ThemeNate</span>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a class="text-dark text-link" href="">Legal</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="text-dark text-link" href="">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </div>
