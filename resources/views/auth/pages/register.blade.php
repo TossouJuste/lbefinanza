@@ -24,7 +24,7 @@
         <div class="container-fluid">
             <div class="d-flex full-height p-v-20 flex-column justify-content-between">
                 <div class="d-md-flex p-h-40">
-                    <img src="/assets/images/logo/logo.png" alt="">
+                    <a href="/"><img src="assets/images/logo/logo.png" alt="" ></a>   
                 </div>
                 <div class="container">
                     <div class="row align-items-center">

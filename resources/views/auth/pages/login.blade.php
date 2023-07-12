@@ -19,11 +19,11 @@
 <body>
     <div class="app">
         <div class="container-fluid">
-            <div class="d-flex full-height p-v-20 flex-column justify-content-between">
+            <div class="d-flex full-height p-v-20 flex-column ">
                 <div class="d-md-flex p-h-40">
-                    <img src="assets/images/logo/logo.png" alt="">
+                 <a href="/"><img src="assets/images/logo/logo.png" alt="" ></a>   
                 </div>
-                <div class="container">
+                <div class="container mt-5">
                     <div class="row align-items-center">
                         <div class="col-md-5">
                             <div class="card">
@@ -52,8 +52,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-semibold" for="password">Password:</label>
-                                            <a class="float-right font-size-13 text-muted" href="">Forget
-                                                Password?</a>
+                                            <a class="float-right font-size-13 text-muted" href="">
+                                                Mot de passe oublié ?</a>
                                             <div class="input-affix m-b-10">
                                                 <i class="prefix-icon anticon anticon-lock"></i>
                                                 <input type="password" name="password" class="form-control"
