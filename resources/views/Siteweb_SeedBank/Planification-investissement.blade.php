@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>KidKinder - Kindergarten Website Template</title>
+    <title>Investissement</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free HTML Templates" name="keywords" />
     <meta content="Free HTML Templates" name="description" />
@@ -57,7 +57,7 @@
 
     
     <div class="container pb-2 justify-content-center">
-      <div class="text-center pb-2 ">
+      <div class="text-start pb-2 ">
 
         <p class="section-title px-5">
           <span class="px-2"> L'activité d'investissement</span>
