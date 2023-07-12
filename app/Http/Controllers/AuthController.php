@@ -31,6 +31,10 @@ class AuthController extends Controller
         ]);
         if (Auth::attempt(request()->only(['email', 'password']))) {
             $request->session()->regenerate();
+            if(auth()->user()->admin_validation==0){
+                auth()->logout();
+                return view('auth.pages.compte_validation');
+            }
             return redirect('/dashboard');
         }
         return back()->withErrors([
