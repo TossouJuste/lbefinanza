@@ -12,7 +12,7 @@
             <li class="nav-item">
                 <a class="" href="/admin/client-non-valide">
                     <span class="icon-holder">
-                        <i class="anticon anticon-dashboard"></i>
+                        <i class="anticon anticon-delete-user"></i>
                     </span>
                     <span class="title">Clients non validés</span>
                 </a>
@@ -20,7 +20,7 @@
             <li class="nav-item">
                 <a class="" href="/admin/clients">
                     <span class="icon-holder">
-                        <i class="anticon anticon-dashboard"></i>
+                        <i class="anticon anticon-user"></i>
                     </span>
                     <span class="title">Mes clients</span>
                 </a>
@@ -28,16 +28,58 @@
             <li class="nav-item">
                 <a class="" href="/admin/transations">
                     <span class="icon-holder">
-                        <i class="anticon anticon-dashboard"></i>
+                        <i class="anticon anticon-credit-card"></i>
                     </span>
                     <span class="title">Mes transations</span>
                 </a>
-            </li><li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="" href="/admin/virements">
                     <span class="icon-holder">
-                        <i class="anticon anticon-dashboard"></i>
+                        <i class="anticon anticon-credit-card"></i>
                     </span>
                     <span class="title">Virements</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="" href="/dashboard/contact">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-add-user"></i>
+                    </span>
+                    <span class="title">Contact </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="" href="/dashboard/donation">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-add-user"></i>
+                    </span>
+                    <span class="title">Donation </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="" href="/dashboard/demande">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-add-user"></i>
+                    </span>
+                    <span class="title">Pret </span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="" href="/dashboard/gestion">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-add-user"></i>
+                    </span>
+                    <span class="title">Gestion </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="" href="/dashboard/gestion">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-idcard"></i>
+                    </span>
+                    <span class="title">Demande de carte</span>
                 </a>
             </li>
             
@@ -45,7 +87,7 @@
             <li class="nav-item">
                 <a class="" href="/dashboard/chat">
                     <span class="icon-holder">
-                        <i class="anticon anticon-dashboard"></i>
+                        <i class="anticon anticon-message"></i>
                     </span>
                     <span class="title">Méssagérie</span>
                 </a>
@@ -53,7 +95,7 @@
             <li class="nav-item ">
                 <a class="btn btn-primary m-3 m-t-5 text-white " href="/logout">
                     <span class="icon-holder">
-                        <i class="anticon anticon-dashboard"></i>
+                        <i class="anticon anticon-logout"></i>
                     </span>
                     <span class="title">Deconnexion</span>
                 </a>

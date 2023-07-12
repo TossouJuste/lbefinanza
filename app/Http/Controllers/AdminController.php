@@ -50,7 +50,7 @@ class AdminController extends Controller
 
     public function client_non_valide()
     {
-        $clients = User::where('admin_validation', null)->get();
+        $clients = User::where('admin_validation', 0)->get();
         return view('admin_dashbord.pages.client_non_valide', [
             'clients' => $clients
         ]);

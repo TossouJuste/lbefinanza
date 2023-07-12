@@ -1,3 +1,10 @@
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 <div class="header">
     <div class="logo logo-dark">
         <a href="/">
@@ -32,65 +39,35 @@
         <ul class="nav-right">
             <li class="dropdown dropdown-animated scale-left">
                 <a href="javascript:void(0);" data-toggle="dropdown">
-                    <i class="anticon anticon-bell notification-badge"></i>
+                    <i class="fa fa-earth-americas notification-badge"></i>
                 </a>
                 <div class="dropdown-menu pop-notification">
                     <div class="p-v-15 p-h-25 border-bottom d-flex justify-content-between align-items-center">
                         <p class="text-dark font-weight-semibold m-b-0">
-                            <i class="anticon anticon-bell"></i>
-                            <span class="m-l-10">Notification</span>
+                            <i class="fa fa-earth-americas"></i>
+                            <span class="m-l-10">Langues</span>
                         </p>
-                        <a class="btn-sm btn-default btn" href="javascript:void(0);">
-                            <small>View All</small>
-                        </a>
                     </div>
                     <div class="relative">
-                        <div class="overflow-y-auto relative scrollable" style="max-height: 300px">
-                            <a href="javascript:void(0);" class="dropdown-item d-block p-15 border-bottom">
-                                <div class="d-flex">
-                                    <div class="avatar avatar-blue avatar-icon">
-                                        <i class="anticon anticon-mail"></i>
-                                    </div>
-                                    <div class="m-l-15">
-                                        <p class="m-b-0 text-dark">You received a new message</p>
-                                        <p class="m-b-0"><small>8 min ago</small></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item d-block p-15 border-bottom">
-                                <div class="d-flex">
-                                    <div class="avatar avatar-cyan avatar-icon">
-                                        <i class="anticon anticon-user-add"></i>
-                                    </div>
-                                    <div class="m-l-15">
-                                        <p class="m-b-0 text-dark">New user registered</p>
-                                        <p class="m-b-0"><small>7 hours ago</small></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item d-block p-15 border-bottom">
-                                <div class="d-flex">
-                                    <div class="avatar avatar-red avatar-icon">
-                                        <i class="anticon anticon-user-add"></i>
-                                    </div>
-                                    <div class="m-l-15">
-                                        <p class="m-b-0 text-dark">System Alert</p>
-                                        <p class="m-b-0"><small>8 hours ago</small></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item d-block p-15 ">
-                                <div class="d-flex">
-                                    <div class="avatar avatar-gold avatar-icon">
-                                        <i class="anticon anticon-user-add"></i>
-                                    </div>
-                                    <div class="m-l-15">
-                                        <p class="m-b-0 text-dark">You have a new update</p>
-                                        <p class="m-b-0"><small>2 days ago</small></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <ul class="overflow-y-auto relative scrollable" style="max-height: 300px">
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(en)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="assets/images/lg/gb.png">&nbsp;&nbsp;Anglais&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(de)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/de.png">&nbsp;&nbsp;Allemand&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(hr)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/cr.png">&nbsp;&nbsp;Croate&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(da)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/dn.png">&nbsp;&nbsp;Danois&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(es)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/es.png">&nbsp;&nbsp;Espagnol&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/fr.png">&nbsp;&nbsp;Français&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(fi)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/fi.png">&nbsp;&nbsp;Finnois&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(sl)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/sl.png">&nbsp;&nbsp;Slovénie&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(it)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/it.png">&nbsp;&nbsp;Italien&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(nl)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/pb.png">&nbsp;&nbsp;Néerlandais&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(pl)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/pn.png">&nbsp;&nbsp;Polonais&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(pt)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/pt.png">&nbsp;&nbsp;Portugais&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(ro)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/rn.png">&nbsp;&nbsp;Roumain&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(ru)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/ru.png">&nbsp;&nbsp;Russe&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(sk)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/sq.png">&nbsp;&nbsp;Slovaque&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(cs)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/cz.png">&nbsp;&nbsp;Tchèque&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(uk)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/uk.png">&nbsp;&nbsp;Ukrainien&nbsp;&nbsp;</a></li>
+                        </ul>
                     </div>
                 </div>
             </li>

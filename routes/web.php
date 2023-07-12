@@ -82,7 +82,7 @@ Route::get('/login', [AuthController::class, 'login_view'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
 Route::get('/register', [AuthController::class, 'register_view'])->name('auth.register.view');
 Route::post('/register', [AuthController::class, 'Inscription'])->name('auth.register');
-Route::get('/logout', [AuthController::class, 'Inscription'])->name('auth.logout');
+Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 Route::get('/confirmation/{token}', [AuthController::class, 'confirmation'])->name('confirmation');
 Route::get('/mail', [AuthController::class, 'Envoi_mail'])->name('auth.mail');
 Route::get('/forget_password', [AuthController::class, 'forget_password'])->name('auth.forget_pass');
@@ -109,19 +109,19 @@ Route::get('/admin', [AdminController::class, 'accueil_dashboard'])->name('admin
 
 
 // admin
-Route::get('/admin/dashboard', [AdminController::class, 'accueil_dashboard'])->middleware('auth');
-Route::get('/admin/client-non-valide', [AdminController::class, 'client_non_valide'])->middleware('auth');
-Route::get('/admin/clients', [AdminController::class, 'clients'])->middleware('auth');
-Route::get('/admin/virements', [AdminController::class, 'virements'])->middleware('auth');
-Route::get('/admin/transations', [AdminController::class, 'transations'])->middleware('auth');
-Route::get('/admin/chat', [AdminController::class, 'chat_admin'])->middleware('auth');
-Route::get('/admin/valide-client/{id}', [AdminController::class, 'valide_client'])->middleware('auth');
-Route::get('/admin/delete-client/{id}', [AdminController::class, 'delete_client'])->middleware('auth');
-Route::post('/admin/change-progression', [AdminController::class, 'change_virement_progression'])->middleware('auth');
+Route::get('/admin/dashboard', [AdminController::class, 'accueil_dashboard'])->middleware('auth')->middleware('admin');
+Route::get('/admin/client-non-valide', [AdminController::class, 'client_non_valide'])->middleware('auth')->middleware('admin');
+Route::get('/admin/clients', [AdminController::class, 'clients'])->middleware('auth')->middleware('admin');
+Route::get('/admin/virements', [AdminController::class, 'virements'])->middleware('auth')->middleware('admin');
+Route::get('/admin/transations', [AdminController::class, 'transations'])->middleware('auth')->middleware('admin');
+Route::get('/admin/chat', [AdminController::class, 'chat_admin'])->middleware('auth')->middleware('admin');
+Route::get('/admin/valide-client/{id}', [AdminController::class, 'valide_client'])->middleware('auth')->middleware('admin');
+Route::get('/admin/delete-client/{id}', [AdminController::class, 'delete_client'])->middleware('auth')->middleware('admin');
+Route::post('/admin/change-progression', [AdminController::class, 'change_virement_progression'])->middleware('auth')->middleware('admin');
 
-Route::get('/admin/delete-virement/{id}', [AdminController::class, 'delete_virement'])->middleware('auth');
-Route::get('/admin/valider-virement/{id}', [AdminController::class, 'valider_virement'])->middleware('auth');
-Route::post('/admin/crediter', [AdminController::class, 'crediter_compte'])->middleware('auth');
+Route::get('/admin/delete-virement/{id}', [AdminController::class, 'delete_virement'])->middleware('auth')->middleware('admin');
+Route::get('/admin/valider-virement/{id}', [AdminController::class, 'valider_virement'])->middleware('auth')->middleware('admin');
+Route::post('/admin/crediter', [AdminController::class, 'crediter_compte'])->middleware('auth')->middleware('admin');
 
 
 Route::get('/dashboard/demande', [AdminController::class, 'demande_pret'])->name('reception_pret');
