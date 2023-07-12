@@ -1,4 +1,5 @@
-@extends('client_dashboard.components.app')
+@extends('admin_dashbord.components.app')
+
 @section('page_titre')
 Mon compte
 @endsection

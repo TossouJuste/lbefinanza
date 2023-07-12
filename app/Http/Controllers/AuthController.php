@@ -36,6 +36,12 @@ class AuthController extends Controller
             'email' => 'Mot de passe ou email incorrect.',
         ])->onlyInput('email');
     }
+
+    public function logout()
+    {
+        auth()->logout();
+        return redirect('/login');
+    }
     public function Inscription(validateRegister $request,User $inserte)
     { 
       $piece=$request->file('piece')->store('public/users/users_validation_pieces');
