@@ -101,7 +101,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
 >
   <p class="m-0 text-center text-white">
     &copy;
-    <a class="text-primary font-weight-bold" href="#">Seed Finance</a>.
+    <a class="text-primary font-weight-bold" href="/">Seed Finance</a>.
     All Rights Reserved.
 
   </p>

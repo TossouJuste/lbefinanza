@@ -43,7 +43,7 @@ class AuthController extends Controller
         auth()->logout();
         return redirect('/login');
     }
-    public function Inscription(validateRegister $request,User $inserte )
+    public function Inscription(validateRegister $request,User $inserte,Portefeuille $aa )
     { 
       $piece=$request->file('piece')->store('public/users/users_validation_pieces');
       $emails = $request->email;
