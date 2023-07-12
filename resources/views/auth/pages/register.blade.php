@@ -23,7 +23,7 @@
     <div class="app">
         <div class="container-fluid">
             <div class="d-flex full-height p-v-20 flex-column justify-content-between">
-                <div class="d-none d-md-flex p-h-40">
+                <div class="d-md-flex p-h-40">
                     <img src="/assets/images/logo/logo.png" alt="">
                 </div>
                 <div class="container">

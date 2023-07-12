@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Enlink - Admin Dashboard Template</title>
+    <title>seed Finance login</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
@@ -20,7 +20,7 @@
     <div class="app">
         <div class="container-fluid">
             <div class="d-flex full-height p-v-15 flex-column justify-content-between">
-                <div class="d-none d-md-flex p-h-40">
+                <div class="d-md-flex p-h-40">
                     <img src="assets/images/logo/logo.png" alt="">
                 </div>
                 <div class="container">
