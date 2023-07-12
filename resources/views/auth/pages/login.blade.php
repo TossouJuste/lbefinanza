@@ -19,7 +19,7 @@
 <body>
     <div class="app">
         <div class="container-fluid">
-            <div class="d-flex full-height p-v-15 flex-column justify-content-between">
+            <div class="d-flex full-height p-v-20 flex-column justify-content-between">
                 <div class="d-md-flex p-h-40">
                     <img src="assets/images/logo/logo.png" alt="">
                 </div>
@@ -28,8 +28,8 @@
                         <div class="col-md-5">
                             <div class="card">
                                 <div class="card-body">
-                                    <h2 class="m-t-20">Sign In</h2>
-                                    <p class="m-b-30">Enter your credential to get access</p>
+                                    <h2 class="m-t-20">Connexion </h2>
+                                    <p class="m-b-30">Entrez vos identifiants </p>
                                     <form method="post" action="{{ route('auth.login') }}">
                                         @csrf
                                         @method('post')
