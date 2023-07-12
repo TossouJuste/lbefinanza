@@ -61,10 +61,10 @@
 		
 				<div class="container">
 						<div class="row fullscreen align-items-center justify-content-center" >
-              <div class="text-center pb-2">
+              <div class="text-start pb-2">
 
-                <p class="section-title px-5">
-                  <span class="px-2">Formulaire de demande</span>
+                <p class="section-title px-5 text-center">
+                  <span class="px-2 text-center">Formulaire de demande</span>
                 </p>
                 
               </div>
@@ -128,7 +128,7 @@
               </div>
               <section class="donate-area relative section-gap  col-lg-12 " id="donate">
 				
-                <div class="container justify-content-center col-lg-9">
+                <div class="container justify-content-center ">
                     
                   
                     
