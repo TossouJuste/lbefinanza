@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('depots', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id');
+            $table->bigInteger('user_id')->references('id')->on('users');
             $table->string('motif');
             $table->string('numero_compte');
             $table->integer('montant')->nullable(); 
-            $table->foreign('user_id')->references('id')->on('users'); 
+           
             $table->timestamps();
         });
     }
