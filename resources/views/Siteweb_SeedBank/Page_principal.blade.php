@@ -42,7 +42,7 @@
     
 
     <!-- Header Start -->
-    <div class="container-fluid  px-0 px-md-5 mb-5 bg-images taille">
+    <div class="container-fluid  px-0 px-md-5 mb-5 bg-images taille bg-primary">
       <div class="row align-items-center px-3 ">
         <div class="col-lg-6 text-center text-lg-left" style="margin-top:100px;">
          
@@ -57,9 +57,7 @@
           </p>
           <a href="{{ route('Page_about')}}" class="btn btn-secondary mt-1 py-3 px-4 rounded">En savoir plus </a>
         </div>
-        <div class="col-lg-6 text-center text-lg-right bg-primary">
-          <img class="img-fluid mt-5" src="site_web/img/header-min.jpg" alt="" />
-        </div>
+        
       </div>
     </div>
     <!-- Header End -->

@@ -9866,7 +9866,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .bg-images
 {
-  background-image: url('../img/header.jpg');
+  background-image: url('../img/header-min.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
