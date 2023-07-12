@@ -107,4 +107,47 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
   </p>
 </div>
 </div>
+<style>
+.goc{display:none;}
+       
+@media (max-width:600px) {
+     .goc{
+            position:fixed;
+            bottom:0;
+            height: 70px;
+            width:100%;
+            background:white;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            align-items:center;
+            text-align:center;
+
+        }
+   .goc a{
+            padding:10px;
+            border-radius:10px;
+            font-family:'roboto';
+            border:1px solid white;
+
+
+        }
+        .t1{
+            background:#ed922c;
+            color:white;
+           
+            
+        }
+        .t2{
+            background: #4cb7e5;
+            color:white;
+            margin-right:10px;
+        }
+            
+}
+    </style>
+    <div class="goc d-block d-md-none">
+        <a class="t1 btn" href="/register">Ouvrir un compte</a>
+        <a class="t2 btn" href="/login">mon compte</a>
+    </div>
 <!-- Footer End -->
