@@ -146,7 +146,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
             
 }
     </style>
-    <div class="goc d-block d-md-none">
+    <div class="goc d-block d-md-none text center justify-content-between">
         <a class="t1 btn" href="/register">Ouvrir un compte</a>
         <a class="t2 btn" href="/login">mon compte</a>
     </div>
