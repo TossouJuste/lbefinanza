@@ -17,7 +17,7 @@ class ConfirmationNotification extends Notification
      public $token;
     public function __construct($tokens)
     {
-        $token=$tokens;
+        $this->token=$tokens;
     }
 
     /**
