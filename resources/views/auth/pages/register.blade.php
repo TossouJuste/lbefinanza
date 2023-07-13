@@ -7,7 +7,7 @@
     <title>Register Seed Finance</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.png">
 
     <!-- page css -->
 
