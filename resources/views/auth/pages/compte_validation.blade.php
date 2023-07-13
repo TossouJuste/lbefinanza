@@ -37,7 +37,7 @@
                                 <p>Votre compte est en cours de validation. Veuillez patienter pendant que nous examinons les informations fournies. Une fois la validation terminée, vous pourriez vous connectez</p>
                                 <div class="flex flex-row flex-wrap">
                                
-                                <a href="" class="btn btn-primary btn-tone mt-2">Retour </a>
+                                <a href="/" class="btn btn-primary btn-tone mt-2">Retour </a>
                                </div>
                             </div>
                         </div>
