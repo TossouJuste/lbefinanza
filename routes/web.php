@@ -79,6 +79,7 @@ Route::post('/contact',[Site_web_Controller::class, 'contact'])->name('contacts'
 
 /* authentication */
 Route::get('/login', [AuthController::class, 'login_view'])->name('login');
+Route::post('/envoie-mail', [AuthController::class, 'envoie_email'])->name('envoie_email');
 Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
 Route::get('/register', [AuthController::class, 'register_view'])->name('auth.register.view');
 Route::post('/register', [AuthController::class, 'Inscription'])->name('auth.register');
@@ -100,12 +101,14 @@ Route::get('/dashboard/transations', [ClientController::class, 'my_transations']
 Route::get('/dashboard/transfert', [ClientController::class, 'new_transfert'])->middleware('auth');
 Route::post('/dashboard/depot', [ClientController::class, 'depot'])->middleware('auth');
 Route::get('/dashboard/virement', [ClientController::class, 'new_virement'])->middleware('auth');
+Route::post('/dashboard/virement/code', [ClientController::class, 'virement_code'])->middleware('auth')->name('virement_code');
 Route::get('/dashboard/virement/pourcentage/{user_id}/{virements_id}', [ClientController::class, 'virement_pourcentage'])->middleware('auth');
 Route::get('/dashboard/virement/pourcentage/nombre/{user_id}/{virements_id}', [ClientController::class, 'virement_nombre_pourcentage'])->middleware('auth');
 Route::post('/dashboard/virement', [ClientController::class, 'virement'])->middleware('auth');
 Route::get('/dashboard/chat', [ClientController::class, 'chat_view'])->middleware('auth');
 // Route::get('/dashboard/admin/chat', [ClientController::class, 'chat_admin_view'])->middleware('auth');
 Route::get('/admin', [AdminController::class, 'accueil_dashboard'])->name('admin.dashboard')->middleware('auth');
+Route::get('/admin/virements', [AdminController::class, 'virements'])->middleware('auth')->middleware('admin');
 
 
 

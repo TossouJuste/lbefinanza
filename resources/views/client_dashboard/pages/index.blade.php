@@ -8,7 +8,7 @@ Tableau de bord
         <div class="d-md-flex align-items-md-center justify-content-between">
             <div class="media m-v-10 align-items-center">
                 <div class="avatar avatar-image avatar-lg">
-                    <img src="/assets/images/avatars/thumb-3.jpg" alt="">
+                    <img src="@if(Auth::user()->photo_profil=='default.png') /{{ Auth::user()->photo_profil}} @else {{Storage::url(Auth::user()->photo_profil)}} @endif "  alt="photo_profil">
                 </div>
                 <div class="media-body m-l-15">
                     <h4 class="m-b-0">Bienvenue, {{ Auth::user()->nom }} !</h4>
@@ -16,7 +16,6 @@ Tableau de bord
                 </div>
             </div>
             <div class="d-md-flex align-items-center d-none">
-
             </div>
         </div>
     </div>
@@ -44,7 +43,7 @@ Tableau de bord
                             <i class="anticon anticon-line-chart"></i>
                         </div>
                         <div class="m-l-15">
-                            <h2 class="m-b-0">+ {{Auth::user()->transations()->get()->count()}} %</h2>
+                            <h2 class="m-b-0">+ {{Auth::user()->transations()->get()->count()}} </h2>
                             <p class="m-b-0 text-muted">Transations</p>
                         </div>
                     </div>
@@ -108,7 +107,7 @@ Tableau de bord
         <div class="col-md-12 col-lg-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="m-b-0">Customers</h5>
+                    <h5 class="m-b-0">Clients</h5>
                     <div class="m-v-60 text-center" style="height: 200px">
                         <canvas class="chart" id="customers-chart"></canvas>
                     </div>
@@ -118,8 +117,11 @@ Tableau de bord
                                 <div class="media align-items-center">
                                     <span class="badge badge-success badge-dot m-r-10"></span>
                                     <div class="m-l-5">
-                                        <h4 class="m-b-0">350</h4>
-                                        <p class="m-b-0 muted">New</p>
+                                        <h4 class="m-b-0">
+                                            @php
+                                           rand(25000, 30000)
+                                            @endphp</h4>
+                                        <p class="m-b-0 muted">Nouveau</p>
                                     </div>    
                                 </div>
                             </div>
@@ -129,7 +131,9 @@ Tableau de bord
                                 <div class="media align-items-center">
                                     <span class="badge badge-secondary badge-dot m-r-10"></span>
                                     <div class="m-l-5">
-                                        <h4 class="m-b-0">0</h4>
+                                        <h4 class="m-b-0">
+                                          
+                                        </h4>
                                         <p class="m-b-0 muted">Returning</p>
                                     </div>    
                                 </div>
@@ -140,8 +144,8 @@ Tableau de bord
                                 <div class="media align-items-center">
                                     <span class="badge badge-warning badge-dot m-r-10"></span>
                                     <div class="m-l-5">
-                                        <h4 class="m-b-0">+100</h4>
-                                        <p class="m-b-0 muted">Others</p>
+                                        <h4 class="m-b-0"></h4>
+                                        <p class="m-b-0 muted">Autres</p>
                                     </div>    
                                 </div>
                             </div>

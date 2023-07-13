@@ -1,4 +1,4 @@
-  <style media="screen">
+  {{-- <style media="screen">
     @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
   
   body {
@@ -87,28 +87,41 @@
     background-color: white;
   }
   /* Partie de css  */
-  </style>
+  </style> --}}
 
-      
 
-      <div class="modal-chargement">
-        <div class="modal-chargement-content">
-            <div class="chargement-information">
-                <p>Virement en cours<p>
-               </div>
-            <div class="circle-wrap">
-              <div class="circle">
-                <div class="mask full">
-                  <div class="fill"></div>
-                </div>
-                <div class="mask half">
-                  <div class="fill"></div>
-                </div>
-                <div class="inside-circle">{{($virement->pourcentage)}}%</div>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+              <div class="card-body">
+
+                  <div class="d-flex flex-column justify-content-center aligns-items-center">
+                      <div class="progress mb-5">
+                          <div class="progress-bar bg-success" role="progressbar"
+                              style="width: {{ $virement->pourcentage }}%" aria-valuenow="{{ $virement->pourcentage }}"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+
+                      <div class="chargement-information m-t-5 text-center">
+                          <p>{{ $virement->temps_attente }}</p>
+                      </div>
+                      @if ($virement->code)
+                          
+                              <input type="hidden" name="virement_id" value="{{ $virement->id }}">
+                              <div class="my-1 form-row justify-content-center align-items-center">
+                                  <div class="mb-3">
+                                      <input type="text" class="form-control border border-primary" id="code"
+                                          name="code" placeholder="Code" aria-describedby="defaultFormControlHelp"
+                                          required />
+                                  </div>
+                                  <div class="">
+                                      <button type="" class="btn btn-primary">Envoyer</button>
+                                  </div>
+                              </div>
+                       
+                          @endif
+                  </div>
               </div>
-            </div>
-           <div class="chargement-information">
-            <p>{{$virement->temps_attente }}</p>
-           </div>
-        </div>
+
+          </div>
       </div>

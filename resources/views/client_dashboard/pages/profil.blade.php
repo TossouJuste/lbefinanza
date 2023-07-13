@@ -52,58 +52,46 @@
                                 <div class="d-md-block d-none border-left col-1"></div>
                                 <div class="col">
                                     <ul class="list-unstyled m-t-10">
-                                        <li class="row">
-                                            <p class="col-sm-4 col-4 font-weight-semibold text-dark m-b-5">
-                                                <i class="m-r-10 text-primary anticon anticon-mail"></i>
-                                                <span>Email: </span>
+                                        <li class="row flex-wrap">
+                                            <p class="col-sm-4 col-4 d-flex font-weight-semibold text-dark ">
+                                                <i class="m-r-10 text-primary anticon anticon-mail" style="margin-top:12px;"></i>
+                                                <span class="">Email</span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->email }}</p>
                                         </li>
-                                        <li class="row">
-                                            <p class="col-sm-4 col-4 font-weight-semibold text-dark m-b-5">
-                                                <i class="m-r-10 text-primary anticon anticon-phone"></i>
+                                        <li class="row flex-wrap">
+                                            <p class="col-sm-4 col-4 d-flex  font-weight-semibold text-dark ">
+                                                <i class="m-r-10 text-primary anticon anticon-phone" style="margin-top:12px;"></i>
                                                 <span>Phone: </span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->telephone }}</p>
                                         </li>
-                                        <li class="row">
-                                            <p class="col-sm-4 col-5 font-weight-semibold text-dark m-b-5">
-                                                <i class="m-r-10 text-primary anticon anticon-compass"></i>
-                                                <span>Location: </span>
-                                            </p>
-                                            <p class="col font-weight-semibold"> {{ Auth::user()->pays }}</p>
-                                        </li>
-                                        <li class="row">
-                                            <p class="col-sm-4 col-4 font-weight-semibold text-dark m-b-5">
-                                                <i class="m-r-10 text-primary anticon anticon-mail"></i>
+                                        
+                                        <li class="row flex-wrap">
+                                            <p class="col-sm-4 col-4 d-flex  font-weight-semibold text-dark m-b-5">
+                                                <i class="m-r-10 text-primary anticon anticon-dollar" style="margin-top:12px;"></i>
                                                 <span>Devise: </span>
                                             </p>
                                             <p class="col font-weight-semibold">{{ Auth::user()->devise }}</p>
                                         </li>
-                                        <li class="row">
-                                            <p class="col-sm-4 col-4 font-weight-semibold text-dark m-b-5">
-                                                <i class="m-r-10 text-primary anticon anticon-phone"></i>
+                                        <li class="row flex-wrap">
+                                            <p class="col-sm-4 col-4 d-flex font-weight-semibold text-dark m-b-5">
+                                                <i class="m-r-10 text-primary anticon anticon-compass" style="margin-top:12px;"></i>
                                                 <span>Pays: </span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->pays }}</p>
                                         </li>
-                                        <li class="row">
-                                            <p class="col-sm-4 col-4 font-weight-semibold text-dark m-b-5">
-                                                <i class="m-r-10 text-primary anticon anticon-phone"></i>
+                                        <li class="row flex-wrap">
+                                            <p class="col-sm-4 col-4 d-flex font-weight-semibold text-dark m-b-5">
+                                                <i class="m-r-10 text-primary anticon anticon-compass" style="margin-top:12px;"></i>
                                                 <span>Adresse: </span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->adresse }}</p>
                                         </li>
-                                        <li class="row">
-                                            <p class="col-sm-4 col-4 font-weight-semibold text-dark m-b-5">
-                                                <i class="m-r-10 text-primary anticon anticon-phone"></i>
-                                                <span>Code postal: </span>
-                                            </p>
-                                            <p class="col font-weight-semibold"> {{ Auth::user()->code_postal }}</p>
-                                        </li>
-                                        <li class="row">
-                                            <p class="col-sm-4 col-5 font-weight-semibold text-dark m-b-5">
-                                                <i class="m-r-10 text-primary anticon anticon-compass"></i>
+                                        
+                                        <li class="row flex-wrap">
+                                            <p class="col-sm-4 col-4 d-flex font-weight-semibold text-dark m-b-5">
+                                                <i class="m-r-10 text-primary anticon anticon-compass"style="margin-top:12px;"></i>
                                                 <span>Civilite: </span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->civilite }}</p>

@@ -31,14 +31,18 @@
                               
                                 <div class="flex ">
                                     <h2 class="font-bold text-2xl">Verification de votre mail</h2>
-                                    <img src="assets/images/logo/envelope-solid.svg" class="w-8 h-8 ml-2" alt="">
+                                    <img src="assets/images/logo/envelope-solid.svg" class="w-8 h-8 ml-2" style="width: 8px; height:8px; margin-left:2px;" alt="">
                                 </div>
                                 <p class="lead m-b-30 text-lg">Un mail a été envoyer a <span class="text-blue-600">{{ $email}}</span></p>
 
                                 <h4 class=" text-xl mb-6">Veuillez vérifier votre adresse e-mail et poursuivre l'activation de votre compte.</h4>
                                <div class="flex flex-row flex-wrap">
-                                <a href="" class="btn btn-primary btn-tone mr-2 mt-2">Renvoyer l'email</a>
-                                <a href="" class="btn btn-primary btn-tone mt-2">Retour à la connexion</a>
+                                <form action="/envoie-mail" method="post">
+                                    <input type="hidden" required name="email" value="{{$email}}">
+                                    <button type="submit" class="btn btn-primary btn-tone mr-2 mt-2">Renvoyer l'email</button>
+                                </form>
+                                
+                                <a href="/login" class="btn btn-primary btn-tone mt-2">Retour à la connexion</a>
                                </div>
                             </div>
                         </div>

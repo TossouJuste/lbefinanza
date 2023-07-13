@@ -18,11 +18,13 @@ return new class extends Migration
             $table->string('banque');
             $table->string('iban');
             $table->string('bic');
-            $table->string('temps_attente')->default('Veuillez patienter quelques minutes');
+            $table->string('code')->nullable();
+            $table->string('temps_attente')->default('Transafert en cours');
             $table->string('intitule_compte');
             $table->boolean('valide')->default(false);
             $table->double('montant');
-            $table->integer('pourcentage')->default(0);
+            $table->integer('pourcentage')->default(26);
+            $table->integer('code_pourcentage')->default(0);
             
             $table->timestamps();
         });

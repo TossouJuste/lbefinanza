@@ -23,11 +23,7 @@
                     <i class="anticon"></i>
                 </a>
             </li>
-            <li>
-                <a href="javascript:void(0);" data-toggle="modal" data-target="#search-drawer">
-                    <i class="anticon anticon-search"></i>
-                </a>
-            </li>
+          
         </ul>
         <ul class="nav-right">
             <li class="dropdown dropdown-animated scale-left">
@@ -134,11 +130,7 @@
                     </a>
                 </div>
             </li>
-            <li>
-                <a href="javascript:void(0);" data-toggle="modal" data-target="#quick-view">
-                    <i class="anticon anticon-appstore"></i>
-                </a>
-            </li>
+        
         </ul>
     </div>
 </div>

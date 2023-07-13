@@ -52,7 +52,16 @@ class AuthController extends Controller
             'email' => 'Mot de passe ou email incorrect.',
         ])->onlyInput('email');
     }
-
+public function envoie_email(Request $request){
+    $credentials=$request->validate([
+        'email',['required','exists:users,email']
+    ]);
+    $user = User::where('email',$request->email);
+    $user->notify(new ConfirmationNotification($user->confirmation_token) );
+    return view('auth.pages.Envoi_mail',[
+        'email'=> $request->email
+      ]);
+}
     public function logout()
     {
         auth()->logout();
@@ -165,7 +174,7 @@ $user->notify(new ConfirmationNotification($token) );
         return view('auth.pages.password_forget');
     }
 
-
+   
 
     public function password_change(Request $request)
     {

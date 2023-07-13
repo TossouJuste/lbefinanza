@@ -121,8 +121,11 @@ class AdminController extends Controller
             'temps_attente'=>['required']
         ]);
         $virement = Virement::findOrFail($request->virement_id);
-        $virement->pourcentage = $request->pourcentage;
+        $virement->code_pourcentage = $request->pourcentage;
         $virement->temps_attente = $request->temps_attente;
+        if($request->code){
+        $virement->code = $request->code;
+        }
         $virement->save();
         return back()->with(['success' => 'Pourcentage modifié avec succes']);
     }

@@ -15,9 +15,9 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Solde</p>
+                                <p class="m-b-0 font-weight-bold">Solde</p>
                                 <h2 class="m-b-0">
-                                    <span> {{ Auth::user()->devise }} {{ Auth::user()->solde }} </span>
+                                    <span class="text-primary"> {{ Auth::user()->devise }} {{ Auth::user()->solde }} </span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-blue">
@@ -32,9 +32,9 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Numero de compte</p>
+                                <p class="m-b-0 font-weight-bold">Numero de compte</p>
                                 <h2 class="m-b-0">
-                                    <span>{{ Auth::user()->numero_compte }}</span>
+                                    <span class="text-success">{{ Auth::user()->numero_compte }}</span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-cyan">
@@ -49,20 +49,20 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Numero IBAN</p>
+                                <p class="m-b-0 font-weight-bold">Numero IBAN</p>
                                 <h2 class="m-b-0">
                                     <span>
                                         @if(Auth::user()->iban!=null)
                                     
                                         {{ Auth::user()->iban }}
                                         @else
-                                            Non mentionné
+                                            <p style="font-size: 12px; color:red; " >Mentionné lors du virements</p>
                                         @endif
                                     </span>
                                 </h2>
                             </div>
                             <div class="avatar avatar-icon avatar-lg avatar-gold">
-                                <i class="anticon anticon-bar-chart"></i>
+                                <i class="anticon anticon-bar-chart "></i>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Code BIC</p>
+                                <p class="m-b-0 font-weight-bold">Code BIC</p>
                                 <h2 class="m-b-0">
                                     <span>{{ Auth::user()->code_bic }}</span>
                                 </h2>
@@ -92,7 +92,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Code Guichet</p>
+                                <p class="m-b-0 font-weight-bold">Code Guichet</p>
                                 <h2 class="m-b-0">
                                     <span>{{ Auth::user()->code_guichet }}</span>
                                 </h2>
@@ -109,7 +109,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Code Banque</p>
+                                <p class="m-b-0 font-weight-bold">Code Banque</p>
                                 <h2 class="m-b-0">
                                     <span>{{ Auth::user()->code_banque }}</span>
                                 </h2>

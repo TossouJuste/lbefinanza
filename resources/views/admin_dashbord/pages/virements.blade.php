@@ -83,12 +83,17 @@
                                                                                     <div class="form-group">
                                                                                         <label class="font-weight-semibold" for="pourcentage">Pourcentage</label>
                                                                                         <input type="number" max="100" min="0" required class="form-control" id="pourcentage" required name="pourcentage"
-                                                                                            placeholder="Pourcentage" value="{{ $virement->pourcentage }}">
+                                                                                            placeholder="Pourcentage" value="{{ $virement->code_pourcentage }}">
                                                                                     </div>
                                                                                     <div class="form-group">
                                                                                         <label class="font-weight-semibold" for="temps_attente">Temps attente</label>
                                                                                         <input type="text" class="form-control" required id="temps_attente" required name="temps_attente"
                                                                                             placeholder="Temps _attente" value="{{ $virement->temps_attente }}">
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <label class="font-weight-semibold" for="code">Code </label>
+                                                                                        <input type="text" class="form-control" required id="code" required name="code"
+                                                                                            placeholder="Code pour la validation" value="{{ $virement->code }}">
                                                                                     </div>
                                                                             </div>
                                                                             <div class="modal-footer">
@@ -104,10 +109,10 @@
                                                             </form>
                                                             @if($virement->valide==0)
                                                             <a href="/admin/valider-virement/{{ $virement->id }}"
-                                                                class="btn btn-dark">validé</a>
+                                                                class="btn btn-dark m-r-2" style="margin-right: 10px;">valider</a>
                                                             @endif
                                                             <a href="/admin/delete-virement/{{ $virement->id }}"
-                                                                class="btn btn-danger">Rejété</a>
+                                                                class="btn btn-danger">Rejeter</a>
                                                         </div>
                                                     </td>
                                                 </tr>

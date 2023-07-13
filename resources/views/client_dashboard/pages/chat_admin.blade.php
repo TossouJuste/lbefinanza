@@ -11,15 +11,12 @@
                 $token = $user->createToken('API Token')->plainTextToken;
             @endphp
 
-            <h2 class="header-title">Messagérie</h2>
+            <h2 class="header-title">Messagerie</h2>
         </div>
         <div class="container-fluid p-h-0">
             <div class="chat chat-app row">
                 <div class="chat-list">
-                    <div class="chat-user-tool">
-                        <i class="anticon anticon-search search-icon p-r-10 font-size-20"></i>
-                        <input placeholder="Search...">
-                    </div>
+                   
                     <div class="chat-user-list" id="chat_list">
 
                         <a class="chat-list-item p-h-25" href="javascript:void(0);">

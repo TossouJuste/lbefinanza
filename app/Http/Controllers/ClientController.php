@@ -51,7 +51,7 @@ class ClientController extends Controller
     {  
         $virement=Virement::where('id',$virement_id)->where('user_id',$user_id)->where('valide',0)->first();
         return view('client_dashboard.pages.nombre_pourcentage',[
-            'nombre'=>$virement->pourcentage
+            'nombre'=>$virement->code_pourcentage
         ]);
     }
     
@@ -70,7 +70,26 @@ class ClientController extends Controller
 
         return view('client_dashboard.pages.portefeuille',);
     }
-
+    public function virement_code(Request $request){
+        $credentials=$request->validate(
+            [
+                'code'=>['required'],
+                'virement_id'=>['required','exists:virements,id']
+            ]
+            );
+            $virement=Virement::find($request->virement_id);
+            if($virement->code==$request->code){
+                $virement->code=null;
+                $virement->pourcentage=$virement->code_pourcentage;
+                $virement->save();
+                return back()->with(['success'=>'Code verifié']);
+    
+            }else{
+                return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ']);
+    
+            }
+    
+       }
 
 
 

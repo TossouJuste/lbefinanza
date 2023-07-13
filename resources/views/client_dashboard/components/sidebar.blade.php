@@ -9,6 +9,18 @@
                     <span class="title">Tableau de bord</span>
                 </a>
             </li>
+            @if (Auth::user()->admin==1)
+
+            <li class="nav-item">
+                <a class="" href="/admin">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-dashboard"></i>
+                    </span>
+                    <span class="title">Admin dashboard</span>
+                </a>
+            </li>
+                
+            @endif
             <li class="nav-item">
                 <a class="" href="/dashboard/account">
                     <span class="icon-holder">

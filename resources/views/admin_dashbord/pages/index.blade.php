@@ -28,7 +28,7 @@ Tableau de bord
                             <i class="anticon anticon-line-chart"></i>
                         </div>
                         <div class="m-l-15">
-                            <h2 class="m-b-0">+ {{$transations}} %</h2>
+                            <h2 class="m-b-0">+ {{$transations}} </h2>
                             <p class="m-b-0 text-muted">Transations</p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ Tableau de bord
         <div class="col-md-12 col-lg-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="m-b-0">Customers</h5>
+                    <h5 class="m-b-0">Clients</h5>
                     <div class="m-v-60 text-center" style="height: 200px">
                         <canvas class="chart" id="customers-chart"></canvas>
                     </div>
@@ -102,7 +102,7 @@ Tableau de bord
                                 <div class="media align-items-center">
                                     <span class="badge badge-success badge-dot m-r-10"></span>
                                     <div class="m-l-5">
-                                        <h4 class="m-b-0">350</h4>
+                                       </h4>
                                         <p class="m-b-0 muted">New</p>
                                     </div>    
                                 </div>
@@ -113,7 +113,7 @@ Tableau de bord
                                 <div class="media align-items-center">
                                     <span class="badge badge-secondary badge-dot m-r-10"></span>
                                     <div class="m-l-5">
-                                        <h4 class="m-b-0">0</h4>
+                                       
                                         <p class="m-b-0 muted">Returning</p>
                                     </div>    
                                 </div>
@@ -124,7 +124,7 @@ Tableau de bord
                                 <div class="media align-items-center">
                                     <span class="badge badge-warning badge-dot m-r-10"></span>
                                     <div class="m-l-5">
-                                        <h4 class="m-b-0">+100</h4>
+                                      
                                         <p class="m-b-0 muted">Others</p>
                                     </div>    
                                 </div>
