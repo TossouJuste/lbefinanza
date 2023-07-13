@@ -31,11 +31,22 @@ class AuthController extends Controller
         ]);
         if (Auth::attempt(request()->only(['email', 'password']))) {
             $request->session()->regenerate();
-            if(auth()->user()->admin_validation==0){
+
+            if (auth()->user()->email_verified_at) {
+                if(auth()->user()->admin_validation==0){
+                    auth()->logout();
+                    return view('auth.pages.compte_validation');
+                }
+                return redirect('/dashboard');
+            } else {
+                $user = User::find(auth()->user()->id);
                 auth()->logout();
-                return view('auth.pages.compte_validation');
+                $user->notify(new ConfirmationNotification($user->confirmation_token) );
+                return view('auth.pages.Envoi_mail',[
+                    'email'=> $user->email
+                  ]);
             }
-            return redirect('/dashboard');
+            
         }
         return back()->withErrors([
             'email' => 'Mot de passe ou email incorrect.',
@@ -135,8 +146,15 @@ $user->notify(new ConfirmationNotification($token) );
       
     }
     public function confirmation($token){
+        $user = User::where('confirmation_token', $token)->firstOrFail();
 
+        $user->confirmation_token = null;
+        $user->email_verified_at = now();
+        $user->save();
+
+        return redirect('/login')->with('success', 'Votre adresse e-mail a été confirmée.');
     }
+   
     public function Envoi_mail()
     {
         return view('auth.pages.Envoi_mail');

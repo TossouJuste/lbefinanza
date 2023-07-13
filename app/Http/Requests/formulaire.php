@@ -25,7 +25,7 @@ class formulaire extends FormRequest
             
             'nom'    => 'required|min:3',
             'prenom' => 'required|min:3',
-            'email'  => 'email|required|unique:users',
+            'email'  => 'email|required',
             'telephone' => 'required|min:8',
             'pays' => 'required',
             'codePostal' => 'required|min:5',
