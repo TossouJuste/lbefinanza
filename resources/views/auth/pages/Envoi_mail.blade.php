@@ -35,7 +35,8 @@
                                 </div>
                                 <p class="lead m-b-30 text-lg">Un mail a été envoyer a <span class="text-blue-600">{{ $email}}</span></p>
 
-                                <h4 class=" text-xl mb-6">Veuillez vérifier votre adresse e-mail et poursuivre l'activation de votre compte.</h4>
+                                <h4 class=" text-xl mb-6">
+                                    Merci de vérifier votre adresse e-mail, y compris votre dossier spam, afin de pouvoir poursuivre l'activation de votre compte.</h4>
                                <div class="flex flex-row flex-wrap">
                                 <form action="/envoie-mail" method="post">
                                     <input type="hidden" required name="email" value="{{$email}}">
