@@ -34,6 +34,51 @@
 
 
                                 <div class="d-flex flex-column justify-content-center aligns-items-center">
+                                    <div class="container-fluid pt-3 ">
+                                        <div class="container">
+                            
+                                            <div class="row">
+                                               
+                            
+                                                    <div class="col-md-6 col-lg-3 text-start team mb-5 ml-2 border-0 shadow-sm "
+                                                    style="background-color: white;">
+                                                        @if (strlen($virement_cours->montant)>0)
+                            
+                                                        <p class="mb-1 mt-2"> <span class="text-primary"> Formulaire Contact</p>
+                                                        <p> Banque: {{  $virement_cours->banque }}</p>
+                                                        @endif
+                            
+                                                        @if (strlen($virement_cours->montant)>0)
+                            
+                                                        <p> Montant: {{$virement_cours->montant}}</p>
+                                                        @endif
+                            
+                                                        @if (strlen($virement_cours->montant)>0)
+                            
+                                                        <p> Iban: {{ $virement_cours->iban}}</p>
+                                                        @endif
+                                                        
+                                                        @if (strlen($virement_cours->montant)>0)
+                            
+                                                        <p> Bic:{{ $virement_cours->iban}}</p>
+                                                        @endif
+                            
+                                                        @if (strlen($virement_cours->montant)>0)
+                            
+                                                        <p> Pays: {{ $donnees->pays}}</p>
+                                                        @endif
+                            
+                                 
+                            
+                                                   </div>
+                                                   
+                            
+                                              
+                                            </div>
+                            
+                            
+                                        </div>
+                                    </div>    
                                     <div class="progress mb-5">
                                         <div class="progress-bar bg-success" role="progressbar"
                                             style="width: {{ $virement_cours->pourcentage }}%"
