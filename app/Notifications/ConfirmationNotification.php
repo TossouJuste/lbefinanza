@@ -35,7 +35,7 @@ class ConfirmationNotification extends Notification
      */
     public function toMail(object $notifiable): MailMessage
     {
-        $url='/confirmation/'.$notifiable->token;
+        $url='/confirmation/'.$this->token;
         return (new MailMessage)
             ->subject('Confirmation d\'adresse e-mail'.$this->token)
             ->line('Veuillez cliquer sur le lien ci-dessous pour confirmer votre adresse e-mail.')
