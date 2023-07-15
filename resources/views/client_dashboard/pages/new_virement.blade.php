@@ -24,7 +24,7 @@
         <form action="/dashboard/virement/code" method="post">
             @csrf
             @method('post')
-            <div id="progress">
+            <div id="progressi">
 
                 <div class="row">
                     <div class="col-md-12">
