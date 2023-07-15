@@ -31,7 +31,7 @@
                               
                                 <div class="flex ">
                                     <h2 class="font-bold text-2xl">Verification de votre mail</h2>
-                                    <img src="assets/images/logo/envelope-solid.svg" class="w-8 h-8 ml-2" style="width: 8px; height:8px; margin-left:2px;" alt="">
+                                    <img src="assets/images/logo/envelope-solid.svg" class="w-8 h-8 ml-2" style="width: 16px; height:16px; margin-left:2px;" alt="">
                                 </div>
                                 <p class="lead m-b-30 text-lg">Un mail a été envoyer a <span class="text-blue-600">{{ $email}}</span></p>
 
