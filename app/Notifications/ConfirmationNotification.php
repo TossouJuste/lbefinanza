@@ -37,7 +37,7 @@ class ConfirmationNotification extends Notification
     {
         $url='/confirmation/'.$this->token;
         return (new MailMessage)
-            ->subject('Confirmation d\'adresse e-mail')
+            ->subject('Confirm Email Address')
             ->greeting('Dear user,')
             ->line('We are thrilled to welcome you to the Seded-Finance platform! Your registration has been successfully completed..')
             ->line('To confirm your email address and activate your account, please click on the link below:')
@@ -50,22 +50,7 @@ class ConfirmationNotification extends Notification
             ->salutation('The Seded-Finance Team');
     }
 
-   
 
-Nous sommes ravis de vous accueillir sur la plateforme Seded-Finance ! Votre inscription a été effectuée avec succès.
-
-Pour confirmer votre adresse e-mail et activer votre compte, veuillez cliquer sur le lien ci-dessous :
-
-[Confirmer mon adresse e-mail](lien-de-confirmation)
-
-Si vous ne pouvez pas cliquer sur le lien, veuillez le copier et le coller dans la barre d'adresse de votre navigateur.
-
-Une fois votre adresse e-mail confirmée, vous aurez accès à toutes les fonctionnalités de Seded-Finance. Vous pourrez gérer vos finances, effectuer des transactions, suivre vos investissements et bien plus encore.
-
-Nous vous remercions de votre confiance et nous sommes impatients de vous accompagner dans vos projets financiers. Si vous avez des questions ou avez besoin d'une assistance supplémentaire, n'hésitez pas à nous contacter à l'adresse support@seded-finance.com.
-
-Cordialement,
-L'équipe Seded-Finance
 
     /**
      * Get the array representation of the notification.
