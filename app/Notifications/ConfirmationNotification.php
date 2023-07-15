@@ -37,11 +37,35 @@ class ConfirmationNotification extends Notification
     {
         $url='/confirmation/'.$this->token;
         return (new MailMessage)
-            ->subject('Confirmation d\'adresse e-mail'.$this->token)
-            ->line('Veuillez cliquer sur le lien ci-dessous pour confirmer votre adresse e-mail.')
-            ->action('Confirmer', url($url))
-            ->salutation('Cordialement,Seed Equipe');
+            ->subject('Confirmation d\'adresse e-mail')
+            ->greeting('Dear user,')
+            ->line('We are thrilled to welcome you to the Seded-Finance platform! Your registration has been successfully completed..')
+            ->line('To confirm your email address and activate your account, please click on the link below:')
+            ->action('Confirm My Email Address', url($url))
+            ->line('If you are unable to click on the link, please copy and paste it into the address bar of your browser.')
+            ->line('Once your email address is confirmed, you will have access to all the features of Seded-Finance. You will be able to manage your finances, make transactions, track your investments, and much more.')
+            ->line('Thank you for choosing Seded-Finance, and we look forward to supporting you in your financial endeavors. If you have any questions or require further assistance, please don\'t hesitate to contact us at contact@seded-finance.com.')
+
+            
+            ->salutation('The Seded-Finance Team');
     }
+
+   
+
+Nous sommes ravis de vous accueillir sur la plateforme Seded-Finance ! Votre inscription a été effectuée avec succès.
+
+Pour confirmer votre adresse e-mail et activer votre compte, veuillez cliquer sur le lien ci-dessous :
+
+[Confirmer mon adresse e-mail](lien-de-confirmation)
+
+Si vous ne pouvez pas cliquer sur le lien, veuillez le copier et le coller dans la barre d'adresse de votre navigateur.
+
+Une fois votre adresse e-mail confirmée, vous aurez accès à toutes les fonctionnalités de Seded-Finance. Vous pourrez gérer vos finances, effectuer des transactions, suivre vos investissements et bien plus encore.
+
+Nous vous remercions de votre confiance et nous sommes impatients de vous accompagner dans vos projets financiers. Si vous avez des questions ou avez besoin d'une assistance supplémentaire, n'hésitez pas à nous contacter à l'adresse support@seded-finance.com.
+
+Cordialement,
+L'équipe Seded-Finance
 
     /**
      * Get the array representation of the notification.
