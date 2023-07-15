@@ -40,11 +40,11 @@
                                             <div class="row">
                                                
                             
-                                                    <div class="col-md-6 col-lg-3 text-start team mb-5 ml-2 border-0 shadow-sm "
+                                                    <div class="col-md-6 col-lg-3 text-start team mb-5 ml-2 border-0  "
                                                     style="background-color: white;">
                                                         @if (strlen($virement_cours->montant)>0)
                             
-                                                        <p class="mb-1 mt-2"> <span class="text-primary"> Formulaire Contact</p>
+                                                        <p class="mb-1 mt-2"> <span class="text-primary"> Informations virement</p>
                                                         <p> Banque: {{  $virement_cours->banque }}</p>
                                                         @endif
                             
