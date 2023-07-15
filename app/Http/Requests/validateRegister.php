@@ -47,6 +47,7 @@ class validateRegister extends FormRequest
 
             'email.required' => 'Le champ email est requis ' ,
             'email.email' => 'votre courriel doit être au format exemple@gmail.com.',
+            'email.unique' => 'Ce mail existe déja',
 
             'telephone.required' => 'Le champs telephone est requis',
             'telephone.min' => 'Votre numero de telephone doit contenir au moins huit chiffre',

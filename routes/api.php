@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MessageController;
-
+use App\Http\Controllers\ClientController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,6 +23,9 @@ Route::get('messages/admin/{id1}/{id2}', [MessageController::class, 'show_admin'
 Route::get('messages/nombre/{id}', [MessageController::class, 'nombre']); // Route pour récupérer un message spécifique par son ID (GET)
 Route::delete('messages/{id}', [MessageController::class, 'destroy']); // Route pour supprimer un message spécifique par son ID (DELETE)
 Route::get('messages', [MessageController::class, 'index']);
+
+Route::post('virement/pourcentage/code/', [ClientController::class, 'code_verification']);
+Route::get('virement/pourcentage/{id_virement}', [ClientController::class, 'virement_pourcentage_api']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

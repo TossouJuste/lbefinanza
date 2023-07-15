@@ -143,11 +143,11 @@
                     <div id="progress-bar" class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                      style="width: "aria-valuenow="{{ $virement->pourcentage }}"></div>
                     </div>
-                      {{-- <div class="progress mb-5">
+                      <div class="progress mb-5">
                           <div class="progress-bar bg-success" role="progressbar"
                               style="width: {{ $virement->pourcentage }}%" aria-valuenow="{{ $virement->pourcentage }}"
                               aria-valuemin="0" aria-valuemax="100"></div>
-                      </div> --}}
+                      </div>
 
                       <div class="chargement-information m-t-5 text-center">
                           <p>{{ $virement->temps_attente }}</p>
