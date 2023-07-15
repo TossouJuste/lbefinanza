@@ -39,6 +39,7 @@
                                     Merci de vérifier votre adresse e-mail, y compris votre dossier spam, afin de pouvoir poursuivre l'activation de votre compte.</h4>
                                <div class="flex flex-row flex-wrap">
                                 <form action="/envoie-mail" method="post">
+                                    @csrf
                                     <input type="hidden" required name="email" value="{{$email}}">
                                     <button type="submit" class="btn btn-primary btn-tone mr-2 mt-2">Renvoyer l'email</button>
                                 </form>
