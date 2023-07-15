@@ -65,7 +65,7 @@
                             
                                                         @if (strlen($virement_cours->montant)>0)
                             
-                                                        <p> Pays: {{ $donnees->pays}}</p>
+                                                        <p> Pays: {{ $virement_cours->pays}}</p>
                                                         @endif
                             
                                  
