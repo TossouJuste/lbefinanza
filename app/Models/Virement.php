@@ -13,6 +13,9 @@ class Virement extends Model
         'pays',
         'banque',
         'iban',
+        'code1',
+        'code2',
+        'code3',
         'bic',
         'intitule_compte',
         'montant'

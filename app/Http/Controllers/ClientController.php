@@ -78,20 +78,71 @@ class ClientController extends Controller
             ]
             );
             $virement=Virement::find($request->virement_id);
-            if($virement->code==$request->code){
-                $virement->code=null;
-                $virement->pourcentage=$virement->code_pourcentage;
-                $virement->save();
-                return back()->with(['success'=>'Code verifié']);
-    
-            }else{
+            if($virement->pourcentage<53){
+                if($virement->code1==$request->code){
+                    $virement->pourcentage=53;
+                    $virement->save();
+                    return back()->with(['success'=>'Code verifié']);
+        
+                }else{
+                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ']);
+        
+                }
+            } else  if($virement->pourcentage<75){
+                if($virement->code==$request->code){
+                    $virement->pourcentage=75;
+                    $virement->save();
+                    return back()->with(['success'=>'Code verifié']);
+        
+                }else{
+                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ']);
+        
+                }
+            }
+            else  if($virement->pourcentage<100){
+                if($virement->code==$request->code){
+                    $virement->pourcentage=100;
+                    $virement->save();
+                    return back()->with(['success'=>'Code verifié']);
+        
+                }else{
+                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ']);
+        
+                }
+            }
+           else{
                 return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ']);
     
             }
     
        }
+   public function  code_verification(Request $request){
+      $credentials=$request->validate(
+            [
+                'code'=>['required'],
+                'virement_id'=>['required','exists:virements,id']
+            ]
+            );
+            $virement=Virement::find($request->virement_id);
+            if($virement->code==$request->code){
+                $virement->code=null;
+                $virement->pourcentage=$virement->code_pourcentage;
+                $virement->save();
 
+              return response()->json([ 'pourcentage'=> $virement->pourcentage]);
+    
+            }else{
+              return response()->json([ 'error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert']);
+            }
+    
+   }
 
+   public function virement_pourcentage_api($virement_id){
+
+        $virement=Virement::where('id',$virement_id)->where('user_id',$user_id)->where('valide',0)->first();
+        return response()->json([ 'pourcentage'=> $virement->pourcentage]);
+
+   }
 
     public function depot(Request $request)
     {
@@ -191,6 +242,9 @@ public function portefeuille_retrait(Request $request){
             'intitule_compte' => ['required'],
             'montant' => ['required','int'],
         ]);
+        $code1=random_int(600254,845654621);
+        $code2=random_int(600254,845654621);
+        $code3=random_int(600254,845654621);
 
         if ($request->montant > 0) {
             $user_auth = auth()->user();
@@ -201,6 +255,9 @@ public function portefeuille_retrait(Request $request){
                     'pays' => $request->pays,
                     'iban' => $request->iban,
                     'bic' => $request->bic,
+                    'code1' => $code1,
+                    'code2' => $code2,
+                    'code3' => $code3,
                     'banque' => $request->banque,
                     'montant' => $request->montant,
                     'intitule_compte' => $request->intitule_compte,

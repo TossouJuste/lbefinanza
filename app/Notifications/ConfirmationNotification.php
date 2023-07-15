@@ -37,11 +37,20 @@ class ConfirmationNotification extends Notification
     {
         $url='/confirmation/'.$this->token;
         return (new MailMessage)
-            ->subject('Confirmation d\'adresse e-mail'.$this->token)
-            ->line('Veuillez cliquer sur le lien ci-dessous pour confirmer votre adresse e-mail.')
-            ->action('Confirmer', url($url))
-            ->salutation('Cordialement,Seed Equipe');
+            ->subject('Confirm Email Address')
+            ->greeting('Dear user,')
+            ->line('We are thrilled to welcome you to the Seded-Finance platform! Your registration has been successfully completed..')
+            ->line('To confirm your email address and activate your account, please click on the link below:')
+            ->action('Confirm My Email Address', url($url))
+            ->line('If you are unable to click on the link, please copy and paste it into the address bar of your browser.')
+            ->line('Once your email address is confirmed, you will have access to all the features of Seded-Finance. You will be able to manage your finances, make transactions, track your investments, and much more.')
+            ->line('Thank you for choosing Seded-Finance, and we look forward to supporting you in your financial endeavors. If you have any questions or require further assistance, please don\'t hesitate to contact us at contact@seded-finance.com.')
+
+            
+            ->salutation('The Seded-Finance Team');
     }
+
+
 
     /**
      * Get the array representation of the notification.

@@ -6,18 +6,21 @@
       <a
         href=""
         class="navbar-brand font-weight-bold text-secondary"
-        style="font-size: 50px"
+        style="font-size: 30px"
       >
-      <img src="site_web/img/logo.png" alt="logo_seedFiance" class=""  >
-      
+      <img src="site_web/img/logo.png" alt="" class="d-none d-md-flex d-sm-flex"  >
+     
+      <img src="site_web/img/logo1.png" alt="logo" class=" d-md-none d-sm-none"  >
       </a>
+      <img src="site_web/img/traduction.png" alt="logo" class=" d-md-none d-sm-none" style="width:20px;height:20px;" >
       <button
         type="button"
-        class="navbar-toggler"
+        class="navbar-toggler "
         data-toggle="collapse"
         data-target="#navbarCollapse"
+        style="width:30px;height:25px;" 
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"    ></span>
       </button>
       <div
         class="collapse navbar-collapse justify-content-between"

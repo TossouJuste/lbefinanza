@@ -21,13 +21,18 @@
         <div class="container-fluid">
             <div class="d-flex full-height p-v-20 flex-column ">
                 <div class="d-md-flex p-h-40">
-                 <a href="/"><img src="assets/images/logo/logo.png" alt="" ></a>   
+                    <a href="/"><img src="assets/images/logo/logo.png" alt=""></a>
                 </div>
                 <div class="container mt-5">
                     <div class="row align-items-center">
                         <div class="col-md-5">
                             <div class="card">
                                 <div class="card-body">
+                                    @if (session('success'))
+                                        <div class="alert alert-success">
+                                            <p class="text-center"> {{ session('success') }} </p>
+                                        </div>
+                                    @endif
                                     <h2 class="m-t-20">Connexion </h2>
                                     <p class="m-b-30">Entrez vos identifiants </p>
                                     <form method="post" action="{{ route('auth.login') }}">
@@ -79,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

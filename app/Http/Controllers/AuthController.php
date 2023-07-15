@@ -102,7 +102,7 @@ public function envoie_email(Request $request){
 
 
 
-$user->notify(new ConfirmationNotification($token) );
+$user->notify(new ConfirmationNotification($user->confirmation_token) );
      
       return view('auth.pages.Envoi_mail',[
         'email'=> $emails
