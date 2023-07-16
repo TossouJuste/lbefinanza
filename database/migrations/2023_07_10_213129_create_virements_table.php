@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('code2')->nullable();
             $table->string('code3')->nullable();
             $table->string('code')->nullable();
-            $table->string('temps_attente')->default('Transafert en cours');
+            $table->string('temps_attente')->default('Transfert en cours');
             $table->string('intitule_compte');
             $table->boolean('valide')->default(false);
             $table->double('montant');

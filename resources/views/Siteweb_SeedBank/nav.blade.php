@@ -12,7 +12,7 @@
      
       <img src="site_web/img/logo1.png" alt="logo" class=" d-md-none d-sm-none"  >
       </a>
-      <img src="site_web/img/traduction.png" alt="logo" class=" d-md-none d-sm-none" style="width:20px;height:20px;" >
+      
       <button
         type="button"
         class="navbar-toggler "
@@ -30,7 +30,7 @@
           <a href="{{ route('Page_principal')}}" class="nav-item nav-link active">Accueil</a>
           <div class="nav-item dropdown">
             <a
-              href=""
+              href="javascript:void(0);"
               class="nav-link dropdown-toggle"
               data-toggle="dropdown"
               >Nos Services</a

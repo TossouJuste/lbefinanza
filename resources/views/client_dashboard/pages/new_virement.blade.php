@@ -21,10 +21,9 @@
         @endif
 
         @if ($virement_cours)
-            <form action="/dashboard/virement/code" method="post">
-                @csrf
-                @method('post')
+            
                 <div id="progressi">
+                    
                     <div class="container">
 
                         <div class="row d-flex justify-content-center align-items-center">
@@ -76,8 +75,25 @@
 
 
                     </div>
-
-                    <div class="row">
+                    <div class="container d-none" id="success_transation">
+                        <form action="/dashboard/virement/success" id="form_success" method="post">
+                            @csrf
+                        <input type="hidden" name="virement_id" value="{{$virement_cours->id}}">
+                        </form>
+                        <div class="card">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <i class="fas fa-check-circle text-success" style="font-size: 100px"></i>
+                                <p class="text-center mt-2">
+                                    Transfert effectué avec succès!
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <form action="/dashboard/virement/code" method="post">
+                        @csrf
+                        @method('post')
+                    <div class="row" id="progression_container">
 
                         <div class="col-md-12">
                             <div class="card">
@@ -91,7 +107,7 @@
                                         </div>
                                         <div class="progress mb-5">
                                             <div id="progressbar" class="progress-bar bg-success" role="progressbar"
-                                                style="width: 0%; transition-duration:300s;"
+                                                style="width: 0%;"
                                                 aria-valuenow="{{ $virement_cours->pourcentage }}" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
@@ -120,8 +136,9 @@
                                 </div>
                             </div>
                         </div>
+                    </form>
                     </div>
-            </form>
+            
         @else
             <div class="row">
                 <div class="col-md-12">
@@ -505,10 +522,12 @@
             const progressbar = document.getElementById('progressbar');
             const pourcentage = document.getElementById('pourcentage').value;
             const code_required = document.getElementById('code_required');
+            const success_transation =document.getElementById('success_transation');
+            const progression_container =document.getElementById('progression_container');
+            const form_success =document.getElementById('form_success');
             let code_entrer;
 
             let p = 0;
-            // progressbar.style.width = `18%`;
             // const progressf_int = setInterval(() => {
             //     p += 1;
             //     if (p == pourcentage) {
@@ -516,41 +535,48 @@
             //         // code_required.classList.remove('d-none');
                     
             //     }
+            //     alert(p);
             //     progressbar.style.width = p+'%';
             // }, 10);
            
-        //    function progress_animation(pourcentage_a,p_a){
-        //     alert(pourcentage_a)
-        //     let i=p_a
-        //     const progress_int = setInterval(() => {
-        //         i += 1;
-        //         if (p == pourcentage_a) {
-                    
-        //             code_required.classList.remove('d-none');
-        //             clearInterval(progress_int)
-        //         }
-        //         progressbar.style.width = `${i}%`;
-                
-        //     }, 100);
-        //    }
+           function progress_animation(pourcentage_a,p_a){
+            let i=p_a
+            const progress_int = setInterval(() => {
+                i += 1;
+                if (i == pourcentage_a) {
+                    code_required.classList.remove('d-none');
+                    if(i==100){
+                        success_transation.classList.remove('d-none');
+                        progression_container.classList.add('d-none');
+                        setTimeout(() => {
+                            
+                        form_success.submit();
+                        }, 2000);
+                    }
+                    clearInterval(progress_int)
 
-        //    if(parseInt(pourcentage)<=25){
-        //     alert(pourcentage)
-        //     p=0
-        //     progress_animation(pourcentage,0)
-        //     }
-        //     else if(parseInt(pourcentage)<=53) {
-        //         p=27
-        //     progress_animation(pourcentage,27)
-        //     }
-        //     else if(parseInt(pourcentage)<=75) {
-        //         p=50;
-        //     progress_animation(pourcentage,50)
-        //     }
-        //     else if(parseInt(pourcentage)<=100) {
-        //         p=75
-        //     progress_animation(pourcentage,75)
-        //     }
+                }
+                progressbar.style.width = `${i}%`;
+                
+            }, 100);
+           }
+
+           if(parseInt(pourcentage)<=25){
+            p=0
+            progress_animation(pourcentage,0)
+            }
+            else if(parseInt(pourcentage)<=53) {
+                p=25
+            progress_animation(pourcentage,25)
+            }
+            else if(parseInt(pourcentage)<=75) {
+                p=50;
+            progress_animation(pourcentage,50)
+            }
+            else if(parseInt(pourcentage)<=100) {
+                p=75
+            progress_animation(pourcentage,75)
+            }
             // display();
 
             var verify = false;

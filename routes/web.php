@@ -109,6 +109,7 @@ Route::get('/dashboard/chat', [ClientController::class, 'chat_view'])->middlewar
 // Route::get('/dashboard/admin/chat', [ClientController::class, 'chat_admin_view'])->middleware('auth');
 Route::get('/admin', [AdminController::class, 'accueil_dashboard'])->name('admin.dashboard')->middleware('auth');
 Route::get('/admin/virements', [AdminController::class, 'virements'])->middleware('auth')->middleware('admin');
+Route::post('/dashboard/virement/success', [ClientController::class, 'valider_virement'])->middleware('auth');
 
 
 

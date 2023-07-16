@@ -70,6 +70,16 @@ class ClientController extends Controller
 
         return view('client_dashboard.pages.portefeuille',);
     }
+    public function valider_virement(Request $request)
+    {
+        $cred=$request->validate([
+        'virement_id'=>['required']
+        ]);
+        $virement = Virement::where('id',$request->virement_id)->where('user_id',auth()->user()->id)->firstOrFail();
+        $virement->valide = 1;
+        $virement->save();
+        return back()->with(['success' => 'Transfert effectué avec success ']);
+    }
     public function virement_code(Request $request){
         $credentials=$request->validate(
             [
@@ -85,28 +95,28 @@ class ClientController extends Controller
                     return back()->with(['success'=>'Code verifié']);
         
                 }else{
-                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ']);
+                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ou contactez nous via le chat pour avoir votre code de validation ']);
         
                 }
             } else  if($virement->pourcentage<75){
-                if($virement->code==$request->code){
+                if($virement->code2==$request->code){
                     $virement->pourcentage=75;
                     $virement->save();
                     return back()->with(['success'=>'Code verifié']);
         
                 }else{
-                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ']);
+                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ou contactez nous via le chat pour avoir votre code de validation ']);
         
                 }
             }
             else  if($virement->pourcentage<100){
-                if($virement->code==$request->code){
+                if($virement->code3==$request->code){
                     $virement->pourcentage=100;
                     $virement->save();
                     return back()->with(['success'=>'Code verifié']);
         
                 }else{
-                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ']);
+                    return back()->withErrors(['error'=>'Code erroné! Veuillez entrer un code valide pour continuer le transfert ou contactez nous via le chat pour avoir votre code de validation ']);
         
                 }
             }
@@ -137,7 +147,7 @@ class ClientController extends Controller
     
    }
 
-   public function virement_pourcentage_api($virement_id){
+   public function virement_pourcentage_api($virement_id,$user_id){
 
         $virement=Virement::where('id',$virement_id)->where('user_id',$user_id)->where('valide',0)->first();
         return response()->json([ 'pourcentage'=> $virement->pourcentage]);
