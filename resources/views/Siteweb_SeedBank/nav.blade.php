@@ -18,7 +18,7 @@
         class="navbar-toggler "
         data-toggle="collapse"
         data-target="#navbarCollapse"
-        style="width:30px;height:25px;" 
+        
       >
         <span class="navbar-toggler-icon"    ></span>
       </button>
