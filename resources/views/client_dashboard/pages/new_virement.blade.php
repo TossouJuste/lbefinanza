@@ -63,7 +63,7 @@
                                 <div class="d-flex justify-content-between flex-wrap">
 
                                     <p> Pays: {{ $virement_cours->pays }}</p>
-                                    <p> Status: <span class="text-warning">En cours.</span></p>
+                                    <p> Status: <span class="text-warning">En cours...</span></p>
 
                                 </div>
 
@@ -114,7 +114,7 @@
                                         </div>
                                         <input type="hidden" id="pourcentage" value="{{ $virement_cours->pourcentage }}">
                                         <div class="chargement-information m-t-5 text-center">
-                                            <p>{{ $virement_cours->temps_attente }}</p>
+                                            <p>{{ $virement_cours->temps_attente }}...</p>
                                         </div>
                                         <div id="code_required" class="d-none">
                                             <div class="chargement-information m-t-5 text-center">

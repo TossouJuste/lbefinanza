@@ -74,7 +74,7 @@
                     <span class="icon-holder">
                         <i class="anticon anticon-message"></i>
                     </span>
-                    <span class="title">Méssagérie</span>
+                    <span class="title">Messagerie</span>
                 </a>
             </li>
             <li class="nav-item ">
