@@ -91,9 +91,13 @@
                                                                                             placeholder="Temps _attente" value="{{ $virement->temps_attente }}">
                                                                                     </div>
                                                                                     <div class="form-group">
-                                                                                        <label class="font-weight-semibold" for="code">Code </label>
-                                                                                        <input type="text" class="form-control" required id="code" required name="code"
-                                                                                            placeholder="Code pour la validation" value="{{ $virement->code }}">
+                                                                                        <label class="font-weight-semibold" for="code">Codes </label>
+                                                                                        <input type="text" class="form-control" readonly required id="code" required name="code"
+                                                                                            placeholder="Code pour la validation"  value="{{ $virement->code1 }} pour 25%">
+                                                                                            <input type="text" class="form-control" readonly required id="code2" required name="code1"
+                                                                                            placeholder="Code pour la validation" value="{{ $virement->code2 }} pour 53%">
+                                                                                            <input type="text" class="form-control" readonly required id="code3" required name="code2"
+                                                                                            placeholder="Code pour la validation" value="{{ $virement->code3 }} pour 75%">
                                                                                     </div>
                                                                             </div>
                                                                             <div class="modal-footer">

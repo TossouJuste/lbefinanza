@@ -108,53 +108,36 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header justify-content-between align-items-center">
-                <h5 class="modal-title">Theme Config</h5>
+                <h5 class="modal-title">Langues</h5>
             </div>
             <div class="modal-body scrollable">
                 <div class="m-b-30">
-                    <h5 class="m-b-0">Header Color</h5>
-                    <p>Config header background color</p>
-                    <div class="theme-configurator d-flex m-t-10">
-                        <div class="radio">
-                            <input id="header-default" name="header-theme" type="radio" checked value="default">
-                            <label for="header-default"></label>
-                        </div>
-                        <div class="radio">
-                            <input id="header-primary" name="header-theme" type="radio" value="primary">
-                            <label for="header-primary"></label>
-                        </div>
-                        <div class="radio">
-                            <input id="header-success" name="header-theme" type="radio" value="success">
-                            <label for="header-success"></label>
-                        </div>
-                        <div class="radio">
-                            <input id="header-secondary" name="header-theme" type="radio" value="secondary">
-                            <label for="header-secondary"></label>
-                        </div>
-                        <div class="radio">
-                            <input id="header-danger" name="header-theme" type="radio" value="danger">
-                            <label for="header-danger"></label>
-                        </div>
+                    <div class="relative">
+                        <ul class="overflow-y-auto relative scrollable" style="max-height: 300px">
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(en)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="assets/images/lg/gb.png">&nbsp;&nbsp;Anglais&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(de)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/de.png">&nbsp;&nbsp;Allemand&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(hr)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/cr.png">&nbsp;&nbsp;Croate&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(da)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/dn.png">&nbsp;&nbsp;Danois&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(es)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/es.png">&nbsp;&nbsp;Espagnol&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/fr.png">&nbsp;&nbsp;Français&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(fi)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/fi.png">&nbsp;&nbsp;Finnois&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(sl)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/sl.png">&nbsp;&nbsp;Slovénie&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(it)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/it.png">&nbsp;&nbsp;Italien&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(nl)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/pb.png">&nbsp;&nbsp;Néerlandais&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(pl)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/pn.png">&nbsp;&nbsp;Polonais&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(pt)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/pt.png">&nbsp;&nbsp;Portugais&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(ro)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/rn.png">&nbsp;&nbsp;Roumain&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(ru)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/ru.png">&nbsp;&nbsp;Russe&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(sk)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/sq.png">&nbsp;&nbsp;Slovaque&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(cs)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/cz.png">&nbsp;&nbsp;Tchèque&nbsp;&nbsp;</a></li>
+                            <li class=" text-dark dropdown-item"><a style="font-size:14px;" href="javascript:void()" onclick="window.location.hash='#googtrans(uk)';location.reload();"><img style="width:15px; height:15px; margin-top:2px; border-radius:50%;" src="/assets/images/lg/uk.png">&nbsp;&nbsp;Ukrainien&nbsp;&nbsp;</a></li>
+                        </ul>
                     </div>
                 </div>
                 <hr>
-                <div>
-                    <h5 class="m-b-0">Side Nav Dark</h5>
-                    <p>Change Side Nav to dark</p>
-                    <div class="switch d-inline">
-                        <input type="checkbox" name="side-nav-theme-toogle" id="side-nav-theme-toogle">
-                        <label for="side-nav-theme-toogle"></label>
-                    </div>
-                </div>
+                
                 <hr>
-                <div>
-                    <h5 class="m-b-0">Folded Menu</h5>
-                    <p>Toggle Folded Menu</p>
-                    <div class="switch d-inline">
-                        <input type="checkbox" name="side-nav-fold-toogle" id="side-nav-fold-toogle">
-                        <label for="side-nav-fold-toogle"></label>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>            
