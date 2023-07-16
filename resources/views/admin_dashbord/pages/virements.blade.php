@@ -43,7 +43,7 @@
                                                     <td>{{ $virement->user->prenom }}</td>
                                                     <td>{{ $virement->pays }}</td>
                                                     <td>{{ $virement->banque }}</td>
-                                                    <td>{{ $virement->viban }}</td>
+                                                    <td>{{ $virement->iban }}</td>
                                                     <td>{{ $virement->bic }}</td>
                                                     <td>{{ $virement->intitule_compte }}</td>
                                                     <td>{{ $virement->montant }} {{ $virement->devise }} </td>

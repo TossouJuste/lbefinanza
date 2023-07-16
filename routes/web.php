@@ -101,6 +101,7 @@ Route::get('/dashboard/transations', [ClientController::class, 'my_transations']
 Route::get('/dashboard/transfert', [ClientController::class, 'new_transfert'])->middleware('auth');
 Route::post('/dashboard/depot', [ClientController::class, 'depot'])->middleware('auth');
 Route::get('/dashboard/virement', [ClientController::class, 'new_virement'])->middleware('auth');
+Route::get('/dashboard/virements', [ClientController::class, 'mes_virements'])->middleware('auth');
 Route::post('/dashboard/virement/code', [ClientController::class, 'virement_code'])->middleware('auth')->name('virement_code');
 Route::get('/dashboard/virement/pourcentage/{user_id}/{virements_id}', [ClientController::class, 'virement_pourcentage'])->middleware('auth');
 Route::get('/dashboard/virement/pourcentage/nombre/{user_id}/{virements_id}', [ClientController::class, 'virement_nombre_pourcentage'])->middleware('auth');

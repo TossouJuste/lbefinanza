@@ -59,6 +59,9 @@ class ClientController extends Controller
     {
         return view('client_dashboard.pages.chat');
     }
+    public function mes_virements(){
+        return view('client_dashboard.pages.virements');
+    }
     public function chat_admin_view()
     {
 
@@ -126,6 +129,7 @@ class ClientController extends Controller
             }
     
        }
+
    public function  code_verification(Request $request){
       $credentials=$request->validate(
             [
