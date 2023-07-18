@@ -70,11 +70,19 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="" href="/dashboard/virements">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-credit-card"></i>
+                    </span>
+                    <span class="title">Mes virements</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="" href="/dashboard/chat">
                     <span class="icon-holder">
                         <i class="anticon anticon-message"></i>
                     </span>
-                    <span class="title">Méssagérie</span>
+                    <span class="title">Messagerie</span>
                 </a>
             </li>
             <li class="nav-item ">

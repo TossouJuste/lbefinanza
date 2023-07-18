@@ -4,6 +4,7 @@
     <title>Termes du contrat et Politique de confidentialité - Seed Finance</title>
    
     <link href="site_web/css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
     <style>
         body {
     font-family: Arial, sans-serif;
