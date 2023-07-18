@@ -105,6 +105,10 @@
                                         <div class="container-fluid pt-3 ">
 
                                         </div>
+                                        
+                                        <div class=" m-t-1 text-center">
+                                            <h1 id="pourcentage_view">0%</h1>
+                                        </div>
                                         <div class="progress mb-5">
                                             <div id="progressbar" class="progress-bar bg-success" role="progressbar"
                                                 style="width: 0%;"
@@ -123,7 +127,7 @@
                                             <input type="hidden" name="virement_id" value="{{ $virement_cours->id }}">
                                             <div class="my-1 form-row justify-content-center align-items-center">
                                                 <div class="mb-3">
-                                                    <input type="text" class="form-control border border-primary"
+                                                    <input type="password" class="form-control border border-primary"
                                                         id="code" name="code" placeholder="Code"
                                                         aria-describedby="defaultFormControlHelp" required />
                                                 </div>
@@ -521,6 +525,7 @@
             const user_id = document.getElementById('user_id').value;
             const progressbar = document.getElementById('progressbar');
             const pourcentage = document.getElementById('pourcentage').value;
+            const pourcentage_view = document.getElementById('pourcentage_view');
             const code_required = document.getElementById('code_required');
             const success_transation =document.getElementById('success_transation');
             const progression_container =document.getElementById('progression_container');
@@ -556,6 +561,7 @@
                     clearInterval(progress_int)
 
                 }
+                pourcentage_view.innerHTML=`${i}%`;
                 progressbar.style.width = `${i}%`;
                 
             }, 100);
