@@ -30,9 +30,9 @@
                     <i class="anticon"></i>
                 </a>
             </li>
-            <li class="lofo-mobile">
+            <li class="logo-mobile">
                 <a href="javascript:void(0);">
-                    <img src="site_web/img/logo1.png" alt="logo" class=" d-md-none d-sm-none"  >
+                    <img src="/site_web/img/logo1.png" alt="logo" class=" d-md-none d-sm-none"  >
 
                 </a>
             </li>

@@ -14,7 +14,7 @@
             <h2 class="header-title">Messagérie</h2>
         </div>
         <div class="container-fluid p-h-0">
-            <div class="chat chat-app row">
+            <div class="chat chat-app row " style="height:100%;width:100%;">
                 <div class="chat-list">
                     <div class="chat-user-tool">
                         <i class="anticon anticon-search search-icon p-r-10 font-size-20"></i>
@@ -22,7 +22,7 @@
                     </div>
                     <div class="chat-user-list" id="chat_list">
 
-                        <a class="chat-list-item p-h-25" href="javascript:void(0);">
+                        {{-- <a class="chat-list-item p-h-25" href="javascript:void(0);">
                             <div class="media align-items-center">
                                 <div class="avatar avatar-image">
                                     <img src="/assets/images/avatars/thumb-2.jpg" alt="">
@@ -34,16 +34,19 @@
                                     </p>
                                 </div>
                             </div>
-                        </a>
+                        </a> --}}
+                        <div>
+                            <p class="text-center"> Chargement de vos discussions</p>
+                        </div>
                     </div>
                 </div>
-                <div class="chat-content">
+                <div class="chat-content position-relative">
                     <div class="conversation">
                         <div class="conversation-wrapper">
                             <div class="conversation-header justify-content-between">
                                 <div class="media align-items-center">
-                                    <a href="javascript:void(0);"
-                                        class="chat-close m-r-20 d-md-none d-block text-dark font-size-18 m-t-5">
+                                    <a href="javascript:void(0);" 
+                                        class="chat-close m-r-20 d-md-none d-block text-dark font-size-18 m-t-5" onclick="ferme_chat()">
                                         <i class="anticon anticon-left-circle"></i>
                                     </a>
                                     <div class="avatar avatar-image">
@@ -59,7 +62,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="conversation-body" id="conversation_body">
+                            <div class="conversation-body" id="conversation_body" style="height:100vh;">
                                 
                                 <div id="derniere_div"></div>
                             </div>
@@ -79,7 +82,7 @@
 
                                     </li>
                                     <li class="list-inline-item m-r-15">
-                                        <input type="file" class="d-none" name="message_image" id="message_image"
+                                        <input type="file" accept="image/*" class="d-none" name="message_image" id="message_image"
                                             onchange="image_choose(event)">
                                         <label for="message_image" class="text-gray font-size-20" data-toggle="tooltip"
                                             title="Attachment">
@@ -92,7 +95,7 @@
                                             <span class="m-r-10">Send</span>
                                             <i class="far fa-paper-plane"></i>
                                         </button>
-                                        <a href="javascript:void(0);" class="text-gray font-size-20 d-md-none d-block">
+                                        <a href="javascript:void(0);" onclick="envoie_message()" class="text-gray font-size-20 d-md-none d-block">
                                             <i class="far fa-paper-plane"></i>
                                         </a>
                                     </li>
@@ -357,9 +360,25 @@
             });
 
             chat_element.classList.add('active');
+            const chart_Content = document.querySelector('.chat-content')
+            chart_Content.classList.add('open')
+            const chatlist_div = document.querySelector('.chat-list')
+            chatlist_div.classList.add('d-none')
+            chatlist_div.classList.add('d-md-block')
+            
+
+        
         }
 
         const interval = setInterval(nombre, 1000);
+        const ferme_chat=()=>{
+            const chart_Content = document.querySelector('.chat-content')
+            chart_Content.classList.remove('open')
+            const chatlist_div = document.querySelector('.chat-list')
+            chatlist_div.classList.remove('d-none')
+            
+            chatlist_div.classList.remove('d-md-block')
+        };
     </script>
 @endsection
 

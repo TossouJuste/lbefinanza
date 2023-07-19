@@ -5,46 +5,31 @@ Messagérie
 @section('page_container')
              
     <!-- Content Wrapper START -->
-    <div class="main-content">
+    <div class="main-content w-100">
         <div class="page-header">
             @php
     $user = Auth::user();
     $token = $user->createToken('API Token')->plainTextToken;
 @endphp
 
-            <h2 class="header-title">Messagerie</h2>
+         
         </div>
         <div class="container-fluid p-h-0">
-            <div class="chat chat-app row">
+            <div class="chat chat-app row" style="height:100%;width:100%;">
                 <div class="chat-list">
                   
-                    <div class="chat-user-list">
-                        
-                        {{-- <a class="chat-list-item p-h-25" href="javascript:void(0);">
-                            <div class="media align-items-center">
-                                <div class="avatar avatar-image">
-                                    <img src="/assets/images/avatars/thumb-2.jpg" alt="">
-                                </div>
-                                <div class="p-l-15">
-                                    <h5 class="m-b-0">Seed Bank</h5>
-                                    <p class="msg-overflow m-b-0 text-muted font-size-13">
-                                       Communication
-                                    </p>
-                                </div>
-                            </div>
-                        </a> --}}
-                    </div>   
+                    
                 </div>
-                <div class="chat-content open">
+                <div class="chat-content open position-relative m-0 p-0" style="height:100%;width:100%;">
                     <div class="conversation">
                         <div class="conversation-wrapper">
                             <div class="conversation-header justify-content-between">
                                 <div class="media align-items-center">
-                                    <a href="javascript:void(0);" class="chat-close m-r-20 d-md-none d-block text-dark font-size-18 m-t-5" >
+                                    <a href="javascript:void(0);" class="chat-close m-r-20 d-none text-dark font-size-18 m-t-5" >
                                         <i class="anticon anticon-left-circle"></i>
                                     </a>
                                     <div class="avatar avatar-image">
-                                        <img src="/assets/images/avatars/thumb-1.jpg" alt="">
+                                        <img src="/assets/images/logo/logo-fold.png" alt="">
                                     </div>
                                     <div class="p-l-15">
                                         <h6 class="m-b-0">Seed Bank</h6>
@@ -58,69 +43,11 @@ Messagérie
                                     <a class="text-dark font-size-20" href="javascript:void(0);" data-toggle="dropdown">
                                         <i class="anticon anticon-setting"></i>
                                     </a>
-                                    <div class="dropdown-menu">
-                                        <button class="dropdown-item" type="button">Action</button>
-                                        <button class="dropdown-item" type="button">Another action</button>
-                                        <button class="dropdown-item" type="button">Something else here</button>
-                                    </div>
+                                   
                                 </div>
                             </div>
-                            <div class="conversation-body justify-content-reverse"  id="conversation_body">
-                                {{-- <div class="msg justify-content-center">
-                                    <div class="font-weight-semibold font-size-12"> 7:57PM </div>
-                                </div>
-                                <div class="msg msg-recipient">
-                                    <div class="m-r-10">
-                                        <div class="avatar avatar-image">
-                                            <img src="/assets/images/avatars/thumb-1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bubble">
-                                        <div class="bubble-wrapper">
-                                            <span>Hey, let me show you something nice!</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-sent">
-                                    <div class="bubble">
-                                        <div class="bubble-wrapper">
-                                            <span>Oh! What is it?</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-recipient">
-                                    <div class="m-r-10">
-                                        <div class="avatar avatar-image">
-                                            <img src="/assets/images/avatars/thumb-1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bubble">
-                                        <div class="bubble-wrapper p-5">
-                                            <img src="https://s3.envato.com/files/249796117/preview.__large_preview.png" alt="https://s3.envato.com/files/249796117/preview.__large_preview.png">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-recipient">
-                                    <div class="bubble m-l-50">
-                                        <div class="bubble-wrapper">
-                                            <span>Applicator - Bootstrap 4 Admin Template</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-recipient">
-                                    <div class="bubble m-l-50">
-                                        <div class="bubble-wrapper">
-                                            <span>A creative, responsive and highly customizable admin template</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="msg msg-sent">
-                                    <div class="bubble">
-                                        <div class="bubble-wrapper">
-                                            <span>Wow, that was cool!</span>
-                                        </div>
-                                    </div>
-                                </div> --}}
+                            <div class="conversation-body justify-content-reverse mb-4"  id="conversation_body" style="height:100vh;width:100%;">
+                                
                                 <div id="derniere_div"></div>
                             </div> 
                             <div class="conversation-footer">
@@ -147,7 +74,7 @@ Messagérie
                                             <span class="m-r-10">Send</span>
                                             <i class="far fa-paper-plane"></i>
                                         </button>
-                                        <a href="javascript:void(0);" class="text-gray font-size-20 d-md-none d-block">
+                                        <a href="javascript:void(0);" onclick="envoie_message()" class="text-gray font-size-20 d-md-none d-block">
                                             <i class="far fa-paper-plane"></i>
                                         </a>
                                     </li>
@@ -327,6 +254,10 @@ const envoie_message_image = async () => {
                 }
             });
             conversation_body.innerHTML=message_dom;
+            
+            const divs = conversation_body.querySelectorAll('.msg');
+            const lastDiv = divs[divs.length - 1];
+            lastDiv.style.marginBottom = '100px';
             conversation_body.scrollTop = conversation_body.scrollHeight;
 
         } catch (error) {
