@@ -1,11 +1,11 @@
 @extends('client_dashboard.components.app')
 @section('page_titre')
-Messagérie
+Messagerie
 @endsection
 @section('page_container')
              
     <!-- Content Wrapper START -->
-    <div class="main-content w-100">
+    <div class="main-content w-100 mb-5">
         <div class="page-header">
             @php
     $user = Auth::user();
@@ -46,7 +46,8 @@ Messagérie
                                    
                                 </div>
                             </div>
-                            <div class="conversation-body justify-content-reverse mb-4"  id="conversation_body" style="height:100vh;width:100%;">
+                            <div class="conversation-body justify-content-reverse mb-4"  id="conversation_body" 
+                            style="height:50vh;width:100%">
                                 
                                 <div id="derniere_div"></div>
                             </div> 
