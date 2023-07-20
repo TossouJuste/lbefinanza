@@ -63,8 +63,68 @@
     <!-- Header End -->
 
     <!-- Facilities Start -->
-    <div>
+    
+    <div class="container-fluid">
+
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <div class="align-items-center justify-content-center mb-2" style="height:5px;width:100px;background-color:#17A2B8; border-radius:3px;">
+
+        </div>
+
+        <p class="" style="font-size: 16px; color:black;font-weight:bold;">Avec l'appli, découvrez vos comptes bancaires comme vous ne les avez jamais vus !</p>
+
+       </div>
+       
+      <div class="d-flex align-items-center justify-content-center" style="background-color: aliceblue;padding:40px;">
+
+      
+        <div class="row  ">
+
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <img src="site_web/img/lg/mobile.gif" alt="" class="img-fluid" style="height:300px;">
+          </div>
+
+          <div class=" col-md-6 flex-column d-none d-md-flex d-sm-flex">
+            <div class="d-flex ">
+              <div>  <img src="site_web/img/lg/check.svg" alt="" style="width:20px;heigth:20px;"></div>
+            <p>Catégorisation automatique des opérations pour une meilleure gestion de votre budget.</p>
+            </div>
+            <div class="d-flex justify-content-start">
+             <div style="margin-left: 3px;">
+              <img src="site_web/img/lg/check.svg" alt="" style="width:20px;heigth:20px;">
+             </div>
+             <p >Modification des plafonds de paiements et retrait, en fonction de vos besoins.</p>
+            </div>
+           <div class="d-flex ">
+            <div><img src="site_web/img/lg/check.svg" alt="" style="width:20px;heigth:20px;"></div>
+            <p>Affichage en temps réel de vos opérations, pour tout suivre à la seconde près.</p>
+           </div>
+           <div class="d-flex ">
+           <div> <img src="site_web/img/lg/check.svg" alt="" style="width:20px;heigth:20px;"></div>
+            <p>Gestion au quotidien de votre budget, pour plus de sérénité.</p>
+           </div>
+         </div>  
+
+
+
+        </div>
+
+      </div>
+
+      <div class="container col-md-9 d align-items-center justify-content-center mt-5 mb-5">
+        <p class="section-title px-5">
+          <span class="px-2 col-md-6 "> Ouvrez un compte aujourd'hui 
+          </span>
+        </p>
+        <p>SeedBank offre une prime de bienvenue allant jusqu'à 110 euros à ses nouveaux clients pour l'ouverture d'un <a href="/register">compte bancaire en ligne</a></p>
+        <p>SeedBank propose 3 offres de compte bancaire avec carte Visa, dont deux gratuites. La gestion se fait entièrement à distance, par internet ou applications sur mobile. La banque en ligne se revendique depuis plus d'une dizaine d'années être la « banque la moins chère ».
+         <a href="/carte"> En savoir plus </a> </p>
+      </div>
+
+      <div>
         <marquee behavior="" direction="" ><Span class="font-weight-bold text-black-500">Que pouvons-nous faire pour vous ?</Span></marquee>
+    </div>
+
     </div>
     <div class="container-fluid pt-5">
       <div class="container pb-3">

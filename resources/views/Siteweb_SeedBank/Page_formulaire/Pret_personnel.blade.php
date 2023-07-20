@@ -85,7 +85,7 @@
         <div class="col-6 col-md-8">
             <ul class="list-inline m-0">
               <li class="py-2 border-top border-bottom">
-                <i class="fa fa-check text-primary mr-3"></i>Taux d'intérêt fixe à partir de 7,6 %
+                <i class="fa fa-check text-primary mr-3"></i>Taux d'intérêt fixe à partir de 3,6 %
               </li>
               <li class="py-2 border-bottom">
                 <i class="fa fa-check text-primary mr-3"></i>Recevez votre argent sous forme de somme forfaitaire

@@ -45,7 +45,8 @@
                                         </div>
                                     @endif
                                     <h2 class="m-t-20">Connexion </h2>
-                                    <p class="m-b-30">Entrez vos identifiants </p>
+                                    <p>Connectez vous a votre banque en ligne en un clin d'œil</p>
+                                    <p class="m-b-30 text-primary">Entrez vos identifiants </p>
                                     <form method="post" action="{{ route('auth.login') }}">
                                         @csrf
                                         @method('post')
@@ -74,6 +75,48 @@
                                                 <i class="prefix-icon anticon anticon-lock"></i>
                                                 <input type="password" name="password" class="form-control"
                                                     id="password" placeholder="Password">
+                                                <i class="suffix-icon fa-ey toggle-password" onclick="togglePasswordVisibility()"><img src="site_web/img/lg/cacher.png" alt=""  class=""> </i>
+                                                <i class="suffix-icon toggle fa-eye-slas" onclick="togglePasswordVisibility()"><img src="site_web/img/lg/oeil.png" alt="" class=""> </i>
+                                                <style>
+
+                                                  .toggle-password {
+                                                  
+                                                    cursor: pointer;
+                                                  }
+                                                  .fa-ey
+                                                  {
+                                                    display: block;
+
+                                                  }
+                                                  .fa-eye-slas
+                                                  {
+                                                    display: none;
+                                                  }
+                                                </style> 
+                                                <script>
+                                                  function togglePasswordVisibility() {
+                                                    const passwordInput = document.getElementById('password');
+                                                    const toggleIcon = document.querySelector('.toggle-password');
+                                                    const toggleIcons = document.querySelector('.toggle');
+                                                    if (passwordInput.type === 'password') {
+                                                      passwordInput.type = 'text';
+                                                      toggleIcon.classList.remove('fa-ey');
+                                                      toggleIcon.classList.add('fa-eye-slas');
+                                                      toggleIcons.classList.remove('fa-eye-slas');
+                                                      toggleIcons.classList.add('fa-ey');
+                                                     
+                                                    }
+                                                     else {
+                                                      passwordInput.type = 'password';
+                                                      toggleIcons.classList.remove('fa-ey');
+                                                      toggleIcons.classList.add('fa-eye-slas');
+                                                      
+                                                      toggleIcon.classList.remove('fa-eye-slas');
+                                                      toggleIcon.classList.add('fa-ey');
+                                                    }
+                                                  }
+
+                                                </script> 
                                             </div>
                                         </div>
                                         <div class="form-group">

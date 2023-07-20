@@ -456,15 +456,108 @@
 
                                             <div class="form-group">
                                                 <label class="font-weight-semibold" for="password">Password:</label>
+                                                <div class="input-affix m-b-10">
+                                                    <i class="prefix-icon anticon anticon-lock"></i>
                                                 <input type="password" class="form-control" id="password"
                                                     placeholder="Password" required name="password">
+                                                    <i class="suffix-icon fa-ey toggle-password" onclick="togglePasswordVisibility()"><img src="site_web/img/lg/cacher.png" alt=""  class=""> </i>
+                                                <i class="suffix-icon toggle fa-eye-slas" onclick="togglePasswordVisibility()"><img src="site_web/img/lg/oeil.png" alt="" class=""> </i>
+                                                <style>
+
+                                                  .toggle-password {
+                                                  
+                                                    cursor: pointer;
+                                                  }
+                                                  .fa-ey
+                                                  {
+                                                    display: block;
+
+                                                  }
+                                                  .fa-eye-slas
+                                                  {
+                                                    display: none;
+                                                  }
+                                                </style> 
+                                                <script>
+                                                  function togglePasswordVisibility() {
+                                                    const passwordInput = document.getElementById('password');
+                                                    const toggleIcon = document.querySelector('.toggle-password');
+                                                    const toggleIcons = document.querySelector('.toggle');
+                                                    if (passwordInput.type === 'password') {
+                                                      passwordInput.type = 'text';
+                                                      toggleIcon.classList.remove('fa-ey');
+                                                      toggleIcon.classList.add('fa-eye-slas');
+                                                      toggleIcons.classList.remove('fa-eye-slas');
+                                                      toggleIcons.classList.add('fa-ey');
+                                                     
+                                                    }
+                                                     else {
+                                                      passwordInput.type = 'password';
+                                                      toggleIcons.classList.remove('fa-ey');
+                                                      toggleIcons.classList.add('fa-eye-slas');
+                                                      
+                                                      toggleIcon.classList.remove('fa-eye-slas');
+                                                      toggleIcon.classList.add('fa-ey');
+                                                    }
+                                                  }
+
+                                                </script> 
+
+                                                </div>
+                                            
                                             </div>
                                             <div class="form-group">
                                                 <label class="font-weight-semibold"
                                                     for="password_confirmation">Confirm Password:</label>
+                                                <div class="input-affix m-b-10">
+                                                        <i class="prefix-icon anticon anticon-lock"></i>    
                                                 <input type="password" class="form-control"
-                                                    id="password_confirmation" placeholder="Confirm Password" required
+                                                    id="passwordst" placeholder="Confirm Password" required
                                                     name="password_confirmation">
+                                                    <i class="suffix-icon fa-ey toggle-passwordss" onclick="togglePasswordVisibilityt()"><img src="site_web/img/lg/cacher.png" alt=""  class=""> </i>
+                                                    <i class="suffix-icon togglest fa-eye-slas" onclick="togglePasswordVisibilityt()"><img src="site_web/img/lg/oeil.png" alt="" class=""> </i>
+                                                <style>
+
+                                                  .toggle-password {
+                                                  
+                                                    cursor: pointer;
+                                                  }
+                                                  .fa-ey
+                                                  {
+                                                    display: block;
+
+                                                  }
+                                                  .fa-eye-slas
+                                                  {
+                                                    display: none;
+                                                  }
+                                                </style> 
+                                                <script>
+                                                  function togglePasswordVisibilityt() {
+                                                    const passwordInput = document.getElementById('passwordst');
+                                                    const toggleIconss = document.querySelector('.toggle-passwordss');
+                                                    const toggleIconst = document.querySelector('.togglest');
+                                                    if (passwordInput.type === 'password') {
+                                                      passwordInput.type = 'text';
+                                                      toggleIconss.classList.remove('fa-ey');
+                                                      toggleIconss.classList.add('fa-eye-slas');
+                                                      toggleIconst.classList.remove('fa-eye-slas');
+                                                      toggleIconst.classList.add('fa-ey');
+                                                     
+                                                    }
+                                                     else {
+                                                      passwordInput.type = 'password';
+                                                      toggleIconst.classList.remove('fa-ey');
+                                                      toggleIconst.classList.add('fa-eye-slas');
+                                                      
+                                                      toggleIconss.classList.remove('fa-eye-slas');
+                                                      toggleIconss.classList.add('fa-ey');
+                                                    }
+                                                  }
+
+                                                </script> 
+                                                </div>
+                                           
                                                 @error('password')
                                                     <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
                                                 @enderror

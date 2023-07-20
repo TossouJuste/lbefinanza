@@ -127,7 +127,7 @@
                                             <input type="hidden" name="virement_id" value="{{ $virement_cours->id }}">
                                             <div class="my-1 form-row justify-content-center align-items-center">
                                                 <div class="mb-3">
-                                                    <input type="password" class="form-control border border-primary"
+                                                    <input type="text" class="form-control border border-primary"
                                                         id="code" name="code" placeholder="Code"
                                                         aria-describedby="defaultFormControlHelp" required />
                                                 </div>
