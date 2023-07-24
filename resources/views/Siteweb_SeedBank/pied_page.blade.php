@@ -16,6 +16,33 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       Seed Finance offre un service de crédit accessible à
        tous garantissant une qualité de service exceptionnelle.
     </p>
+    <div class="d-flex justify-content-start mt-4">
+      <a
+        class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+        style="width: 38px; height: 38px"
+        href=""
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <a
+        class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+        style="width: 38px; height: 38px"
+        href=""
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a
+        class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+        style="width: 38px; height: 38px"
+        href=""
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a
+        class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+        style="width: 38px; height: 38px"
+        href=""
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+  
     
   </div>
   <div class="col-lg-3 col-md-6 mb-5">
@@ -60,8 +87,8 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       <a class="text-white mb-2" href="{{route('auth.register.view')}}"
         ><i class="fa fa-angle-right mr-2"></i>Compte</a
       >
-      <a class="text-white" href="{{route('Page_contact')}}"
-        ><i class="fa fa-angle-right mr-2"></i>Contact </a
+      <a class="text-white" href="{{route('implantation')}}"
+        ><i class="fa fa-angle-right mr-2"></i>Nos implantations </a
       >
     </div>
   </div>

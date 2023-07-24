@@ -32,6 +32,72 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="site_web/css/style.css" rel="stylesheet" />
+    <style>
+      .one_text
+      {
+        position: relative;
+      }
+      .second_text::before
+      {
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-left: 2px solid #17A2B8;
+        animation: animate 9s steps(12) infinite; 
+      }
+
+      @keyframes animate 
+      {
+        40%,60%
+        {
+          left: 100%;
+        }
+        100%
+        {
+          left: 0;
+        }
+      }
+      
+          
+    .carousel {
+      overflow: hidden;
+      width: 100%;
+      height: 300px;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 300%;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Optional: Add styles for navigation buttons */
+    .carousel-prev,
+    .carousel-next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+    }
+
+    .carousel-prev {
+      left: 0;
+    }
+
+    .carousel-next {
+      right: 0;
+    }
+    </style>
     
 
   </head>
@@ -46,16 +112,18 @@
       <div class="row align-items-center px-3 ">
         <div class="col-lg-6 text-center text-lg-left" style="margin-top:100px;">
          
-          <h3 class="display-3 font-weight-bold text-white">
-           Seed Finance !
-          </h3>
+          <div class="display-3 font-weight-bold text-white">
+             <span class="one_text one_first " style="color: #249DD5"> <span style="color: #F49122">Seed </span> Finance <span style="color:  #F49122">!</span> </span>
+            
+
+          </div>
           
           <p class="text-white mb-4">
             Votre banque spécialisée dans les crédits bancaires, assurance, épargne, transferts, investissements en crypto-monnaies... 
             une banque présente à vos côtés, pensée pour répondre à vos besoins au quotidien.
            
           </p>
-          <a href="{{ route('Page_about')}}" class="btn btn-secondary mt-1 py-3 px-4 rounded">En savoir plus </a>
+          <a href="{{ route('Page_about')}}" class="btn mt-1 py-3 px-4 rounded" style="background-color: #F49122;color:white;">En savoir plus </a>
         </div>
         
       </div>
@@ -63,22 +131,35 @@
     <!-- Header End -->
 
     <!-- Facilities Start -->
+  
+ 
     
     <div class="container-fluid">
-
+      
+     
       <div class="d-flex flex-column align-items-center justify-content-center">
-        <div class="align-items-center justify-content-center mb-2" style="height:5px;width:100px;background-color:#17A2B8; border-radius:3px;">
+        <div class=" d-none d-md-flex d-sm-flex font-weight-bold text-white mb-2">
+          <span class="one_text one_first " style=" font-size:22px;"> <span style="color: #F49122">Seed </span> </span>
+          <span class="one_text second_text" style="color: #249DD5;font-size:22px;">Bank votre partenaire fidèle <img src="site_web/img/lg/calin-virtuel.png" alt=""></span>
+  
+       </div>
+       <div class=" d-md-none d-sm-none  display-3 font-weight-bold text-white mb-2">
+        <span class="one_text one_first " style=" font-size:14px;"> <span style="color: #F49122">Seed </span> </span>
+        <span class="one_text second_text" style="color: #249DD5;font-size:14px;">Bank votre partenaire fidèle <img src="site_web/img/lg/calin-virtuel.png" alt=""></span>
+
+     </div>
+      <div class="align-items-center justify-content-center mb-2" style="height:5px;width:100px;background-color:#17A2B8; border-radius:3px;">
 
         </div>
 
-        <p class="" style="font-size: 16px; color:black;font-weight:bold;">Avec l'appli, découvrez vos comptes bancaires comme vous ne les avez jamais vus !</p>
+        <p class="" style="font-size: 16px; color:black;font-weight:bold;">Avec l'appli, découvrez vos comptes bancaires <span><img src="site_web/img/lg/calin-virtuel.png" alt=""></span> comme vous ne les avez jamais vus !</p>
 
-       </div>
+      </div>
        
       <div class="d-flex align-items-center justify-content-center" style="background-color: aliceblue;padding:40px;">
 
       
-        <div class="row  ">
+        <div class="row">
 
           <div class="col-md-6 d-flex align-items-center justify-content-center">
             <img src="site_web/img/lg/mobile.gif" alt="" class="img-fluid" style="height:300px;">
@@ -110,26 +191,121 @@
         </div>
 
       </div>
+      <div class="container-fluid mt-2">
+      
+     
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class=" d-none d-md-flex d-sm-flex font-weight-bold text-white mb-2">
+            <span class="one_text one_first " style=" font-size:22px;"> <span style="color: #F49122">Découvrez vos  </span> </span>
+            <span class="one_text second_text" style="color: #249DD5;font-size:22px;"> <span style="font-size:1px;margin-left:3px;"> °</span> cartes bancaires Seed <img src="site_web/img/lg/coeur.png" alt=""></span>
+    
+         </div>
+         <div class=" d-md-none d-sm-none  display-3 font-weight-bold text-white mb-2">
+          <span class="one_text one_first " style=" font-size:14px;"> <<span style="color: #F49122">Découvrez vos  </span> </span>
+          <span class="one_text second_text" style="color: #249DD5;font-size:14px;"> <span style="font-size:1px;margin-left:2px;">°</span> cartes bancaires Seed </span>
+  
+       </div>
+        <div class="align-items-center justify-content-center mb-2" style="height:5px;width:100px;background-color:#17A2B8; border-radius:3px;">
+  
+          </div>
+  
+          <p class="" style="font-size: 16px; color:black;font-weight:bold;">UNE CARTE PENSÉE POUR VOUS <span style=""> <img src="site_web/img/lg/coeur.png" alt=""></span></span></p>
+  
+        </div>
+         
+        <div class="d-flex align-items-center justify-content-center" style="background-color: aliceblue;padding:40px;">
+  
+          <div class="row">
 
-      <div class="container col-md-9 d align-items-center justify-content-center mt-5 mb-5">
+            
+           <div class="">
+            <img src="site_web/img/lg/carte2.png" alt="" class="img-fluid"  >
+          </div>
+  
+            <div class=" col-md-6 flex-column  justify-content-center">
+              <div class="d-flex  ">
+                
+              <p>
+                J'ouvre un compte facilement et surtout (qu'on se le dise) 
+                rapidement, pour profiter vite de tous les avantages de ma carte Visa Internationale :</p>
+              </div>
+              <div class="d-flex justify-content-start">
+               <div style="margin-left: 3px;">
+                <img src="site_web/img/lg/check.svg" alt="" style="width:20px;heigth:20px;">
+               </div>
+               <p >Paiements simples et rapides 
+                </p>
+              </div>
+             <div class="d-flex ">
+              <div><img src="site_web/img/lg/check.svg" alt="" style="width:20px;heigth:20px;"></div>
+              <p>0 frais à l'étranger</p>
+             </div>
+             <div class="d-flex ">
+             <div> <img src="site_web/img/lg/check.svg" alt="" style="width:20px;heigth:20px;"></div>
+              <p>Garanties et assistances même à l'international</p>
+             </div>
+             <div class="d-flex ">
+              <div> <img src="site_web/img/lg/check.svg" alt="" style="width:20px;heigth:20px;"></div>
+               <p>Paramétrage de la carte à volonté </p>
+              </div>
+              <p>SeedBank offre une prime de bienvenue allant jusqu'à 110 euros à ses nouveaux clients pour l'ouverture d'un <a href="/register">compte bancaire en ligne</a></p>
+        <p class="d-none d-md-flex d-sm-flex">SeedBank propose 3 offres de compte bancaire avec carte Visa, dont deux gratuites. La gestion se fait entièrement à distance, par internet ou applications sur mobile. La banque en ligne se revendique depuis plus d'une dizaine d'années être la « banque la moins chère ».
+        </p><a href="/carte"> En savoir plus </a>
+           </div> 
+           
+        </div> 
+      </div>    
+
+      <div class="container-fluid align-items-center justify-content-center  mt-5 mb-5">
+        
         <p class="section-title px-5">
-          <span class="px-2 col-md-6 "> Ouvrez un compte aujourd'hui 
+          <span class="px-2 col-md-6 "> Bitcoin: L'avenir bancaire révolutionnaire.
           </span>
         </p>
-        <p>SeedBank offre une prime de bienvenue allant jusqu'à 110 euros à ses nouveaux clients pour l'ouverture d'un <a href="/register">compte bancaire en ligne</a></p>
-        <p>SeedBank propose 3 offres de compte bancaire avec carte Visa, dont deux gratuites. La gestion se fait entièrement à distance, par internet ou applications sur mobile. La banque en ligne se revendique depuis plus d'une dizaine d'années être la « banque la moins chère ».
-         <a href="/carte"> En savoir plus </a> </p>
+        <div class="d-flex align-items-center justify-content-center" style="background-color: aliceblue;padding:40px;">
+  
+          <div class="row">
+
+            
+           <div class=" col-md-6">
+              <img src="site_web/img/lg/btc2.jpg" alt="" class="img-fluid d-md-none d-sm-none" style=""  >
+              <img src="site_web/img/lg/btc2.jpg" alt="" class="img-fluid d-none d-md-flex d-sm-flex" style="height:300px;" >
+           </div>
+  
+            <div class=" col-md-6 flex-column  justify-content-center">
+              <div class="d-flex flex-column ">
+                
+                <p class="d-none d-md-flex d-sm-flex">
+                  Assurez votre tranquillité financière en saisissant dès aujourd'hui une opportunité d'investissement chez Seed Bank. Notre plateforme vous propose un revenu mensuel sécurisé, générant un rendement exceptionnel de 17% sur votre investissement. Vous pourrez ainsi consolider votre patrimoine tout 
+                  en bénéficiant d'une carte de retrait spéciale qui simplifiera vos transactions financières. 
+                  Faites confiance à Seed Bank pour vous accompagner vers un avenir financier prospère et serein. 
+                  Notre équipe d'experts se tient à votre disposition pour vous fournir un accompagnement personnalisé 
+                  tout au long de votre parcours d'investissement. <span><a href="/investment planning"></a></span>
+                  
+                </p>
+                <p class=" d-md-none d-sm-none">Protégez votre avenir financier en investissant dès aujourd'hui chez Seed Bank. Bénéficiez d'un revenu mensuel garanti de 17% sur votre investissement, 
+                  tout en profitant d'une carte de retrait spéciale pour faciliter vos transactions.<span> <a href="/investment planning">En savoir plus</a> </span>
+                </p>
+                
+              </div>
+              <a href="/investment planning" class="btn btn-primary px-4 mr-2 rounded"style="margin-top: 55px;text-align:left;">Faire une demande</a>
+            </div> 
+          </div>   
+           
+        </div> 
+        
       </div>
 
-      <div>
+      <div class="mt-3">
         <marquee behavior="" direction="" ><Span class="font-weight-bold text-black-500">Que pouvons-nous faire pour vous ?</Span></marquee>
-    </div>
+      </div>
 
     </div>
+
     <div class="container-fluid pt-5">
       <div class="container pb-3">
         <div class="row">
-          <div class="col-lg-4 col-md-6 pb-1">
+          <div class="col-lg-4 col-md-6 pb-1 d-none d-md-flex d-sm-flex">
             <div
               class="d-flex bg-light shadow-sm border-top rounded mb-4"
               style="padding: 30px"
@@ -137,7 +313,7 @@
               <i
                 class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
               ></i>
-              <div >
+              <div cla>
 
                 <div class="text-center">
                   <img src="../site_web/img/bio.png" alt="" style="width:60px;height:60px;margin-bottom:15px; " >
@@ -254,7 +430,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
+          <div class="col-lg-4 col-md-6 pb-1 d-none d-md-flex d-sm-flex">
             <div
               class="d-flex bg-light shadow-sm border-top rounded mb-4"
               style="padding: 30px"
@@ -326,7 +502,7 @@
                 </ul>
               </div>
             </div>
-            <a href="{{ route('Page_about')}}" class="btn btn-primary mt-2 py-2 px-4">En savoir plus</a>
+            <a href="{{ route('Page_about')}}" class="btn mt-2 py-2 px-4 rounded" style="background-color: #F49122;color:white;">En savoir plus</a>
           </div>
         </div>
       </div>
@@ -379,7 +555,7 @@
                   <div class="col-6 py-1">9700 $</div>
                 </div>
               </div>
-              <a href="{{route('Page_donation')}}" class="btn btn-primary px-4 mx-auto mb-4">Participer</a>
+              <a href="{{route('Page_donation')}}" class="btn rounded px-4 mx-auto mb-4" style="background-color: #F49122;color:white;">Participer</a>
             </div>
           </div>
           <div class="col-lg-4 mb-5">
@@ -418,7 +594,7 @@
                   <div class="col-6 py-1">45000 $</div>
                 </div>
               </div>
-              <a href="{{route('loan_entrepreneur')}}" class="btn btn-primary px-4 mx-auto mb-4">Je faire ma demande</a>
+              <a href="{{route('loan_entrepreneur')}}" class="btn rounded px-4 mx-auto mb-4" style="background-color: #F49122;color:white;">Je faire ma demande</a>
             </div>
           </div>
           <div class="col-lg-4 mb-5">
@@ -460,25 +636,53 @@
                   <div class="col-6 py-1">60000 $</div>
                 </div>
               </div>
-              <a href="{{ route('loan_personal')}}" class="btn btn-primary px-4 mx-auto mb-4">Je faire ma demande</a>
+              <a href="{{ route('loan_personal')}}" class="btn rounded  px-4 mx-auto mb-4" style="background-color: #F49122;color:white;">Je faire ma demande</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class=" " style="height:200px; align-items:center ">
-        <div class="aa">
-            <h1 class="font-open" style="margin:20px">Forts de plusieurs décennies d'expérience, nous sommes déterminés à répondre à vos besoins. Profitez de notre taux d'intérêt très compétitif sur le marché et de notre engagement envers un service de qualité irréprochable. Contactez-nous dès aujourd'hui pour bénéficier de nos services.
-                Nous sommes impatients de vous aider à atteindre vos objectifs financiers.</h1>
-         
+   </div>
+    
+     <div class="container">
+        <div class="d-flex flex-wrap">
+
+          <div>
+            <h3>Nous travaillons avec les meilleurs partenaires</h3>
+            <p class="">
+              En tant qu'allié au sommet de l'industrie, 
+              Seed Bank s'engage à vous offrir le meilleur. 
+              vos ambitions prendront 
+              racine et s'épanouiront comme jamais auparavant. 
+              Grâce à notre expertise avant-gardiste et à notre dévouement, 
+              nous sommes prêts à vous accompagner dans la réalisation de vos projets les plus audacieux.
+              Ensemble, nous ferons fructifier votre succès et cultiverons un avenir florissant.
+
+            </p>
+          </div>
+          <div class="d-flex flex-row flex-wrap align-items-center justify-content-center">
+            
+            <div class="mt-2 mb-2" ><img src="site_web/img/lg/bankamerica.png" alt="" class="img-fluid" style="height:60px;"></div>
+            
+            <div class="mt-2 mb-2 ml-2 mr-2" ><img src="site_web/img/lg/orangebank.png"  alt=""  class="img-fluid" style="height:60px;"></div>
+            <div class="mt-2 mb-2" ><img src="site_web/img/lg/hellobank.png" alt="" class="img-fluid" style="height:60px;"></div>
+            <div class="mt-2 mb-2" ><img src="site_web/img/lg/bank.png" alt="" class="img-fluid" style="height:60px;"></div>
+          
+          </div>
+
         </div>
      </div>
+    </div>
+  </div>
+
+    
     <!-- Class End -->
 
   
 
     <!--footer-->
+    <div style="width: 100%;">
     @include('Siteweb_SeedBank.pied_page')
+   </div>
 
     
 

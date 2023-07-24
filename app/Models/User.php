@@ -35,6 +35,7 @@ class User extends Authenticatable
         'telephone',
         'civilite',
         'pays',
+        'Types_comptes',
         'password',
         'piece',
         'admin_validation',

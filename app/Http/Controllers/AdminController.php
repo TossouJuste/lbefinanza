@@ -11,6 +11,7 @@ use App\Models\donation;
 use App\Models\investissement;
 use App\Models\contact;
 use App\Models\carte;
+use App\Models\Assurance;
 use App\Models\Virement;
 use App\Models\Portefeuille;
 
@@ -238,6 +239,8 @@ class AdminController extends Controller
 
         return view('admin_dashbord.pages.Demandecarte', compact('donnee'));
     }
+
+   
 
     public function carte_control(carte $table,$id)
     {

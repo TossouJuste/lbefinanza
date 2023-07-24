@@ -438,9 +438,19 @@
 
                                         <div class="step">
                                             <div class="form-group flex flex-col">
+                                                 <label for="comptes"
+                                                    class="form-label font-weight-semibold "> Types de comptes</label>
+                                                <select class="form-select border-2 border-indigo-200 rounded-lg py-2 mb-2 form-control"
+                                                    required id="Types_comptes" name="comptes"
+                                                    aria-label="Default select example">
+
+                                                    <option value="Compte Courant">Compte Courant</option>
+                                                    <option value="Compte Epargne">Compte Epargne</option>
+                                                    
+                                                </select>
                                                 <label for="devise"
                                                     class="form-label font-weight-semibold ">DEVISE</label>
-                                                <select class="form-select border-2 border-indigo-200 rounded-lg py-2 "
+                                                <select class="form-select border-2 border-indigo-200 rounded-lg py-2 form-control "
                                                     required id="devise" name="devise"
                                                     aria-label="Default select example">
 

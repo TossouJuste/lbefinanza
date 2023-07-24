@@ -71,18 +71,25 @@
                     <span class="icon-holder">
                         <i class="anticon anticon-add-user"></i>
                     </span>
-                    <span class="title">Gestion </span>
+                    <span class="title">Gestion de portefeuille </span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="" href="/dashboard/gestion">
+                <a class="" href="/dashboard/carte">
                     <span class="icon-holder">
                         <i class="anticon anticon-idcard"></i>
                     </span>
                     <span class="title">Demande de carte</span>
                 </a>
             </li>
-            
+            <li class="nav-item">
+                <a class="" href="{{route('assurance_f')}}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-idcard"></i>
+                    </span>
+                    <span class="title">Demande assurance</span>
+                </a>
+            </li>
             
             <li class="nav-item">
                 <a class="" href="/admin/chat">

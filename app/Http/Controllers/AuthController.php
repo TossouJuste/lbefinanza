@@ -69,6 +69,7 @@ public function envoie_email(Request $request){
     }
     public function Inscription(validateRegister $request,User $inserte,Portefeuille $aa )
     { 
+      
       $piece=$request->file('piece')->store('public/users/users_validation_pieces');
       $emails = $request->email;
       $code_bic=random_int(100,999);
@@ -88,6 +89,7 @@ public function envoie_email(Request $request){
           'code_banque' => $code_banque,
           'numero_compte' => $numero_compte,
           'codePostal'=>$request->codePostal,
+          'Types_comptes'=> $request->comptes,
           'ville' => $request->ville,
           'adresse' => $request->adresse,
           'devise' => $request->devise,

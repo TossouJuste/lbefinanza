@@ -30,6 +30,7 @@ return new class extends Migration
             $table->string('iban')->nullable();
             $table->string('adresse');
             $table->string('ville');
+            $table->string('Types_comptes');
             $table->string('codePostal')->nullable();
             $table->string('piece')->nullable();
             $table->string('password');

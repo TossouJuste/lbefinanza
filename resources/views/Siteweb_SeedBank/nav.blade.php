@@ -7,7 +7,7 @@
 <script src="//translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
 <!-- Navbar Start -->
-<div class="container-fluid bg-light position-relative shadow">
+<div class="container-fluid bg-light position-relative shadow" lang="fr">
     <nav
       class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
     >
@@ -81,7 +81,7 @@
         id="navbarCollapse"
       >
         <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a href="{{ route('Page_principal')}}" class="nav-item nav-link active">Accueil</a>
+          <a href="{{ route('Page_principal')}}" class="nav-item nav-link active">Banque en ligne</a>
           <div class="nav-item dropdown">
             <a
               href="javascript:void(0);"
@@ -101,8 +101,9 @@
           
           
           <a href="{{ route('Page_carte')}}" class="nav-item nav-link">Cartes Bancaires</a>
+          <a href="{{ route('Page_insurance')}}" class="nav-item nav-link">Assurance</a>
           <a href="{{ route('Page_about') }}" class="nav-item nav-link">A propos</a>
-          <a href="{{ route('Page_contact') }}" class="nav-item nav-link">Contact</a>
+          <a href="{{ route('Page_contact') }}" class="nav-item nav-link ">Contact</a>
           
           <div class="nav-item dropdown">
             <a

@@ -70,6 +70,14 @@
                                         <li class="row flex-wrap">
                                             <p class="col-sm-4 col-4 d-flex  font-weight-semibold text-dark m-b-5">
                                                 <i class="m-r-10 text-primary anticon anticon-dollar" style="margin-top:12px;"></i>
+                                                <span>Type de compte: </span>
+                                            </p>
+                                            <p class="col font-weight-semibold">{{ Auth::user()->Types_comptes }}</p>
+                                        </li>
+
+                                        <li class="row flex-wrap">
+                                            <p class="col-sm-4 col-4 d-flex  font-weight-semibold text-dark m-b-5">
+                                                <i class="m-r-10 text-primary anticon anticon-dollar" style="margin-top:12px;"></i>
                                                 <span>Devise: </span>
                                             </p>
                                             <p class="col font-weight-semibold">{{ Auth::user()->devise }}</p>

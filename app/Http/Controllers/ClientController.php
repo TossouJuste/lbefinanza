@@ -11,7 +11,11 @@ use Illuminate\Support\Facades\DB;
 
 class ClientController extends Controller
 {
-    //
+    
+    public function implantation()
+    {
+        return view('Siteweb_SeedBank.Page_formulaire.nos_implantations');
+    }
     public function accueil_dashboard()
     {
         return view('client_dashboard.pages.index');

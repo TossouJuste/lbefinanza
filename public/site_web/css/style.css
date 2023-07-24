@@ -9885,6 +9885,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: FP-open;
   font-size: 16px;
 }
+.font-opens
+{
+  font-family: FP-open;
+}
 .aa
 {
   margin-left: 30px;
@@ -9892,4 +9896,7 @@ a.text-dark:hover, a.text-dark:focus {
  
   
   
+}
+h1{
+  font-family: FP-open;
 }

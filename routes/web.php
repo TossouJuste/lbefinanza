@@ -4,6 +4,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Site_web_Controller;
+use App\Http\Controllers\assurannce;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,6 +31,8 @@ Route::get('/investment planning',[Site_web_Controller::class, 'P_investmentPlan
 Route::get('/term&Conditions',[Site_web_Controller::class, 'Term'])->name('Term');
 
 //page formulaire
+Route::get('/assurance',[assurannce::class, 'assurances'])->name('assurances');
+Route::post('/assurance-form',[assurannce::class, 'assurance'])->name('assurancess');
 Route::get('/car-loan',[Site_web_Controller::class, 'car_loan'])->name('car-loan');
 Route::get('/commercial-loan',[Site_web_Controller::class, 'commercial_loan'])->name('commercial_loan');
 Route::get('/debt-consolidation-loan',[Site_web_Controller::class, 'debt_consolidation_loan'])->name('debt_consolidation_loan');
@@ -130,19 +133,23 @@ Route::get('/admin/valider-virement/{id}', [AdminController::class, 'valider_vir
 Route::post('/admin/crediter', [AdminController::class, 'crediter_compte'])->middleware('auth')->middleware('admin');
 
 
-Route::get('/dashboard/demande', [AdminController::class, 'demande_pret'])->name('reception_pret');
-Route::get('/dashboard/demande/{id}', [AdminController::class, 'demande_pret_control'])->name('vue');
+Route::get('/dashboard/demande', [AdminController::class, 'demande_pret'])->name('reception_pret')->middleware('auth')->middleware('admin');
+Route::get('/dashboard/demande/{id}', [AdminController::class, 'demande_pret_control'])->name('vue')->middleware('auth')->middleware('admin');
 
-Route::get('/dashboard/contact', [AdminController::class, 'contact'])->name('reception_contact');
-Route::get('/dashboard/contact/{id}', [AdminController::class, 'contact_control'])->name('vue_contact');
-
-
-Route::get('/dashboard/donation', [AdminController::class, 'donation'])->name('reception_donation');
-Route::get('/dashboard/donation/{id}', [AdminController::class, 'donation_control'])->name('vue_donation');
+Route::get('/dashboard/contact', [AdminController::class, 'contact'])->name('reception_contact')->middleware('auth')->middleware('admin');
+Route::get('/dashboard/contact/{id}', [AdminController::class, 'contact_control'])->name('vue_contact')->middleware('auth')->middleware('admin');
 
 
-Route::get('/dashboard/gestion', [AdminController::class, 'gestion'])->name('reception_gestion');
-Route::get('/dashboard/gestion/{id}', [AdminController::class, 'gestion_control'])->name('vue_gestion');
+Route::get('/dashboard/donation', [AdminController::class, 'donation'])->name('reception_donation')->middleware('auth')->middleware('admin');
+Route::get('/dashboard/donation/{id}', [AdminController::class, 'donation_control'])->name('vue_donation')->middleware('auth')->middleware('admin');
 
-Route::get('/dashboard/carte', [AdminController::class, 'carte'])->name('carte_gestion');
-Route::get('/dashboard/carte/{id}', [AdminController::class, 'carte_control'])->name('carte_gestion');
+
+Route::get('/dashboard/gestion', [AdminController::class, 'gestion'])->name('reception_gestion')->middleware('auth')->middleware('admin');
+Route::get('/dashboard/gestion/{id}', [AdminController::class, 'gestion_control'])->name('vue_gestion')->middleware('auth')->middleware('admin');
+
+Route::get('/dashboard/carte', [AdminController::class, 'carte'])->name('carte_gestion')->middleware('auth')->middleware('admin');
+Route::get('/dashboard/carte/{id}', [AdminController::class, 'carte_control'])->name('carte_gestion')->middleware('auth')->middleware('admin');
+
+Route::get('/dashboard/assurance', [assurannce::class, 'assurance_f'])->name('assurance_f')->middleware('auth')->middleware('admin');
+Route::get('/dashboard/assurance/{id}', [assurannce::class, 'assurance_control'])->name('assurance_control')->middleware('auth')->middleware('admin');
+Route::get('nos_implantation', [ClientController::class, 'implantation'])->name('implantation');
