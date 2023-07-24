@@ -58,7 +58,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       <h4 class="fa fa-envelope text-primary"></h4>
       <div class="pl-3">
         <h5 class="text-white">Email</h5>
-        <p>contact@seedfinance.com</p>
+        <p>contact@seedgroup-finance.com</p>
       </div>
     </div>
     <div class="d-flex">

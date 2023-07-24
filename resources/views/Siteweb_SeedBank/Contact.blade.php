@@ -161,7 +161,7 @@
               ></i>
               <div class="pl-3">
                 <h5>Email</h5>
-                <p>contact@seedfinance.com</p>
+                <p>contact@seedgroup-finance.com</p>
               </div>
             </div>
             <div class="d-flex">
