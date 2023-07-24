@@ -12,7 +12,7 @@
       class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
     >
       <a
-        href=""
+        href="/"
         class="navbar-brand font-weight-bold text-secondary"
         style="font-size: 30px"
       >
