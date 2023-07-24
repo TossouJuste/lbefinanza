@@ -218,7 +218,7 @@
           <div class="row">
 
             
-           <div class="">
+           <div class="col-md-6">
             <img src="site_web/img/lg/carte2.png" alt="" class="img-fluid"  >
           </div>
   

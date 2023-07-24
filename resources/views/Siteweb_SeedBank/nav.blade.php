@@ -91,6 +91,7 @@
             >
             <div class="dropdown-menu rounded-0 m-0">
               <a href=" {{ route('auth.register.view')}} " class="dropdown-item">Overture compte bancaire</a>
+              <a href="{{ route('Page_carte')}}" class="dropdown-item">Cartes Bancaires</a>
               <a href=" {{ route('Page_donation')}} " class="dropdown-item">Donation</a>
               <a href=" {{ route('Page_loan')}} " class="dropdown-item">Prêt</a>
              
@@ -100,10 +101,10 @@
           </div>
           
           
-          <a href="{{ route('Page_carte')}}" class="nav-item nav-link">Cartes Bancaires</a>
+          
           <a href="{{ route('Page_insurance')}}" class="nav-item nav-link">Assurance</a>
           <a href="{{ route('Page_about') }}" class="nav-item nav-link">A propos</a>
-          <a href="{{ route('Page_contact') }}" class="nav-item nav-link ">Contact</a>
+         
           
           <div class="nav-item dropdown">
             <a
