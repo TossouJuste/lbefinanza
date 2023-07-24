@@ -84,8 +84,8 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       <a class="text-white mb-2" href="{{route('Page_carte')}}"
         ><i class="fa fa-angle-right mr-2"></i>Carte</a
       >
-      <a class="text-white mb-2" href="{{route('auth.register.view')}}"
-        ><i class="fa fa-angle-right mr-2"></i>Compte</a
+      <a class="text-white mb-2" href="/contact"
+        ><i class="fa fa-angle-right mr-2"></i>Contact</a
       >
       <a class="text-white" href="{{route('implantation')}}"
         ><i class="fa fa-angle-right mr-2"></i>Nos implantations </a
