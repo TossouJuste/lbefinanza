@@ -31,7 +31,7 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="site_web/css/style.css" rel="stylesheet" />
+    <link href="/site_web/css/style.css" rel="stylesheet" />
     <style>
       .one_text
       {
