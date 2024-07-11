@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Register Seed Finance</title>
+    <title>Registrati LBE Finanza</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/images/logo/favicon.png">
@@ -24,7 +24,7 @@
         <div class="container-fluid">
             <div class="d-flex full-height p-v-20 flex-column justify-content-between">
                 <div class="d-flex justify-content-between align-items-center p-h-40">
-                    <a href="/"><img src="assets/images/logo/logo.png" alt=""></a>
+                    <a href="/"><img src="site_web/img/logo.png" alt=""></a>
                     <a href="javascript:void(0);" class="me-1" data-toggle="modal" data-target="#quick-view">
                         <i class="fas fa-language" style="font-size: 30px"></i>
                     </a>
@@ -40,15 +40,15 @@
 
                                 <div class="card-body">
 
-                                    <h2 class="m-t-20">Inscription</h2>
-                                    <p class="m-b-30">Veuillez remplir le formulaire ci-dessous pour vous inscrire</p>
+                                    <h2 class="m-t-20">iscrizione</h2>
+                                    <p class="m-b-30">Si prega di compilare il modulo sottostante per registrarsi</p>
                                     <form id="step-form" class="step-form" enctype="multipart/form-data" onsubmit="return validateForm(event)"
                                         method="post" action="{{ route('auth.register') }}">
                                         @csrf
                                         @method('post')
 
                                         {{-- @error('password')
-                                    <p class="p-2 bg-red-100 mb-2">Merci de bien vouloir examiner le formulaire d'inscription afin de détecter et de corriger toute éventuelle erreur.</p>
+                                    <p class="p-2 bg-red-100 mb-2">Si prega di rivedere il modulo di registrazione per rilevare e correggere eventuali errori.</p>
                                     @enderror --}}
                                         @if ($errors->any())
                                             <div class="alert alert-danger">
@@ -63,17 +63,17 @@
 
                                         <div class="step step-form">
                                             <div class="form-group">
-                                                <label class="font-weight-semibold" for="nom">NOM</label>
+                                                <label class="font-weight-semibold" for="nom">COGNOME</label>
                                                 <input type="text" class="form-control" id="nom" required
-                                                    name="nom" placeholder="Votre nom" value={{ old('nom') }}>
+                                                    name="nom" placeholder="Il tuo cognome" value={{ old('nom') }}>
                                                 @error('nom')
                                                     <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                             <div class="form-group">
-                                                <label class="font-weight-semibold" for="prenom">PRENOM</label>
+                                                <label class="font-weight-semibold" for="prenom">NOME</label>
                                                 <input type="text" class="form-control" id="prenom" required
-                                                    name="prenom" placeholder="Votre prénom" value={{ old('prenom') }}>
+                                                    name="prenom" placeholder="Il tuo nome" value={{ old('prenom') }}>
                                                 @error('prenom')
                                                     <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
                                                 @enderror
@@ -81,16 +81,15 @@
                                             <div class="form-group">
                                                 <label class="font-weight-semibold" for="email">EMAIL</label>
                                                 <input type="email" class="form-control" id="email" required
-                                                    name="email" placeholder="Votre email" value={{ old('email') }}>
+                                                    name="email" placeholder="la tua email" value={{ old('email') }}>
                                                 @error('email')
                                                     <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
                                                 @enderror
                                             </div>
                                             <div class="form-group">
-                                                <label class="font-weight-semibold" for="telephone">NUMERO DE
-                                                    TELEPHONE</label>
+                                                <label class="font-weight-semibold" for="telephone">NUMERO DI TELEFONO</label>
                                                 <input type="tel" class="form-control" id="telephone" required
-                                                    name="telephone" placeholder="Votre numero de télephone"
+                                                    name="telephone" placeholder="il tuo numero di telefono"
                                                     value={{ old('telephone') }}>
                                                 @error('telephone')
                                                     <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
@@ -98,20 +97,20 @@
                                             </div>
                                             <button
                                                 class="btn btn-primary next-btn hover:bg-green-500 hover:border-green-500"
-                                                onclick="nextStep(event)">Suivant</button>
+                                                onclick="nextStep(event)">Seguente</button>
                                         </div>
                                         <!-- civilite et pays  -->
 
                                         <div class="step">
                                             <div class="form-group flex flex-col">
                                                 <label class="font-weight-semibold form-label"
-                                                    for="civilite">CIVILITE</label>
+                                                    for="civilite">CIVILTÀ</label>
                                                 <select class="form-select border-2 border-indigo-200 rounded-lg py-2 "
                                                     required name="civilite" id="civilite"
                                                     aria-label="Default select example" value={{ old('civilite') }}>
 
-                                                    <option value="Masculin">Masculin</option>
-                                                    <option value="Féminin">Féminin</option>
+                                                    <option value="Male">Maschio</option>
+                                                    <option value="Femminile">Femminile</option>
                                                 </select>
                                                 @error('civilite')
                                                     <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
@@ -119,8 +118,7 @@
 
                                             </div>
                                             <div class="form-group flex flex-col">
-                                                <label for="piece" class="form-label">Ajouter une pièce
-                                                    d'identité</label>
+                                                <label for="piece" class="form-label">Aggiungi un documento d'identità</label>
                                                 <input class="form-control" required type="file" name="piece"
                                                     id="piece" value={{ old('piece') }} />
                                                 @error('piece')
@@ -133,7 +131,7 @@
 
                                             <div class="form-group flex flex-col">
                                                 <label for="pays"
-                                                    class="form-label font-weight-semibold ">PAYS</label>
+                                                    class="form-label font-weight-semibold ">PAESE</label>
                                                 <select class="form-select border-2 border-indigo-200 rounded-lg py-2"
                                                     required id="pays" name="pays"
                                                     aria-label="Default select example" value={{ old('pays') }}>
@@ -141,119 +139,116 @@
                                                     <option value="France">France </option>
 
                                                     <option value="Afghanistan">Afghanistan </option>
-                                                    <option value="Afrique_Centrale">Afrique_Centrale </option>
-                                                    <option value="Afrique_du_sud">Afrique_du_Sud </option>
-                                                    <option value="Albanie">Albanie </option>
-                                                    <option value="Algerie">Algerie </option>
-                                                    <option value="Allemagne">Allemagne </option>
-                                                    <option value="Andorre">Andorre </option>
-                                                    <option value="Angola">Angola </option>
-                                                    <option value="Anguilla">Anguilla </option>
-                                                    <option value="Arabie_Saoudite">Arabie_Saoudite </option>
-                                                    <option value="Argentine">Argentine </option>
-                                                    <option value="Armenie">Armenie </option>
-                                                    <option value="Australie">Australie </option>
-                                                    <option value="Autriche">Autriche </option>
-                                                    <option value="Azerbaidjan">Azerbaidjan </option>
+ <option value="Africa_Centrale">Africa_Centrale </option>
+ <option value="Sud_Africa">Sud_Africa </option>
+ <option value="Albania">Albania </option>
+ <option value="Algeria">Algeria </option>
+ <option value="Germania">Germania </option>
+ <option value="Andorra">Andorra </option>
+ <option value="Angola">Angola </option>
+ <option value="Anguilla">Anguilla </option>
+ <option value="Arabia_Saudita">Arabia_Saudita </option>
+ <option value="Argentina">Argentina </option>
+ <option value="Armenia">Armenia </option>
+ <option value="Australia">Australia </option>
+ <option value="Austria">Austria </option>
+ <option value="Azerbaigian">Azerbaigian </option>
+ <option value="Bahamas">Bahamas </option>
+ <option value="Bangladesh">Bangladesh </option>
+ <option value="Barbados">Barbados </option>
+ <option value="Bahrein">Bahrein </option>
+ <option value="Belgio">Belgio </option>
+ <option value="Belize">Belize </option>
+ <option value="Benin">Benin </option>
+ <option value="Bermuda">Bermuda </option>
+ <option value="Bielorussia">Bielorussia </option>
+ <option value="Bolivia">Bolivia </option>
+ <option value="Botswana">Botswana </option>
+ <option value="Bhutan">Bhutan </option>
+ <option value="Boznia_Erzegovina">Boznia_Erzegovina </option>
+ <option value="Brasile">Brasile </option>
+ <option value="Brunei">Brunei </option>
+ <option value="Bulgaria">Bulgaria </option>
+ <option value="Burkina_Faso">Burkina_Faso </option>
+ <option value="Burundi">Burundi </option>
 
-                                                    <option value="Bahamas">Bahamas </option>
-                                                    <option value="Bangladesh">Bangladesh </option>
-                                                    <option value="Barbade">Barbade </option>
-                                                    <option value="Bahrein">Bahrein </option>
-                                                    <option value="Belgique">Belgique </option>
-                                                    <option value="Belize">Belize </option>
-                                                    <option value="Benin">Benin </option>
-                                                    <option value="Bermudes">Bermudes </option>
-                                                    <option value="Bielorussie">Bielorussie </option>
-                                                    <option value="Bolivie">Bolivie </option>
-                                                    <option value="Botswana">Botswana </option>
-                                                    <option value="Bhoutan">Bhoutan </option>
-                                                    <option value="Boznie_Herzegovine">Boznie_Herzegovine </option>
-                                                    <option value="Bresil">Bresil </option>
-                                                    <option value="Brunei">Brunei </option>
-                                                    <option value="Bulgarie">Bulgarie </option>
-                                                    <option value="Burkina_Faso">Burkina_Faso </option>
-                                                    <option value="Burundi">Burundi </option>
+ <option value="Caimano">Caimano </option>
+ <option value="Cambogia">Cambogia </option>
+ <option value="Camerun">Camerun </option>
+ <option value="Canada">Canada </option>
+ <option value="Canarie">Canarie </option>
+ <option value="Capo Verde">Capo Verde </option>
+ <option value="Cile">Cile </option>
+ <option value="Cina">Cina </option>
+ <option value="Cipro">Cipro </option>
+ <option value="Colombia">Colombia </option>
+ <option value="Comore">Colombia </option>
+ <option value="Congo">Congo </option>
+ <option value="Congo_democratico">Congo_democratico </option>
+ <option value="Cucina">Cucina </option>
+ <option value="Nord_Corea">Nord_Corea </option>
+ <option value="Corea_del_Sud">Corea_del_Sud </option>
+ <option value="Costa_Rica">Costa_Rica </option>
+ <option value="Costa d'Avorio">Costa d'Avorio </option>
+ <option value="Croazia">Croazia </option>
+ <option value="Cuba">Cuba </option>
 
-                                                    <option value="Caiman">Caiman </option>
-                                                    <option value="Cambodge">Cambodge </option>
-                                                    <option value="Cameroun">Cameroun </option>
-                                                    <option value="Canada">Canada </option>
-                                                    <option value="Canaries">Canaries </option>
-                                                    <option value="Cap_vert">Cap_Vert </option>
-                                                    <option value="Chili">Chili </option>
-                                                    <option value="Chine">Chine </option>
-                                                    <option value="Chypre">Chypre </option>
-                                                    <option value="Colombie">Colombie </option>
-                                                    <option value="Comores">Colombie </option>
-                                                    <option value="Congo">Congo </option>
-                                                    <option value="Congo_democratique">Congo_democratique </option>
-                                                    <option value="Cook">Cook </option>
-                                                    <option value="Coree_du_Nord">Coree_du_Nord </option>
-                                                    <option value="Coree_du_Sud">Coree_du_Sud </option>
-                                                    <option value="Costa_Rica">Costa_Rica </option>
-                                                    <option value="Cote_d_Ivoire">Côte_d_Ivoire </option>
-                                                    <option value="Croatie">Croatie </option>
-                                                    <option value="Cuba">Cuba </option>
+ <option value="Danimarca">Danimarca </option>
+ <option value="Gibuti">Gibuti </option>
+ <option value="Dominique">Dominique </option>
 
-                                                    <option value="Danemark">Danemark </option>
-                                                    <option value="Djibouti">Djibouti </option>
-                                                    <option value="Dominique">Dominique </option>
+ <option value="Egitto">Egitto </option>
+ <option value="Emirati_Arabi_Uniti">Emirati_Arabi_Uniti </option>
+ <option value="Ecuador">Ecuador </option>
+ <option value="Eritrea">Eritrea </option>
+ <option value="Spagna">Spagna </option>
+ <option value="Estonia">Estonia </option>
+ <option value="Stati Uniti">Stati Uniti </option>
+ <option value="Etiopia">Etiopia </option>
 
-                                                    <option value="Egypte">Egypte </option>
-                                                    <option value="Emirats_Arabes_Unis">Emirats_Arabes_Unis </option>
-                                                    <option value="Equateur">Equateur </option>
-                                                    <option value="Erythree">Erythree </option>
-                                                    <option value="Espagne">Espagne </option>
-                                                    <option value="Estonie">Estonie </option>
-                                                    <option value="Etats_Unis">Etats_Unis </option>
-                                                    <option value="Ethiopie">Ethiopie </option>
+ <option value="Falkland">Falkland </option>
+ <option value="Feroe">Feroe </option>
+ <option value="Fiji">Fiji </option>
+ <option value="Finlandia">Finlandia </option>
+ <option value="Francia">Francia </option>
 
-                                                    <option value="Falkland">Falkland </option>
-                                                    <option value="Feroe">Feroe </option>
-                                                    <option value="Fidji">Fidji </option>
-                                                    <option value="Finlande">Finlande </option>
-                                                    <option value="France">France </option>
+ <option value="Gabon">Gabon </option>
+ <option value="Gambia">Gambia </option>
+ <option value="Georgia">Georgia </option>
+ <option value="Ghana">Ghana </option>
+ <option value="Gibilterra">Gibilterra </option>
+ <option value="Grecia">Grecia </option>
+ <option value="Grenada">Grenada </option>
+ <option value="Groenlandia">Groenlandia </option>
+ <option value="Guadalupa">Guadalupa </option>
+ <option value="Guam">Guam </option>
+ <option value="Guatemala">Guatemala</option>
+ <option value="Guernsey">Guernsey </option>
+ <option value="Guinea">Guinea </option>
+ <option value="Guinee_Bissau">Guinee_Bissau </option>
+ <option value="Guinea Equatoriale">Guinea_Equatoriale </option>
+ <option value="Guyana">Guyana </option>
+ <option value="Guyane_francese ">Guyane_francese </option>
+ <option value="Haiti">Haiti </option>
+ <option value="Hawaii">Hawaii </option>
+ <option value="Honduras">Honduras </option>
+ <option value="Hong_Kong">Hong_Kong </option>
+ <option value="Ungheria">Ungheria </option>
 
-                                                    <option value="Gabon">Gabon </option>
-                                                    <option value="Gambie">Gambie </option>
-                                                    <option value="Georgie">Georgie </option>
-                                                    <option value="Ghana">Ghana </option>
-                                                    <option value="Gibraltar">Gibraltar </option>
-                                                    <option value="Grece">Grece </option>
-                                                    <option value="Grenade">Grenade </option>
-                                                    <option value="Groenland">Groenland </option>
-                                                    <option value="Guadeloupe">Guadeloupe </option>
-                                                    <option value="Guam">Guam </option>
-                                                    <option value="Guatemala">Guatemala</option>
-                                                    <option value="Guernesey">Guernesey </option>
-                                                    <option value="Guinee">Guinee </option>
-                                                    <option value="Guinee_Bissau">Guinee_Bissau </option>
-                                                    <option value="Guinee equatoriale">Guinee_Equatoriale </option>
-                                                    <option value="Guyana">Guyana </option>
-                                                    <option value="Guyane_Francaise ">Guyane_Francaise </option>
+ <option value="India">India </option>
+ <option value="Indonesia">Indonesia </option>
+ <option value="Iran">Iran </option>
+ <option value="Iraq">Iraq </option>
+ <option value="Irlanda">Irlanda </option>
+ <option value="Islanda">Islanda </option>
+ <option value="Israele">Israele </option>
+ <option value="Italia">italia </option>
 
-                                                    <option value="Haiti">Haiti </option>
-                                                    <option value="Hawaii">Hawaii </option>
-                                                    <option value="Honduras">Honduras </option>
-                                                    <option value="Hong_Kong">Hong_Kong </option>
-                                                    <option value="Hongrie">Hongrie </option>
-
-                                                    <option value="Inde">Inde </option>
-                                                    <option value="Indonesie">Indonesie </option>
-                                                    <option value="Iran">Iran </option>
-                                                    <option value="Iraq">Iraq </option>
-                                                    <option value="Irlande">Irlande </option>
-                                                    <option value="Islande">Islande </option>
-                                                    <option value="Israel">Israel </option>
-                                                    <option value="Italie">italie </option>
-
-                                                    <option value="Jamaique">Jamaique </option>
-                                                    <option value="Jan Mayen">Jan Mayen </option>
-                                                    <option value="Japon">Japon </option>
-                                                    <option value="Jersey">Jersey </option>
-                                                    <option value="Jordanie">Jordanie </option>
-
+ <option value="Giamaica">Giamaica </option>
+ <option value="Jan Mayen">Jan Mayen </option>
+ <option value="Giappone">Giappone </option>
+ <option value="Jersey">Maglia </option>
+ <option value="Giordania">Giordania </option>
                                                     <option value="Kazakhstan">Kazakhstan </option>
                                                     <option value="Kenya">Kenya </option>
                                                     <option value="Kirghizstan">Kirghizistan </option>
@@ -402,9 +397,9 @@
 
                                             <div class="form-group">
                                                 <label class="font-weight-semibold form-label"
-                                                    for="adresse">ADRESSE</label>
+                                                    for="adresse">INDIRIZZO</label>
                                                 <input type="text" class="form-control" id="adresse" required
-                                                    name="adresse" placeholder="Votre address"
+                                                    name="adresse" placeholder="Il tuo indirizzo"
                                                     value={{ old('adresse') }}>
 
                                                 @error('adresse')
@@ -413,9 +408,9 @@
                                             </div>
                                             <div class="form-group">
                                                 <label class="font-weight-semibold form-label"
-                                                    for="ville">VILLE</label>
+                                                    for="ville">CITTÀ</label>
                                                 <input type="text" class="form-control" id="ville" required
-                                                    name="ville" placeholder="Ville" value={{ old('ville') }}>
+                                                    name="ville" placeholder="città" value={{ old('ville') }}>
 
                                                 @error('ville')
                                                     <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
@@ -424,10 +419,10 @@
 
                                             <div class="mb-3 flex flex-row justify-between">
                                                 <button class="btn bg-red-200 prev-btn"
-                                                    onclick="prevStep(event)">Precedent</button>
+                                                    onclick="prevStep(event)">Precedente</button>
                                                 <button
                                                     class="btn btn-primary next-btn  hover:bg-green-500 hover:border-green-500"
-                                                    onclick="nextStep(event)">Suivant</button>
+                                                    onclick="nextStep(event)">Seguente</button>
                                             </div>
 
 
@@ -439,23 +434,22 @@
                                         <div class="step">
                                             <div class="form-group flex flex-col">
                                                  <label for="comptes"
-                                                    class="form-label font-weight-semibold "> Types de comptes</label>
+                                                    class="form-label font-weight-semibold "> Tipi di conto</label>
                                                 <select class="form-select border-2 border-indigo-200 rounded-lg py-2 mb-2 form-control"
                                                     required id="Types_comptes" name="comptes"
                                                     aria-label="Default select example">
 
-                                                    <option value="Compte Courant">Compte Courant</option>
-                                                    <option value="Compte Epargne">Compte Epargne</option>
-                                                    
+                                                    <option value="Conto corrente">Conto corrente</option>
+ <option value="Conto di risparmio">Conto di risparmio</option>
                                                 </select>
                                                 <label for="devise"
-                                                    class="form-label font-weight-semibold ">DEVISE</label>
+                                                    class="form-label font-weight-semibold ">VALUTA</label>
                                                 <select class="form-select border-2 border-indigo-200 rounded-lg py-2 form-control "
                                                     required id="devise" name="devise"
                                                     aria-label="Default select example">
 
                                                     <option value="EUR">EUR</option>
-                                                    <option value="Dollar">Dollar</option>
+                                                    <option value="Dollar">Dollaro</option>
                                                     <option value="XOF">BTC</option>
                                                 </select>
                                                 @error('devise')
@@ -518,11 +512,11 @@
                                             </div>
                                             <div class="form-group">
                                                 <label class="font-weight-semibold"
-                                                    for="password_confirmation">Confirm Password:</label>
+                                                    for="password_confirmation">Conferma password:</label>
                                                 <div class="input-affix m-b-10">
                                                         <i class="prefix-icon anticon anticon-lock"></i>    
                                                 <input type="password" class="form-control"
-                                                    id="passwordst" placeholder="Confirm Password" required
+                                                    id="passwordst" placeholder="Conferma password" required
                                                     name="password_confirmation">
                                                     <i class="suffix-icon fa-ey toggle-passwordss" onclick="togglePasswordVisibilityt()"><img src="site_web/img/lg/cacher.png" alt=""  class=""> </i>
                                                     <i class="suffix-icon togglest fa-eye-slas" onclick="togglePasswordVisibilityt()"><img src="site_web/img/lg/oeil.png" alt="" class=""> </i>
@@ -578,17 +572,17 @@
                                                 <div class="align-items-center justify-content-between p-t-15">
                                                     <div class="checkbox mb-10">
                                                         <input id="checkbox" required type="checkbox" name="check">
-                                                        <label for="checkbox"><span>I have read the <a
-                                                                    href="#">agreement</a></span></label>
+                                                        <label for="checkbox"><span>Ho letto il <a
+                                                                    href="#">accordo</a></span></label>
                                                         @error('check')
                                                             <p class="p-2 bg-red-100 mb-2">{{ $message }}</p>
                                                         @enderror
                                                     </div>
                                                     <div class="mb-3 flex flex-row justify-between">
                                                         <button class="btn bg-red-200 prev-btn"
-                                                            onclick="prevStep(event)">Precedent</button>
+                                                            onclick="prevStep(event)">Precedente</button>
                                                         <button
-                                                            class="btn btn-primary submit-btn  hover:bg-green-500 hover:border-green-500">S'inscrire</button>
+                                                            class="btn btn-primary submit-btn  hover:bg-green-500 hover:border-green-500">Iscriviti</button>
                                                     </div>
 
                                                 </div>

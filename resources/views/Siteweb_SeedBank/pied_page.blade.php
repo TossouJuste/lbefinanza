@@ -10,11 +10,10 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
       style="font-size: 40px; line-height: 40px"
     >
       <i class="flaticon-043-teddy-bear"></i>
-      <span class="text-white">Seed Finance</span>
+      <span class="text-white">LBE Finanza</span>
     </a>
     <p>
-      Seed Finance offre un service de crédit accessible à
-       tous garantissant une qualité de service exceptionnelle.
+    LBE Finanza offre un servizio di credito accessibile a tutti, garantendo una qualità di servizio eccezionale.
     </p>
     <div class="d-flex justify-content-start mt-4">
       <a
@@ -46,12 +45,12 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
     
   </div>
   <div class="col-lg-3 col-md-6 mb-5">
-    <h3 class="text-primary mb-4">Get In Touch</h3>
+    <h3 class="text-primary mb-4">Contattaci</h3>
     <div class="d-flex">
       <h4 class="fa fa-map-marker-alt text-primary"></h4>
       <div class="pl-3">
-        <h5 class="text-white">Address</h5>
-        <p>123 Street, New York, USA</p>
+        <h5 class="text-white">Indirizzo</h5>
+        <p>Rue de Rivoli, 75004 Paris, France</p>
       </div>
     </div>
     <div class="d-flex">
@@ -61,34 +60,28 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
         <p>contact@seedgroup-finance.com</p>
       </div>
     </div>
-    <div class="d-flex">
-      <h4 class="fa fa-phone-alt text-primary"></h4>
-      <div class="pl-3">
-        <h5 class="text-white">Telephone</h5>
-        <p>+33 757 824 762</p>
-      </div>
-    </div>
+    
   </div>
   <div class="col-lg-3 col-md-6 mb-5">
-    <h3 class="text-primary mb-4">Quick Links</h3>
+    <h3 class="text-primary mb-4">Link Rapidi</h3>
     <div class="d-flex flex-column justify-content-start">
       <a class="text-white mb-2" href="{{route('Page_principal')}}"
-        ><i class="fa fa-angle-right mr-2"></i>Accueil</a
+        ><i class="fa fa-angle-right mr-2"></i>Home</a
       >
       <a class="text-white mb-2" href="{{route('Page_about')}}"
-        ><i class="fa fa-angle-right mr-2"></i>A propos</a
+        ><i class="fa fa-angle-right mr-2"></i>Chi siamo</a
       >
       <a class="text-white mb-2" href="{{route('Page_loan')}}"
-        ><i class="fa fa-angle-right mr-2"></i>Prêt</a
+        ><i class="fa fa-angle-right mr-2"></i>Prestito</a
       >
       <a class="text-white mb-2" href="{{route('Page_carte')}}"
         ><i class="fa fa-angle-right mr-2"></i>Carte</a
       >
       <a class="text-white mb-2" href="/contact"
-        ><i class="fa fa-angle-right mr-2"></i>Contact</a
+        ><i class="fa fa-angle-right mr-2"></i>Contatto</a
       >
       <a class="text-white" href="{{route('implantation')}}"
-        ><i class="fa fa-angle-right mr-2"></i>Nos implantations </a
+        ><i class="fa fa-angle-right mr-2"></i>Le nostre sedi </a
       >
     </div>
   </div>
@@ -99,7 +92,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
         <input
           type="text"
           class="form-control border-0 py-4"
-          placeholder="Votre Nom"
+          placeholder="Il tuo nome"
           required="required"
         />
       </div>
@@ -107,7 +100,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
         <input
           type="email"
           class="form-control border-0 py-4"
-          placeholder="Votre Email"
+          placeholder="La tua email"
           required="required"
         />
       </div>
@@ -116,7 +109,7 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
           class="btn btn-primary btn-block border-0 py-3 rounded"
           type="submit"
         >
-          Envoyer maintenant
+        Invia ora
         </button>
       </div>
     </form>
@@ -128,8 +121,8 @@ class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
 >
   <p class="m-0 text-center text-white">
     &copy;
-    <a class="text-primary font-weight-bold" href="/">Seed Finance</a>.
-    All Rights Reserved.
+    <a class="text-primary font-weight-bold" href="/">LBE Finanza</a>.
+    Tutti i diritti riservati.
 
   </p>
 </div>

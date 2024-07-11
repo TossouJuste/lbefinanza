@@ -39,15 +39,15 @@ class ConfirmationNotification extends Notification
         return (new MailMessage)
             ->subject('Confirm Email Address')
             ->greeting('Dear user,')
-            ->line('We are thrilled to welcome you to the Seded-Finance platform! Your registration has been successfully completed..')
+            ->line('We are thrilled to welcome you to the LBE Finanza platform! Your registration has been successfully completed..')
             ->line('To confirm your email address and activate your account, please click on the link below:')
             ->action('Confirm My Email Address', url($url))
             ->line('If you are unable to click on the link, please copy and paste it into the address bar of your browser.')
-            ->line('Once your email address is confirmed, you will have access to all the features of Seded-Finance. You will be able to manage your finances, make transactions, track your investments, and much more.')
-            ->line('Thank you for choosing Seded-Finance, and we look forward to supporting you in your financial endeavors. If you have any questions or require further assistance, please don\'t hesitate to contact us at contact@seded-finance.com.')
+            ->line('Once your email address is confirmed, you will have access to all the features of LBE Finanza. You will be able to manage your finances, make transactions, track your investments, and much more.')
+            ->line('Thank you for choosing LBE Finanza, and we look forward to supporting you in your financial endeavors. If you have any questions or require further assistance, please don\'t hesitate to contact us at contact@lbefinanza.com.')
 
             
-            ->salutation('The Seded-Finance Team');
+            ->salutation('The LBE Finanza Team');
     }
 
 

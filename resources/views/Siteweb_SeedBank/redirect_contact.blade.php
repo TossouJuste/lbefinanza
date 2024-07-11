@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Email Seed Finance</title>
+    <title>Email Finanza LBE</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
@@ -30,20 +30,23 @@
                             <div class="p-v-30">
                               
                                 
-                                    Cher <span class="text-primary">{{ $nom }}</span>,
+                            <p>
+    Caro <span class="text-primary">{{ $nom }}</span>,
 
-                                    Nous vous remercions d'avoir contacté Seed Finance et de nous avoir fait part de votre intérêt pour nos services. Nous apprécions votre confiance et nous nous engageons à vous fournir des solutions financières adaptées à vos besoins.
+    Ti ringraziamo per aver contattato Finanza LBE e per aver mostrato interesse nei nostri servizi. Apprezziamo la tua fiducia e ci impegniamo a fornirti soluzioni finanziarie adatte alle tue esigenze.
 
-                                    Nous avons bien reçu votre demande de renseignements et nous tenons à vous assurer que notre équipe est en train d'étudier attentivement votre demande. Nous vous recontacterons dans les plus brefs délais pour discuter de votre situation spécifique et vous fournir des informations détaillées sur nos offres de prêt personnel et de gestion de portefeuille.
-                                    
-                                    Chez Seed Finance, nous nous efforçons de fournir un service de qualité et de répondre aux attentes de nos clients. Notre équipe d'experts se tient à votre disposition pour vous accompagner tout au long du processus et répondre à toutes vos questions.
-                                    <br>
-                                    Cordialement,
+    Abbiamo ricevuto correttamente la tua richiesta di informazioni e desideriamo assicurarti che il nostro team sta esaminando attentamente la tua richiesta. Ti contatteremo al più presto per discutere della tua situazione specifica e fornirti informazioni dettagliate sui nostri servizi di prestito personale e gestione del portafoglio.
 
-                                    <span class="text-primary"><br>Equipe Seed Finance
-                                        <br>
-                                        
-                                        Seed Finance</span> <br>
+    Da Finanza LBE, ci impegniamo a offrire un servizio di alta qualità e a soddisfare le aspettative dei nostri clienti. Il nostro team di esperti è a tua disposizione per assisterti durante tutto il processo e rispondere a tutte le tue domande.
+
+    Cordiali saluti,
+
+    <span class="text-primary"><br>Team Finanza LBE
+        <br>
+        
+        Finanza LBE</span> <br>
+</p>
+
                                <div class="flex flex-row flex-wrap">
                             
                                 <a href="{{ route('Page_principal')}}" class="btn btn-primary btn-tone mt-2">Retour </a>

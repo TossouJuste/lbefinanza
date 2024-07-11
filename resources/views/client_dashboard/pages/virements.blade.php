@@ -1,12 +1,12 @@
 @extends('client_dashboard.components.app')
 @section('page_titre')
-    Mes transations
+le mie transazioni
 @endsection
 @section('page_container')
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">Mes virements</h2>
+            <h2 class="header-title">I miei bonifici</h2>
         </div>
 
  
@@ -23,14 +23,14 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                                <th>Pays</th>
-                                                <th>Nom Banque</th>
-                                                <th>IBAN</th>
+                                            <th>Paese</th>
+                                                <th>Nome Banca</th>
+                                                <th>Iban</th>
                                                 <th>BIC</th>
-                                                <th>Intitule compte</th>
-                                                <th>Montant</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
+                                                <th>Titolo dell'account</th>
+                                                <th>Importo</th>
+                                                <th>Dattero</th>
+                                                <th>Stato</th> 
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -45,9 +45,9 @@
                                                     <td>{{ $virement->created_at }}</td>
                                                     <td>
                                                         @if ($virement->valide)
-                                                        <span class="badge badge-success"> succès</span>
+                                                        <span class="badge badge-success"> Successo</span>
                                                         @else
-                                                        <span class="badge badge-warning">En cours</span>
+                                                        <span class="badge badge-warning">In corso</span>
                                                             
                                                         @endif
                                                     </td>
@@ -65,7 +65,7 @@
                                                 <a href="#" class="text-primary "><i class="mdi mdi-account-plus"
                                                         style="font-size: 100px"></i></a>
                                                 <p class="text-center mt-2 font-weight">
-                                                    Aucun virement trouvé
+                                                Nessun bonifico trovato
                                                 </p>
                                             </div>
                                         </div>

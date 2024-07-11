@@ -6,7 +6,7 @@
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">Mes transations</h2>
+            <h2 class="header-title">Le mie transazioni</h2>
         </div>
         
         <div class="row">
@@ -15,7 +15,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0 font-weight-bold">Solde</p>
+                                <p class="m-b-0 font-weight-bold">Saldo</p>
                                 <h2 class="m-b-0">
                                     <span class="text-primary"> {{ Auth::user()->devise }} {{ Auth::user()->solde }} </span>
                                 </h2>
@@ -32,7 +32,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Numero de compte</p>
+                                <p class="m-b-0">Numero di conto</p>
                                 <h2 class="m-b-0">
                                     <span class="text-success">{{ Auth::user()->numero_compte }}</span>
                                 </h2>
@@ -55,7 +55,7 @@
                                         @if (Auth::user()->iban != null)
                                             {{ Auth::user()->iban }}
                                         @else
-                                            <p style="font-size: 12px; color:red; " >Mentionné lors du virements</p>
+                                            <p style="font-size: 12px; color:red; " >Menziato durante il bonifico</p>
                                         @endif
                                     </span>
                                 </h2>
@@ -73,7 +73,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h5>Mes Transactions</h5>
+                            <h5>Le mie transazioni</h5>
                         </div>
                         @if (Auth::user()->transations()->get()->count() > 0)
                             <div class="m-t-30">
@@ -81,11 +81,12 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                                <th>Id_transation</th>
-                                                <th>Banque</th>
-                                                <th>Motif</th>
-                                                <th>Montant</th>
-                                                <th>Date et heure</th>
+                                            <th>Id_transazione</th>
+                                            <th>Banca</th>
+                                            <th>Motivo</th>
+                                            <th>Importo</th>
+                                            <th>Data e ora</th>
+
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -111,7 +112,7 @@
                                                 <a href="#" class="text-primary "><i class="mdi mdi-account-plus"
                                                         style="font-size: 100px"></i></a>
                                                 <p class="text-center mt-2 font-weight">
-                                                    Aucune transation trouvée
+                                                Nessuna transazione trovata
                                                 </p>
                                             </div>
                                         </div>

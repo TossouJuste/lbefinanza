@@ -1,12 +1,12 @@
 @extends('client_dashboard.components.app')
 @section('page_titre')
-    Effectuer un transfert vers un autre compte seedBank
+Effettua un bonifico su un altro conto LBE Finanza
 @endsection
 @section('page_container')
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">Transfert</h2>
+            <h2 class="header-title">Trasferimento</h2>
 
         </div>
         
@@ -17,7 +17,7 @@
 
                     <div class="card-header">
                         <h2 class="m-b-0 py-2">
-                            Nouveau transfert
+                        Nuovo trasferimento
                         </h2>
                     </div>
                     <div class="card-body">
@@ -38,21 +38,21 @@
                                 </div>
                             @endif
                             <div class="form-group">
-                                <label for="inputAddress">Numero de compte</label>
+                                <label for="inputAddress">Numero di conto</label>
                                 <input type="text" class="form-control" name="numero_compte" id="numero_compte"
                                     placeholder="12345678900">
                             </div>
                             <div class="form-group">
-                                <label for="motif">Motif</label>
+                                <label for="motif">Motivo</label>
                                 <input type="text" class="form-control" name="motif" id="motif"
-                                    placeholder="Paiement">
+                                    placeholder="Pagamento">
                             </div>
                             <div class="form-group">
-                                <label for="inputAddress">Montant</label>
+                                <label for="inputAddress">Quantità</label>
                                 <input type="number" class="form-control" name="montant" id="montant"
-                                    placeholder="Montant({{ Auth::user()->devise }}) inferieur à {{ Auth::user()->solde }}">
+                                    placeholder="Quantità({{ Auth::user()->devise }}) meno di {{ Auth::user()->saldo }}">
                             </div>
-                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                            <button type="submit" class="btn btn-primary">Mandare</button>
                         </form>
                     </div>
                 </div>

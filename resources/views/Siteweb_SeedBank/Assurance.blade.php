@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Seed Finance </title>
+    <title>Finanza LBE </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free HTML Templates" name="keywords" />
     <meta content="Free HTML Templates" name="description" />
@@ -46,13 +46,12 @@
           <div class="col-lg-6 text-center text-lg-left" style="margin-top:100px;">
            
             <h3 class="display-3 font-weight-bold text-primary font-opens" >
-             Assurance  <span style="color: #F49122">Seed</span>
+            assicurazione  <span style="color: #F49122">Seed</span>
             </h3>
             
             <p class="mb-4 font-weight-bold " style="color:black;">
-              La protection financière à portée de main. Dites bonjour à l'avenir en toute sérénité avec nos solutions 
-              d'assurance sur mesure. Simplifiez-vous la vie, souscrivez dès maintenant
-             
+            La protezione finanziaria al porto principale. Dites bonjour à l'avenir en toute sérénité con le nostre soluzioni 
+              d'assurance sur mesure. Semplifica la vita, souscrivez dès maintenant
             </p>
          
           </div>
@@ -68,36 +67,36 @@
 
           </div>
   
-          <p class="col-md-6" style="font-size: 16px; color:black;font-weight:bold;">Une bonne option d'assurance pour chaque situation !</p>
+          <p class="col-md-6" style="font-size: 16px; color:black;font-weight:bold;">Una buona opzione di assicurazione per ogni situazione!</p>
         </div>
 
         <div class="d-flex row justify-content-center align-items-center flex-wrap">
 
           <div class=" shadow p-4 text-center m-4" style="background-color: aliceblue">
             <img src="/site_web/img/lg/assurance-voiture.png" alt="" style="height: 60px;" class="mb-2">
-            <p class="mb-2">Assurance voiture</p>
-            <a class="mb-2 rounded btn btn-primary" href="#voiture">En savoir plus</a>
-            <a class="mb-2 rounded btn btn-primary" href="{{route('assurances') }} ">Souscrire </a>
+            <p class="mb-2">Assicurazione auto</p>
+            <a class="mb-2 rounded btn btn-primary" href="#voiture">Saperne di più</a>
+            <a class="mb-2 rounded btn btn-primary" href="{{route('assurances') }} ">Sottoscrivi </a>
           </div>
          
           <div class=" shadow p-4 text-center m-4" style="background-color: aliceblue">
             <img src="/site_web/img/lg/pret.png" alt="" style="height: 60px;" class="mb-2">
-            <p class="mb-2">Assurance crédit</p>
-            <a class="mb-2 rounded btn btn-primary" href="#credit">En savoir plus</a>
-            <a class="mb-2 rounded btn btn-primary" href=" {{route('assurances') }} ">Souscrire </a>
+            <p class="mb-2">Assicurazione del credito</p>
+            <a class="mb-2 rounded btn btn-primary" href="#credit">Saperne di più</a>
+            <a class="mb-2 rounded btn btn-primary" href=" {{route('assurances') }} ">Sottoscrivi </a>
           </div>
  
           <div class=" shadow p-4 text-center m-4" style="background-color: aliceblue">
             <img src="/site_web/img/lg/assurance-habitation.png" alt="" style="height: 60px;" class="mb-2">
-            <p class="mb-2">Assurance habitation</p>
-            <a class="mb-2 rounded btn btn-primary" href="#habitation">En savoir plus</a>
-            <a class="mb-2 rounded btn btn-primary" href="{{route('assurances') }}">Souscrire </a>
+            <p class="mb-2">Assicurazione sulla casa</p>
+            <a class="mb-2 rounded btn btn-primary" href="#habitation">Saperne di più</a>
+            <a class="mb-2 rounded btn btn-primary" href="{{route('assurances') }}">Sottoscrivi </a>
           </div>
           <div class=" shadow p-4 text-center m-4" style="background-color: aliceblue">
             <img src="/site_web/img/lg/croix.png" alt="" style="height: 60px;cusor:pointer;" class="mb-2">
-            <p class="mb-2">Assurance maladie</p>
-            <a class="mb-2 rounded btn btn-primary" href="#maladie">En savoir plus</a>
-            <a class="mb-2 rounded btn btn-primary" href="{{route('assurances') }}">Souscrire </a>
+            <p class="mb-2">Assicurazione sanitaria</p>
+            <a class="mb-2 rounded btn btn-primary" href="#maladie">Saperne di più</a>
+            <a class="mb-2 rounded btn btn-primary" href="{{route('assurances') }}">Sottoscrivi </a>
           </div>
 
 
@@ -120,17 +119,17 @@
           </div>
           <div class="col-lg-7">
             <p class="section-title pr-5">
-              <span class="pr-2">Assurance voiture</span>
+              <span class="pr-2">Assicurazione auto</span>
             </p>
-            <h3 class="mb-4 font-opens" id="voiture">Choisissez notre assurance auto pour une sécurité internationale </h3>
+            <h3 class="mb-4 font-opens" id="voiture">Scegli la nostra assicurazione auto per la sicurezza internazionale </h3>
             <p>
-              Quand il s'agit de protéger votre voiture, nous sommes le choix évident. Notre assurance
-               voiture offre des avantages incomparables et une couverture étendue à l'international.
-                Peu importe où vous allez, prenez la route en toute confiance, sachant que vous êtes 
-                protégé par une assurance auto sur mesure, conçue spécialement pour répondre à vos besoins. 
-                Nos experts en assurance sont là pour vous guider et vous offrir la tranquillité d'esprit que 
-                vous méritez. Ne compromettez pas votre sécurité au volant,
-               choisissez la meilleure protection pour votre véhicule et partez à l'aventure en toute sérénité
+            Quando si tratta di proteggere la tua auto, noi siamo la scelta più ovvia. La nostra assicurazione
+               car offre vantaggi incomparabili e un'ampia copertura internazionale.
+                Non importa dove stai andando, percorri la strada con sicurezza, sapendo che sei 
+                protetta da un'assicurazione auto su misura, studiata appositamente per soddisfare le tue esigenze. 
+                I nostri esperti assicurativi sono qui per guidarti e offrirti la massima tranquillità 
+                tu meriti. Non compromettere la tua sicurezza durante la guida,
+               scegli la migliore protezione per il tuo veicolo e parti all'avventura in tutta tranquillità
             </p>
             <div class="row pt-2 pb-4">
               <div class="col-6 col-md-4" >
@@ -139,18 +138,18 @@
               <div class="col-6 col-md-8">
                 <ul class="list-inline m-0">
                   <li class="py-2 border-top border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Assistance 24h/24
+                    <i class="fa fa-check text-primary mr-3"></i>Supporto 24 ore su 24, 7 giorni su 7
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Protection contre les sinistres
+                    <i class="fa fa-check text-primary mr-3"></i>Protezione dalle perdite
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Services multilingues
+                    <i class="fa fa-check text-primary mr-3"></i>Servizi multilingue
                   </li>
                 </ul>
               </div>
             </div>
-            <a href="{{route('assurances') }} " class="btn mt-2 py-2 px-4 rounded" style="background-color: #F49122;color:white;">Souscrire</a>
+            <a href="{{route('assurances') }} " class="btn mt-2 py-2 px-4 rounded" style="background-color: #F49122;color:white;">sottoscrivi</a>
           </div>
         </div>
       </div>
@@ -168,12 +167,12 @@
           </div>
           <div class="col-lg-7">
             <p class="section-title pr-5">
-              <span class="pr-2">Assurance habitation</span>
+              <span class="pr-2">Assicurazione sulla casa</span>
             </p>
-            <h3 class="mb-4 font-opens" id="habitation">Choisissez notre assurance habitation : votre tranquillité assurée </h3>
+            <h3 class="mb-4 font-opens" id="habitation">Scegli la nostra assicurazione casa: la tua tranquillità è garantita </h3>
             <p>
-              "Optez pour notre assurance habitation et faites le bon choix pour votre tranquillité d'esprit. Bénéficiez d'avantages exclusifs et d'une couverture internationale complète. Profitez d'une assurance sur mesure pour protéger votre foyer où que vous soyez. Notre équipe est là pour vous accompagner et vous offrir la meilleure protection pour votre chez-vous.
-              Prenez la route en toute confiance avec notre assurance habitation fiable et adaptée à vos besoins."   </p>
+            "Opta per la nostra assicurazione casa e fai la scelta giusta per la tua tranquillità. Approfitta di vantaggi esclusivi e di una copertura internazionale completa. Approfitta di un'assicurazione su misura per proteggere la tua casa ovunque tu sia. Il nostro team è qui per supportarti e offrirti per te la migliore protezione per la tua casa.
+              Mettiti in viaggio in tutta sicurezza con la nostra affidabile assicurazione sulla casa su misura per le tue esigenze." </p>
             <div class="row pt-2 pb-4">
               <div class="col-6 col-md-4">
                 <img class="img-fluid rounded" src="site_web/img/lg/home2.jpg" alt="" />
@@ -181,18 +180,18 @@
               <div class="col-6 col-md-8">
                 <ul class="list-inline m-0">
                   <li class="py-2 border-top border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Assistance 24h/24
+                    <i class="fa fa-check text-primary mr-3"></i>Supporto 24 ore su 24, 7 giorni su 7
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Protection contre les sinistres
+                    <i class="fa fa-check text-primary mr-3"></i>Protezione dalle perdite
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Services multilingues
+                    <i class="fa fa-check text-primary mr-3"></i>Servizi multilingue
                   </li>
                 </ul>
               </div>
             </div>
-            <a href=" {{route('assurances') }}" class="btn mt-2 py-2 px-4 rounded" style="background-color: #F49122;color:white;">Souscrire</a>
+            <a href=" {{route('assurances') }}" class="btn mt-2 py-2 px-4 rounded" style="background-color: #F49122;color:white;">sottoscrivi</a>
           </div>
         </div>
       </div>
@@ -211,12 +210,12 @@
           </div>
           <div class="col-lg-7">
             <p class="section-title pr-5">
-              <span class="pr-2">Assurance maladie</span>
+              <span class="pr-2">Assicurazione sanitaria</span>
             </p>
-            <h3 class="mb-4 font-opens" id="maladie">Choisissez notre assurance habitation : votre tranquillité assurée </h3>
+            <h3 class="mb-4 font-opens" id="maladie">Scegli la nostra assicurazione casa: la tua tranquillità è garantita </h3>
             <p>
-              Optez pour notre assurance habitation et faites le bon choix pour votre tranquillité d'esprit. Bénéficiez d'avantages exclusifs et d'une couverture internationale complète. Profitez d'une assurance sur mesure pour protéger votre foyer où que vous soyez. Notre équipe est là pour vous accompagner et vous offrir la meilleure protection pour votre chez-vous.
-              Prenez la route en toute confiance avec notre assurance habitation fiable et adaptée à vos besoins.  </p>
+            Opta per la nostra assicurazione casa e fai la scelta giusta per la tua tranquillità. Approfitta di vantaggi esclusivi e di una copertura internazionale completa. Approfitta di un'assicurazione su misura per proteggere la tua casa ovunque tu sia. Il nostro team è qui per supportarti e offrirti la migliore protezione per la tua casa.
+              Mettiti in viaggio in tutta sicurezza con la nostra affidabile assicurazione sulla casa su misura per le tue esigenze.  </p>
             <div class="row pt-2 pb-4">
               <div class="col-6 col-md-4">
                 <img class="img-fluid rounded" src="site_web/img/lg/maladie1.jpg" alt="" />
@@ -224,13 +223,13 @@
               <div class="col-6 col-md-8">
                 <ul class="list-inline m-0">
                   <li class="py-2 border-top border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Assistance 24h/24
+                    <i class="fa fa-check text-primary mr-3"></i>Supporto 24 ore su 24, 7 giorni su 7
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>A l'international
+                    <i class="fa fa-check text-primary mr-3"></i>A livello internazionale
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Services multilingues
+                    <i class="fa fa-check text-primary mr-3"></i>Servizi multilingue
                   </li>
                 </ul>
               </div>
@@ -253,12 +252,12 @@
           </div>
           <div class="col-lg-7">
             <p class="section-title pr-5">
-              <span class="pr-2">Assurance crédit</span>
+              <span class="pr-2">Assicurazione del credito</span>
             </p>
-            <h3 class="mb-4 font-opens" id="credit">Assurance crédit internationale : votre sécurité garantie</h3>
+            <h3 class="mb-4 font-opens" id="credit">Assicurazione internazionale del credito: la vostra sicurezza garantita</h3>
             <p>
-              Choisissez notre assurance crédit : une couverture internationale pour votre tranquillité d'esprit. Profitez d'avantages exclusifs et prenez la route en toute confiance avec notre assurance adaptée à vos besoins financiers. Protégez-vous contre les imprévus où que vous soyez dans le monde. Notre équipe est là pour vous guider et vous offrir la meilleure protection pour votre avenir financier. Ne laissez pas le hasard dicter votre destin,
-               optez pour notre assurance crédit et préparez-vous à l'avenir en toute sérénité. </p>
+            Scegli la nostra assicurazione crediti: coperture internazionali per la tua tranquillità. Approfitta di vantaggi esclusivi e mettiti in viaggio in tutta sicurezza con la nostra assicurazione su misura per le tue esigenze finanziarie. Proteggiti dagli imprevisti ovunque tu sia nel mondo. Il nostro team è qui per guidarti e offrirti la migliore protezione per il tuo futuro finanziario. Non lasciare che il caso detti il ​​tuo destino,
+               optate per la nostra assicurazione crediti e preparatevi al futuro in tutta tranquillità. </p>
             <div class="row pt-2 pb-4">
               <div class="col-6 col-md-4">
                 <img class="img-fluid rounded" src="site_web/img/lg/credit2.jpeg" alt="" />
@@ -266,18 +265,18 @@
               <div class="col-6 col-md-8">
                 <ul class="list-inline m-0">
                   <li class="py-2 border-top border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Assistance 24h/24
+                    <i class="fa fa-check text-primary mr-3"></i>Supporto 24 ore su 24, 7 giorni su 7
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>A l'international
+                    <i class="fa fa-check text-primary mr-3"></i>A livello internazionale
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Services multilingues
+                    <i class="fa fa-check text-primary mr-3"></i>Servizi multilingue
                   </li>
                 </ul>
               </div>
             </div>
-            <a href=" {{route('assurances') }}"class="btn mt-2 py-2 px-4 rounded" style="background-color: #F49122;color:white;">Souscrire</a>
+            <a href=" {{route('assurances') }}"class="btn mt-2 py-2 px-4 rounded" style="background-color: #F49122;color:white;">Sottoscrivi</a>
           </div>
         </div>
       </div>

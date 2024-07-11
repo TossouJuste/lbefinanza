@@ -1,12 +1,12 @@
 @extends('client_dashboard.components.app')
 @section('page_titre')
-    Mon compte
+    Il Mio Account
 @endsection
 @section('page_container')
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">Mon compte</h2>
+            <h2 class="header-title">Il Mio Account</h2>
         </div>
         
         <div class="row">
@@ -15,7 +15,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0 font-weight-bold">Solde</p>
+                                <p class="m-b-0 font-weight-bold">Saldo</p>
                                 <h2 class="m-b-0">
                                     <span class="text-primary"> {{ Auth::user()->devise }} {{ Auth::user()->solde }} </span>
                                 </h2>
@@ -32,7 +32,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0 font-weight-bold">Numero de compte</p>
+                                <p class="m-b-0 font-weight-bold">Numero di Conto</p>
                                 <h2 class="m-b-0">
                                     <span class="text-success">{{ Auth::user()->numero_compte }}</span>
                                 </h2>
@@ -56,7 +56,7 @@
                                     
                                         {{ Auth::user()->iban }}
                                         @else
-                                            <p style="font-size: 12px; color:red; " >Mentionné lors du virements</p>
+                                            <p style="font-size: 12px; color:red; " >Menzionato durante il bonifico</p>
                                         @endif
                                     </span>
                                 </h2>
@@ -75,7 +75,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0 font-weight-bold">Code BIC</p>
+                                <p class="m-b-0 font-weight-bold">Codice BIC</p>
                                 <h2 class="m-b-0">
                                     <span>{{ Auth::user()->code_bic }}</span>
                                 </h2>
@@ -92,7 +92,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0 font-weight-bold">Code Guichet</p>
+                                <p class="m-b-0 font-weight-bold">Codice Sportello</p>
                                 <h2 class="m-b-0">
                                     <span>{{ Auth::user()->code_guichet }}</span>
                                 </h2>
@@ -109,7 +109,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0 font-weight-bold">Code Banque</p>
+                                <p class="m-b-0 font-weight-bold">Codice Banca</p>
                                 <h2 class="m-b-0">
                                     <span>{{ Auth::user()->code_banque }}</span>
                                 </h2>

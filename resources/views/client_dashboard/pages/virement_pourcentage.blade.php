@@ -162,7 +162,7 @@
                                           required />
                                   </div>
                                   <div class="">
-                                      <button type="" class="btn btn-primary">Envoyer</button>
+                                      <button type="" class="btn btn-primary">Inviare</button>
                                   </div>
                               </div>
                        

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Email Seed Finance</title>
+    <title>Email Finanza LBE</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
@@ -29,28 +29,29 @@
                         <div class="col-md-6">
                             <div class="p-v-30">
                               
-                                <p>
-                                    Cher <span class="text-primary">{{ $nom }} </span>,
+                            <p>
+    Caro <span class="text-primary">{{ $nom }} </span>,
 
-                                    Nous tenons à vous remercier d'avoir soumis une demande de donation auprès de notre organisation. Votre générosité et votre engagement envers notre cause sont grandement appréciés.
+    Desideriamo ringraziarti per aver presentato una domanda di donazione presso la nostra organizzazione. La tua generosità e il tuo impegno verso la nostra causa sono molto apprezzati.
 
-                                    Nous avons bien reçu votre demande de donation et nous tenons à vous informer que votre demande est en cours d'examen. Notre équipe dédiée examine attentivement chaque demande de donation que nous recevons.
+    Abbiamo ricevuto correttamente la tua domanda di donazione e desideriamo informarti che la tua richiesta è attualmente in fase di esame. Il nostro team dedicato esamina attentamente ogni richiesta di donazione che riceviamo.
 
-                                    Veuillez noter que nous recevons un grand nombre de demandes de donation et que notre processus de sélection peut prendre du temps. Nous évaluons chaque demande avec soin afin de maximiser l'impact de nos dons et de les attribuer de manière équitable.
+    Ti preghiamo di considerare che riceviamo un elevato numero di domande di donazione e il nostro processo di selezione potrebbe richiedere del tempo. Valutiamo ogni domanda con cura per massimizzare l'impatto dei nostri doni e assegnarli in modo equo.
 
-                                    Nous tenons à vous assurer que nous étudions votre demande avec toute l'attention qu'elle mérite. Une fois que nous aurons examiné votre demande plus en détail, nous vous informerons par e-mail(<span class="text-primary"> {{ $email }} </span>) de la suite qui sera donnée à votre demande de donation.
+    Vogliamo assicurarti che stiamo esaminando la tua domanda con tutta l'attenzione che merita. Una volta esaminata più dettagliatamente la tua richiesta, ti informeremo tramite e-mail (<span class="text-primary">{{ $email }}</span>) sui prossimi passi relativi alla tua domanda di donazione.
 
-                                    Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Nous sommes là pour vous aider et vous fournir les informations dont vous avez besoin.
+    Se hai domande o hai bisogno di ulteriori informazioni, non esitare a contattarci via e-mail all'indirizzo <span class="text-primary">contact@finanzalbe.com</span> o telefonicamente al <span class="text-primary">+33 757 824 762</span>. Siamo qui per aiutarti e fornirti tutte le informazioni di cui hai bisogno.
 
-                                    Nous vous remercions sincèrement de votre intérêt pour notre cause et de votre soutien à notre organisation. Votre engagement fait une réelle différence dans la réalisation de nos projets et nous sommes reconnaissants de votre confiance.
+    Ti ringraziamo sinceramente per il tuo interesse verso la nostra causa e per il tuo sostegno alla nostra organizzazione. Il tuo impegno fa una vera differenza nel realizzare i nostri progetti e siamo grati della tua fiducia.
 
-                                    <br>Cordialement,
+    <br>Cordiali saluti,
 
-                                    <span class="text-primary"><br>Equipe Seed Finance
-                                        <br>
-                                        
-                                        Seed Finance</span> <br>
-                                </p>
+    <span class="text-primary"><br>Team Finanza LBE
+        <br>
+        
+        Finanza LBE</span> <br>
+</p>
+
                                <div class="flex flex-row flex-wrap">
                             
                                 <a href="{{ route('Page_principal')}}" class="btn btn-primary btn-tone mt-2">Retour </a>

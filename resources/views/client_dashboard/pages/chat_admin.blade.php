@@ -1,6 +1,6 @@
 @extends('client_dashboard.components.app')
 @section('page_titre')
-    Messagérie
+    Messaggistica
 @endsection
 @section('page_container')
     <!-- Content Wrapper START -->
@@ -11,7 +11,7 @@
                 $token = $user->createToken('API Token')->plainTextToken;
             @endphp
 
-            <h2 class="header-title">Messagerie</h2>
+            <h2 class="header-title">Messaggistica</h2>
         </div>
         <div class="container-fluid p-h-0">
             <div class="chat chat-app row">
@@ -27,7 +27,7 @@
                                 <div class="p-l-15">
                                     <h5 class="m-b-0">Seed Bank</h5>
                                     <p class="msg-overflow m-b-0 text-muted font-size-13">
-                                        Communication
+                                        Comunicazione
                                     </p>
                                 </div>
                             </div>
@@ -59,9 +59,9 @@
                                         <i class="anticon anticon-setting"></i>
                                     </a>
                                     <div class="dropdown-menu">
-                                        <button class="dropdown-item" type="button">Action</button>
-                                        <button class="dropdown-item" type="button">Another action</button>
-                                        <button class="dropdown-item" type="button">Something else here</button>
+                                        <button class="dropdown-item" type="button">Azione</button>
+                                        <button class="dropdown-item" type="button">Altra azione</button>
+                                        <button class="dropdown-item" type="button">Altro ancora</button>
                                     </div>
                                 </div>
                             </div>
@@ -77,14 +77,14 @@
                                     </div>
                                     <div class="bubble">
                                         <div class="bubble-wrapper">
-                                            <span>Hey, let me show you something nice!</span>
+                                            <span>Ehi, lascia che ti mostri qualcosa di bello!</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="msg msg-sent">
                                     <div class="bubble">
                                         <div class="bubble-wrapper">
-                                            <span>Oh! What is it?</span>
+                                            <span>Oh! Cos'è?</span>
                                         </div>
                                     </div>
                                 </div>
@@ -103,21 +103,21 @@
                                 <div class="msg msg-recipient">
                                     <div class="bubble m-l-50">
                                         <div class="bubble-wrapper">
-                                            <span>Applicator - Bootstrap 4 Admin Template</span>
+                                            <span>Applicator - Modello di amministrazione Bootstrap 4</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="msg msg-recipient">
                                     <div class="bubble m-l-50">
                                         <div class="bubble-wrapper">
-                                            <span>A creative, responsive and highly customizable admin template</span>
+                                            <span>Un modello di amministrazione creativo, responsive e altamente personalizzabile</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="msg msg-sent">
                                     <div class="bubble">
                                         <div class="bubble-wrapper">
-                                            <span>Wow, that was cool!</span>
+                                            <span>Wow, è stato fantastico!</span>
                                         </div>
                                     </div>
                                 </div> --}}
@@ -129,7 +129,7 @@
                                 <input type="hidden" value="0" id="exp_id" />
                                 <input type="hidden" value="{{ Auth::user()->id }}" id="dest_id" />
                                 <input class="chat-input" id="message_input" onkeyup="message_onchange(event)"
-                                    type="text" placeholder="Type a message...">
+                                    type="text" placeholder="Scrivi un messaggio...">
                                 <ul class="list-inline d-flex align-items-center m-b-0">
                                     <li class="list-inline-item m-r-15">
                                         <a class="text-gray font-size-20" href="javascript:void(0);" data-toggle="tooltip"
@@ -142,14 +142,14 @@
                                         <input type="file" class="d-none" name="message_image" id="message_image"
                                             onchange="image_choose(event)">
                                         <label for="message_image" class="text-gray font-size-20" data-toggle="tooltip"
-                                            title="Attachment">
+                                            title="Allegato">
                                             <i class="anticon anticon-paper-clip"></i>
                                         </label>
                                     </li>
                                     <li class="list-inline-item">
                                         <button id="send_button" onclick="envoie_message()"
                                             class="d-none d-md-block btn btn-primary">
-                                            <span class="m-r-10">Send</span>
+                                            <span class="m-r-10">Invia</span>
                                             <i class="far fa-paper-plane"></i>
                                         </button>
                                         <a href="javascript:void(0);" class="text-gray font-size-20 d-md-none d-block">
@@ -203,7 +203,7 @@
                         headers: {
                             'Content-Type': 'application/json',
                             'Authorization': 'Bearer ' +
-                                token // Remplace 'token' par ton véritable jeton d'authentification
+                                token // Sostituisci 'token' con il tuo vero token di autenticazione
                         },
                         body: JSON.stringify({
                             message: message_content,
@@ -215,7 +215,7 @@
                     imageDiv.innerHTML = '<span></span>';
                     message_content = '';
                     const data = await res.json();
-                    console.log(data); // Fais quelque chose avec la réponse JSON retournée
+                    console.log(data); // Fai qualcosa con la risposta JSON ricevuta
                 } catch (error) {
                     message_input.value = error;
                     console.error(error);
@@ -232,6 +232,7 @@
                 imageDiv.innerHTML = '<span></span>';
                 reader.onload = (e) => {
                     const imageURL = e.target.result;
+                    const imgElement = document
                     const imgElement = document.createElement("img");
                     imgElement.src = imageURL;
                     imgElement.style.height = "50px"; // Applique la hauteur de 50 pixels

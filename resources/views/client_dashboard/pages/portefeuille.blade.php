@@ -7,9 +7,9 @@
     <div class="main-content">
         <div class="d-flex justify-content-between page-header align-items-center" style="height: 60px">
            <div class="">
-            <h2 class="header-title mt-2" >Portefeuille</h2>
+            <h2 class="header-title mt-2" >Portafoglio</h2>
            </div>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#retrait_modal">Retrait</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#retrait_modal">Prelievo</button>
         </div>
         @if ($errors->any())
                                                                                     <div class="alert alert-danger">
@@ -27,7 +27,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Valeur Portefeuille</p>
+                                <p class="m-b-0">Valore del portafoglio</p>
                                 <h2 class="m-b-0">
                                     <span> {{ Auth::user()->devise }} {{ Auth::user()->portefeuilles()->first()->solde_p }} </span>
                                 </h2>
@@ -45,7 +45,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Profit Mensuel</p>
+                                <p class="m-b-0">Profitto mensile</p>
                                 <h2 class="m-b-0">
                                     <span>{{ Auth::user()->portefeuilles()->first()->profit }}</span>
                                 </h2>
@@ -62,7 +62,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Profit Journalier</p>
+                                <p class="m-b-0">Profitto giornaliero</p>
                                 <h2 class="m-b-0">
                                     <span>1.77%</span>
                                 </h2>
@@ -82,7 +82,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Revenu Journalier</p>
+                                <p class="m-b-0">Reddito giornaliero</p>
                                 <h2 class="m-b-0">
                                     <span>{{ Auth::user()->devise }} {{ Auth::user()->portefeuilles()->first()->revenu_p }}</span>
                                 </h2>
@@ -99,7 +99,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Benefice</p>
+                                <p class="m-b-0">Beneficio</p>
                                 <h2 class="m-b-0 text-success">
                                     <span>{{ Auth::user()->devise }} {{ Auth::user()->portefeuilles()->first()->benef}}</span>
                                 </h2>
@@ -116,7 +116,7 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <p class="m-b-0">Valeur Total Portefeuille</p>
+                                <p class="m-b-0">Valore Totale del Portafoglio</p>
                                 <h2 class="m-b-0 text-success">
                                     <span>{{ Auth::user()->devise }} {{ Auth::user()->portefeuilles()->first()->val_solde }}</span>
                                 </h2>
@@ -160,23 +160,23 @@
                                                                                 <div class="row">
                                                                                     <div class="col mb-3">
                                                                                         <label for="numero_compte"
-                                                                                            class="form-label">Numero de compte</label>
+                                                                                            class="form-label">Numero di conto</label>
                                                                                         <input class="form-control"
                                                                                             type="text" id="montant"
                                                                                             name="numero_compte"
                                                                                             value="{{Auth::user()->numero_compte}}"
-                                                                                            placeholder="Numero de compte"
+                                                                                            placeholder="Numero di conto"
                                                                                             required />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row">
                                                                                     <div class="col mb-3">
                                                                                         <label for="montant"
-                                                                                            class="form-label">Montant</label>
+                                                                                            class="form-label">Importo</label>
                                                                                         <input class="form-control"
                                                                                             type="number" id="montant"
                                                                                             name="montant"
-                                                                                            placeholder="Montant(en {{Auth::user()->devise}} )"
+                                                                                            placeholder="Importo(en {{Auth::user()->devise}} )"
                                                                                             required />
                                                                                     </div>
                                                                                 </div>
@@ -184,9 +184,9 @@
                                                                             <div class="modal-footer">
                                                                                 <button type="button"
                                                                                     class="btn btn-default m-r-10"
-                                                                                    data-dismiss="modal">Annuler</button>
+                                                                                    data-dismiss="modal">Annullare</button>
                                                                                 <button type="submit"
-                                                                                    class="btn btn-primary">Envoyer</button>
+                                                                                    class="btn btn-primary">Inviare</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>seed Finance login</title>
+    <title>LBE Finanza login</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
@@ -28,7 +28,7 @@
         <div class="container-fluid">
             <div class="d-flex full-height p-v-20 flex-column ">
                 <div class="d-flex justify-content-between align-items-center p-h-40">
-                    <a href="/"><img src="assets/images/logo/logo.png" alt=""></a>
+                    <a href="/"><img src="site_web/img/logo.png" alt=""></a>
                     <a href="javascript:void(0);" class="me-1" data-toggle="modal" data-target="#quick-view">
                         <i class="fas fa-language" style="font-size: 30px"></i>
                     </a>
@@ -44,9 +44,9 @@
                                             <p class="text-center"> {{ session('success') }} </p>
                                         </div>
                                     @endif
-                                    <h2 class="m-t-20">Connexion </h2>
-                                    <p>Connectez vous a votre banque en ligne en un clin d'œil</p>
-                                    <p class="m-b-30 text-primary">Entrez vos identifiants </p>
+                                    <h2 class="m-t-20">Login </h2>
+                                    <p>Accedi al tuo online banking in un batter d'occhio</p>
+                                    <p class="m-b-30 text-primary">Inserisci le tue credenziali </p>
                                     <form method="post" action="{{ route('auth.login') }}">
                                         @csrf
                                         @method('post')
@@ -70,7 +70,7 @@
                                         <div class="form-group">
                                             <label class="font-weight-semibold" for="password">Password:</label>
                                             <a class="float-right font-size-13 text-muted" href="">
-                                                Mot de passe oublié ?</a>
+                                            Password dimenticata?</a>
                                             <div class="input-affix m-b-10">
                                                 <i class="prefix-icon anticon anticon-lock"></i>
                                                 <input type="password" name="password" class="form-control"
@@ -122,11 +122,11 @@
                                         <div class="form-group">
                                             <div class="d-flex align-items-center justify-content-between flex-wrap">
                                                 <span class="font-size-13 text-muted">
-                                                    Vous n'avez pas de compte ?
+                                                Non hai un account?
                                                     <a class="small" href="{{ route('auth.register.view') }}">
-                                                        Inscrivez-vous</a>
+                                                    Registrati</a> <br>
                                                 </span>
-                                                <button type="submit" class="btn btn-primary">Connectez-vous</button>
+                                                <button type="submit" class="btn btn-primary">Accedi</button>
                                             </div>
                                         </div>
                                     </form>

@@ -1,13 +1,13 @@
 @extends('client_dashboard.components.app')
 @section('page_titre')
-    Mon Profil
+Il mio profilo
 @endsection
 @section('page_container')
 
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">Mon profil</h2>
+            <h2 class="header-title">Il mio profilo</h2>
         </div>
         <div class="container">
             @if ($errors->any())
@@ -41,7 +41,7 @@
                                     <p class="text-opacity font-size-13">@ {{ Auth::user()->nom }}</p>
                                     <p class="text-dark m-b-20">{{ Auth::user()->email }}</p>
                                     <button class="btn btn-primary btn-tone" data-toggle="modal"
-                                        data-target="#profile_change_widget">Modifier</button>
+                                        data-target="#profile_change_widget">Modificare</button>
                                         
 
                                 </div>
@@ -62,7 +62,7 @@
                                         <li class="row flex-wrap">
                                             <p class="col-sm-4 col-4 d-flex  font-weight-semibold text-dark ">
                                                 <i class="m-r-10 text-primary anticon anticon-phone" style="margin-top:12px;"></i>
-                                                <span>Phone: </span>
+                                                <span>Telefono: </span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->telephone }}</p>
                                         </li>
@@ -70,7 +70,7 @@
                                         <li class="row flex-wrap">
                                             <p class="col-sm-4 col-4 d-flex  font-weight-semibold text-dark m-b-5">
                                                 <i class="m-r-10 text-primary anticon anticon-dollar" style="margin-top:12px;"></i>
-                                                <span>Type de compte: </span>
+                                                <span>Tipo di conto: </span>
                                             </p>
                                             <p class="col font-weight-semibold">{{ Auth::user()->Types_comptes }}</p>
                                         </li>
@@ -78,21 +78,21 @@
                                         <li class="row flex-wrap">
                                             <p class="col-sm-4 col-4 d-flex  font-weight-semibold text-dark m-b-5">
                                                 <i class="m-r-10 text-primary anticon anticon-dollar" style="margin-top:12px;"></i>
-                                                <span>Devise: </span>
+                                                <span>Valuta: </span>
                                             </p>
                                             <p class="col font-weight-semibold">{{ Auth::user()->devise }}</p>
                                         </li>
                                         <li class="row flex-wrap">
                                             <p class="col-sm-4 col-4 d-flex font-weight-semibold text-dark m-b-5">
                                                 <i class="m-r-10 text-primary anticon anticon-compass" style="margin-top:12px;"></i>
-                                                <span>Pays: </span>
+                                                <span> Paese: </span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->pays }}</p>
                                         </li>
                                         <li class="row flex-wrap">
                                             <p class="col-sm-4 col-4 d-flex font-weight-semibold text-dark m-b-5">
                                                 <i class="m-r-10 text-primary anticon anticon-compass" style="margin-top:12px;"></i>
-                                                <span>Adresse: </span>
+                                                <span>Indirizzo: </span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->adresse }}</p>
                                         </li>
@@ -100,7 +100,7 @@
                                         <li class="row flex-wrap">
                                             <p class="col-sm-4 col-4 d-flex font-weight-semibold text-dark m-b-5">
                                                 <i class="m-r-10 text-primary anticon anticon-compass"style="margin-top:12px;"></i>
-                                                <span>Civilite: </span>
+                                                <span>Civiltà: </span>
                                             </p>
                                             <p class="col font-weight-semibold"> {{ Auth::user()->civilite }}</p>
                                         </li>
@@ -129,7 +129,7 @@
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modifier mon profil</h5>
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modificare il mio profilo</h5>
                         <button type="button" class="close" data-dismiss="modal">
                             <i class="anticon anticon-close"></i>
                         </button>
@@ -151,7 +151,7 @@
                                 @endif
 
                                 <div class="form-group">
-                                    <label class="font-weight-semibold" for="nom">NOM</label>
+                                    <label class="font-weight-semibold" for="nom">COGNOME</label>
                                     <input type="text" class="form-control" id="nom" required name="nom"
                                         placeholder="Votre nom" value="{{ Auth::user()->nom }}">
                                     @error('nom')
@@ -159,7 +159,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label class="font-weight-semibold" for="prenom">PRENOM</label>
+                                    <label class="font-weight-semibold" for="prenom">NOME</label>
                                     <input type="text" class="form-control" id="prenom" required name="prenom"
                                         placeholder="Votre prénom" value="{{ Auth::user()->prenom }}">
                                     @error('prenom')
@@ -168,8 +168,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="font-weight-semibold" for="telephone">NUMERO DE
-                                        TELEPHONE</label>
+                                    <label class="font-weight-semibold" for="telephone">Numero di telefono</label>
                                     <input type="tel" class="form-control" id="telephone" required name="telephone"
                                         placeholder="Votre numero de télephone" value="{{ Auth::user()->telephone }}">
                                     @error('telephone')
@@ -177,7 +176,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group flex flex-col">
-                                    <label for="pays" class="form-label font-weight-semibold ">PAYS</label>
+                                    <label for="pays" class="form-label font-weight-semibold ">Paese</label>
                                     <select class="form-select border-2 border-indigo-200 rounded-lg py-2" required
                                         id="pays" name="pays" aria-label="Default select example"
                                         value={{ old('pays') }}>
@@ -444,7 +443,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label class="font-weight-semibold form-label" for="adresse">ADRESSE</label>
+                                    <label class="font-weight-semibold form-label" for="adresse">Indirizzo</label>
                                     <input type="text" class="form-control" id="adresse" required name="adresse"
                                         placeholder="Votre address" value="{{ Auth::user()->adresse }}">
 
@@ -453,7 +452,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label class="font-weight-semibold form-label" for="ville">VILLE</label>
+                                    <label class="font-weight-semibold form-label" for="ville">Città</label>
                                     <input type="text" class="form-control" id="ville" required name="ville"
                                         placeholder="Ville" value="{{ Auth::user()->ville }}">
 
@@ -462,7 +461,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group flex flex-col">
-                                    <label for="devise" class="form-label font-weight-semibold ">DEVISE</label>
+                                    <label for="devise" class="form-label font-weight-semibold ">Valuta</label>
                                     <select class="form-select border-2 border-indigo-200 rounded-lg py-2 " required
                                         id="devise" name="devise" aria-label="Default select example">
 
@@ -481,8 +480,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                        <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Annullare</button>
+                        <button type="submit" class="btn btn-primary">Salvare le modifiche</button>
                     </div>
                 </div>
             </div>

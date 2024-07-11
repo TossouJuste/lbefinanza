@@ -32,10 +32,10 @@ Messagerie
                                         <img src="/assets/images/logo/logo-fold.png" alt="">
                                     </div>
                                     <div class="p-l-15">
-                                        <h6 class="m-b-0">Seed Bank</h6>
+                                        <h6 class="m-b-0">Finanza LBE</h6>
                                         <p class="m-b-0 text-muted font-size-13 m-b-0">
                                             <span class="badge badge-success badge-dot m-r-5"></span>
-                                            <span>Online</span>
+                                            <span>in linea</span>
                                         </p>
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@ Messagerie
                                 <input  type="hidden" value="{{$token}}" id="my_token"  />
                                 <input  type="hidden" value="{{Auth::user()->id}}" id="exp_id"  />
                                 <input  type="hidden" value="0" id="dest_id"  />
-                                <input class="chat-input" id="message_input" onkeyup="message_onchange(event)" type="text" placeholder="Type a message...">
+                                <input class="chat-input" id="message_input" onkeyup="message_onchange(event)" type="text" placeholder="Scrivi un messaggio...">
                                 <ul class="list-inline d-flex align-items-center m-b-0">
                                     <li class="list-inline-item m-r-15">
                                         <a class="text-gray font-size-20" href="javascript:void(0);" data-toggle="tooltip" title="Emoji">

@@ -1,6 +1,6 @@
 @extends('client_dashboard.components.app')
 @section('page_titre')
-Tableau de bord
+Dashboard
 @endsection
 @section('page_container')
 <div class="main-content">
@@ -11,8 +11,8 @@ Tableau de bord
                     <img src="@if(Auth::user()->photo_profil=='default.png') /{{ Auth::user()->photo_profil}} @else {{Storage::url(Auth::user()->photo_profil)}} @endif "  alt="photo_profil">
                 </div>
                 <div class="media-body m-l-15">
-                    <h4 class="m-b-0">Bienvenue, {{ Auth::user()->nom }} !</h4>
-                    <span class="text-gray">Espace client</span>
+                    <h4 class="m-b-0">Benvenuto, {{ Auth::user()->nom }} !</h4>
+                    <span class="text-gray">Area cliente</span>
                 </div>
             </div>
             <div class="d-md-flex align-items-center d-none">
@@ -29,7 +29,7 @@ Tableau de bord
                         </div>
                         <div class="m-l-15">
                             <h2 class="m-b-0"> {{Auth::user()->devise}} {{Auth::user()->solde}} </h2>
-                            <p class="m-b-0 text-muted">Solde</p>
+                            <p class="m-b-0 text-muted">Saldo</p>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ Tableau de bord
                         </div>
                         <div class="m-l-15">
                             <h2 class="m-b-0">+ {{Auth::user()->transations()->get()->count()}} </h2>
-                            <p class="m-b-0 text-muted">Transations</p>
+                            <p class="m-b-0 text-muted">Transazioni</p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ Tableau de bord
                         </div>
                         <div class="m-l-15">
                             <h2 class="m-b-0">{{Auth::user()->depots()->get()->count()}}</h2>
-                            <p class="m-b-0 text-muted">Depôts</p>
+                            <p class="m-b-0 text-muted">Depositi</p>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ Tableau de bord
                         </div>
                         <div class="m-l-15">
                             <h2 class="m-b-0">{{Auth::user()->virements()->get()->count()}}</h2>
-                            <p class="m-b-0 text-muted">Virements</p>
+                            <p class="m-b-0 text-muted">Bonifici</p>
                         </div>
                     </div>
                 </div>
@@ -86,14 +86,14 @@ Tableau de bord
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h5>Total Revenue</h5>
+                        <h5>Entrate Totali</h5>
                         <div>
                             <div class="btn-group">
                                 <button class="btn btn-default active">
-                                    <span>Month</span>
+                                    <span>Mese</span>
                                 </button>
                                 <button class="btn btn-default">
-                                    <span>Year</span>
+                                    <span>Anno</span>
                                 </button>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ Tableau de bord
         <div class="col-md-12 col-lg-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="m-b-0">Clients</h5>
+                    <h5 class="m-b-0">Clienti</h5>
                     <div class="m-v-60 text-center" style="height: 200px">
                         <canvas class="chart" id="customers-chart"></canvas>
                     </div>
@@ -121,7 +121,7 @@ Tableau de bord
                                             @php
                                            rand(25000, 30000)
                                             @endphp</h4>
-                                        <p class="m-b-0 muted">Nouveau</p>
+                                        <p class="m-b-0 muted">Nuovi</p>
                                     </div>    
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ Tableau de bord
                                         <h4 class="m-b-0">
                                           
                                         </h4>
-                                        <p class="m-b-0 muted">Returning</p>
+                                        <p class="m-b-0 muted">Ritorno</p>
                                     </div>    
                                 </div>
                             </div>
@@ -145,7 +145,7 @@ Tableau de bord
                                     <span class="badge badge-warning badge-dot m-r-10"></span>
                                     <div class="m-l-5">
                                         <h4 class="m-b-0"></h4>
-                                        <p class="m-b-0 muted">Autres</p>
+                                        <p class="m-b-0 muted">Altro</p>
                                     </div>    
                                 </div>
                             </div>
@@ -155,7 +155,6 @@ Tableau de bord
             </div>
         </div>
     </div>
-    
     
 </div>
 @endsection

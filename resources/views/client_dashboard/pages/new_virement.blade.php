@@ -1,13 +1,13 @@
 @extends('client_dashboard.components.app')
 @section('page_titre')
-    Effectuer un virement vers votre compte bancaire
+Effettua un bonifico sul tuo conto bancario
 @endsection
 @section('page_container')
 
     <!-- Content Wrapper START -->
     <div class="main-content">
         <div class="page-header">
-            <h2 class="header-title">Virement</h2>
+            <h2 class="header-title">Bonifico</h2>
 
         </div>
         @if ($errors->any())
@@ -31,18 +31,18 @@
 
                             <div class="col-md-6 col-lg-6 text-start team mb-5 ml-2 border-0  "
                                 style="background-color: white;">
-                                <p class="mb-1 mt-2 text-center font-weight-bold"> <span class="text-primary"> Informations
-                                        virements</p>
+                                <p class="mb-1 mt-2 text-center font-weight-bold"> <span class="text-primary"> informazioni
+                                bonifici</p>
 
                                 <div class="d-flex justify-content-between flex-wrap">
 
 
 
-                                    <p class="mr-4"> Banque: {{ $virement_cours->banque }}</p>
+                                    <p class="mr-4"> Banca: {{ $virement_cours->banque }}</p>
 
 
 
-                                    <p> Montant: {{ $virement_cours->montant }} {{ Auth::user()->devise }} </p>
+                                    <p> importo: {{ $virement_cours->montant }} {{ Auth::user()->devise }} </p>
 
                                 </div>
 
@@ -62,8 +62,8 @@
 
                                 <div class="d-flex justify-content-between flex-wrap">
 
-                                    <p> Pays: {{ $virement_cours->pays }}</p>
-                                    <p> Status: <span class="text-warning">En cours...</span></p>
+                                    <p> Paese: {{ $virement_cours->pays }}</p>
+                                    <p> Stato: <span class="text-warning">in corso...</span></p>
 
                                 </div>
 
@@ -84,7 +84,7 @@
                             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <i class="fas fa-check-circle text-success" style="font-size: 100px"></i>
                                 <p class="text-center mt-2">
-                                    Transfert effectué avec succès!
+                                Trasferimento completato con successo!
                                 </p>
                                 
                             </div>
@@ -122,17 +122,17 @@
                                         </div>
                                         <div id="code_required" class="d-none">
                                             <div class="chargement-information m-t-5 text-center">
-                                                <p>Veuillez entrer le code de validation afin d'achever votre transfert</p>
+                                                <p>Per finalizzare il trasferimento, inserisci il codice di convalida. <br> si prega di contattare la banca per ottenerlo.</p>
                                             </div>
                                             <input type="hidden" name="virement_id" value="{{ $virement_cours->id }}">
                                             <div class="my-1 form-row justify-content-center align-items-center">
                                                 <div class="mb-3">
                                                     <input type="text" class="form-control border border-primary"
-                                                        id="code" name="code" placeholder="Code"
+                                                        id="code" name="code" placeholder="Codico"
                                                         aria-describedby="defaultFormControlHelp" required />
                                                 </div>
                                                 <div class="">
-                                                    <button type="submit" id="code_verification_btn" class="btn btn-primary">Envoyer</button>
+                                                    <button type="submit" id="code_verification_btn" class="btn btn-primary">inviare</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,7 +150,7 @@
 
                         <div class="card-header">
                             <h2 class="m-b-0 py-2 font-weight-bold"style="font-family: Arial, sans-serif; ">
-                                Nouveau virement
+                            Nuovo bonifico
                             </h2>
                         </div>
                         <div class="card-body">
@@ -174,14 +174,13 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h1 class="text-primary mb-4 font-weight-bold h4"
-                                            style="font-family: Arial, sans-serif;font-size:17px; ">Informations
-                                            Bancaires </h1>
+                                            style="font-family: Arial, sans-serif;font-size:17px; ">Informazioni bancarie </h1>
 
                                     </div>
                                     <div class="col-md-6">
 
                                         <div class="mb-3 flex flex-column">
-                                            <label for="pays" class="form-label">Pays </label>
+                                            <label for="pays" class="form-label">Paese</label>
                                             <select class="form-select border-2 border-indigo-200 rounded-lg py-2" required
                                                 id="pays" name="pays" aria-label="Default select example"
                                                 value={{ old('pays') }}>
@@ -449,7 +448,7 @@
 
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label for="banque" class="form-label">Nom de la Banque</label>
+                                            <label for="banque" class="form-label">Nome della banca</label>
                                             <input type="text" class="form-control" id="banque" placeholder="BBC"
                                                 name="banque" aria-describedby="defaultFormControlHelp" required />
                                         </div>
@@ -458,8 +457,7 @@
 
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label for="IBAN" class="form-label">IBAN (Identifiant
-                                                International)</label>
+                                            <label for="IBAN" class="form-label">IBAN (Identificativo Internazionale)</label>
                                             <input type="text" class="form-control" id="IBAN" name="iban"
                                                 placeholder="" aria-describedby="defaultFormControlHelp" required />
                                         </div>
@@ -476,14 +474,13 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h1 class="text-primary mb-4 h4 font-weight-bold"
-                                            style="font-family: Arial, sans-serif;font-size:17px; "> Informations du
-                                            transfert </h1>
+                                            style="font-family: Arial, sans-serif;font-size:17px; "> informazioni del trasferimento </h1>
 
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label for="intitule_compte" class="form-label">Intitulé du compte</label>
+                                            <label for="intitule_compte" class="form-label">titolare del conto</label>
                                             <input type="text" class="form-control" id="intitule_compte"
                                                 name="intitule_compte" placeholder=""
                                                 aria-describedby="defaultFormControlHelp" required />
@@ -499,7 +496,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                                <button type="submit" class="btn btn-primary">Mandare</button>
                             </form>
                         </div>
                     </div>

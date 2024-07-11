@@ -7,14 +7,14 @@
   <script src="//translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 <div class="header">
     <div class="logo logo-dark">
-        <a href="/">
-            <img src="/assets/images/logo/logo.png" alt="Logo">
+        <a href="/dashboard">
+            <img src="/site_web/img/logo.png"  alt="Logo">
             <img class="logo-fold" src="/assets/images/logo/logo-fold.png" alt="Logo">
         </a>
     </div>
     <div class="logo logo-white">
         <a href="/">
-            <img src="/assets/images/logo/logo-white.png" alt="Logo">
+            <img src="/assets/images/logo/logo-white.png"  alt="Logo">
             <img class="logo-fold" src="/assets/images/logo/logo-fold-white.png" alt="Logo">
         </a>
     </div>
@@ -32,7 +32,7 @@
             </li>
             <li class="logo-mobile">
                 <a href="javascript:void(0);">
-                    <img src="/site_web/img/logo1.png" alt="logo" class=" d-md-none d-sm-none"  >
+                    <img src="/site_web/img/logo.png" alt="logo" width="80%" class=" d-md-none d-sm-none"  >
 
                 </a>
             </li>
@@ -62,7 +62,7 @@
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
                                 <i class="anticon opacity-04 font-size-16 anticon-user"></i>
-                                <span class="m-l-10">Mon profil</span>
+                                <span class="m-l-10">Il mio profilo</span>
                             </div>
                             <i class="anticon font-size-10 anticon-right"></i>
                         </div>
@@ -73,7 +73,7 @@
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
                                 <i class="anticon opacity-04 font-size-16 anticon-logout"></i>
-                                <span class="m-l-10">Deconnexion</span>
+                                <span class="m-l-10">Disconnessione</span>
                             </div>
                             <i class="anticon font-size-10 anticon-right"></i>
                         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Email Seed Finance</title>
+    <title>Email Finanza LBE</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
@@ -29,30 +29,27 @@
                         <div class="col-md-6">
                             <div class="p-v-30">
                               
-                              <p>
+                            <p>
+    Caro <span class="text-primary">{{ $nom }} </span>,
 
+    Grazie per aver presentato una richiesta di gestione del portafoglio presso finanza lbe. Apprezziamo il tuo interesse nei nostri servizi.
 
-                                Cher <span class="text-primary">{{ $nom }} </span>,
+    Desideriamo informarti che abbiamo ricevuto correttamente la tua richiesta e la stiamo esaminando attentamente. Il nostro team dedicato alla gestione del portafoglio sta valutando le informazioni che hai fornito per soddisfare al meglio le tue esigenze finanziarie.
 
-                                Merci d'avoir soumis une demande de gestion de portefeuille à Seed Finance. Nous vous remercions de l'intérêt que vous portez à nos services.
-                                
-                                Nous tenons à vous informer que nous avons bien reçu votre demande et nous l'examinons attentivement. Notre équipe dédiée à la gestion de portefeuille évalue les informations que vous avez fournies afin de répondre au mieux à vos besoins financiers.
-                                Dans le but de garantir la confidentialité et la sécurité de vos informations sensibles, le reste des informations sensibles sera pris par e-mail ou via notre chat bancaire .
-                                
-                                Nous comprenons l'importance d'une réponse rapide et nous vous contacterons sur votre e-mail <span class="text-primary">{{$email}}</span> dans les plus brefs délais pour discuter de votre demande de gestion de portefeuille. Nous sommes impatients de vous offrir notre expertise et de vous aider à atteindre vos objectifs financiers.
-                                
-                                Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Notre équipe est là pour vous aider.
-                                
-                                <br>
-                                    Cordialement,
+    Per garantire la riservatezza e la sicurezza delle tue informazioni sensibili, ulteriori dettagli sensibili saranno trattati via e-mail o tramite la nostra chat bancaria.
 
-                                    <span class="text-primary"><br>Equipe Seed Finance
-                                        <br>
-                                        
-                                        Seed Finance</span> <br>
-                               
-                                
-                             </p> 
+    Comprendiamo l'importanza di una risposta tempestiva e ti contatteremo al tuo indirizzo e-mail <span class="text-primary">{{$email}}</span> al più presto per discutere della tua richiesta di gestione del portafoglio. Siamo ansiosi di mettere a tua disposizione la nostra esperienza e di aiutarti a raggiungere i tuoi obiettivi finanziari.
+
+    Se hai domande o hai bisogno di ulteriori informazioni, non esitare a contattarci all'indirizzo e-mail <span class="text-primary">contact@finanzalbe.com</span> o telefonicamente al <span class="text-primary">+33 757 824 762</span>. Il nostro team è qui per assisterti.
+
+    Cordiali saluti,
+
+    <span class="text-primary"><br>Team Finanza LBE
+        <br>
+        
+        Finanza LBE</span> <br>
+</p>
+
                               
                                <div class="flex flex-row flex-wrap">
                             

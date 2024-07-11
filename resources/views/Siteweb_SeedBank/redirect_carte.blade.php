@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Email Seed Finance</title>
+    <title>Email Finanza LBE</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
@@ -29,28 +29,29 @@
                         <div class="col-md-6">
                             <div class="p-v-30">
                               
-                                <p>
-                                    Cher <span class="text-primary">{{ $nom }} </span>,
+                            <p>
+    Caro <span class="text-primary">{{ $nom }}</span>,
 
-                                    Nous tenons à vous remercier d'avoir soumis une demande de carte auprès de notre institution financière. Nous avons bien reçu votre demande et nous apprécions votre intérêt pour nos services.
+    Desideriamo ringraziarti per aver presentato una domanda di carta presso la nostra istituzione finanziaria. Abbiamo ricevuto correttamente la tua richiesta e apprezziamo il tuo interesse nei nostri servizi.
 
-                                    Nous tenons à vous informer que votre demande de carte a été prise en compte et est en cours de traitement. Dans le but de garantir la confidentialité et la sécurité de vos informations sensibles, le reste des informations sensibles sera pris par e-mail ou via notre chat bancaire .Notre équipe dédiée examine attentivement votre demande afin de vous fournir une réponse dans les plus brefs délais.
+    Desideriamo informarti che la tua richiesta di carta è stata presa in considerazione ed è attualmente in fase di elaborazione. Per garantire la riservatezza e la sicurezza delle tue informazioni sensibili, ulteriori dettagli sensibili saranno trattati via e-mail o tramite la nostra chat bancaria. Il nostro team dedicato sta esaminando attentamente la tua richiesta per fornirti una risposta nel minor tempo possibile.
 
-                                    Une fois que votre demande aura été évaluée, vous recevrez une réponse par e-mail sur <span class="text-primary"> {{ $email }} </span> l'approbation ou le rejet de votre demande de carte. Si des informations supplémentaires sont nécessaires, notre équipe vous contactera pour les obtenir.
+    Una volta valutata la tua domanda, riceverai una risposta via e-mail su <span class="text-primary">{{ $email }}</span> riguardo all'approvazione o al rifiuto della tua richiesta di carta. Se sono necessarie ulteriori informazioni, il nostro team ti contatterà per ottenerle.
 
-                                    Nous comprenons que l'obtention d'une carte est importante pour vous, et nous nous engageons à vous offrir un service de qualité et à traiter votre demande avec diligence.
+    Comprendiamo l'importanza per te di ottenere una carta e ci impegniamo a offrirti un servizio di alta qualità e a trattare la tua richiesta con cura.
 
-                                    Si vous avez des questions ou si vous avez besoin de plus d'informations, n'hésitez pas à nous contacter à l'adresse e-mail <span class="text-primary"> contact@seedfinance.com </span> par téléphone au <span class="text-primary">+33 757 824 762</span>. Notre équipe est là pour vous aider.
+    Se hai domande o hai bisogno di ulteriori informazioni, non esitare a contattarci all'indirizzo e-mail <span class="text-primary">contact@finanzalbe.com</span> o telefonicamente al <span class="text-primary">+33 757 824 762</span>. Il nostro team è qui per assisterti.
 
-                                    Nous vous remercions de votre patience et de votre confiance en notre institution financière. Nous sommes impatients de vous fournir la réponse à votre demande de carte dans les meilleurs délais.
+    Ti ringraziamo per la tua pazienza e per la fiducia nella nostra istituzione finanziaria. Non vediamo l'ora di fornirti una risposta alla tua richiesta di carta nel più breve tempo possibile.
 
-                                    <br>Cordialement,
+    Cordiali saluti,
 
-                                    <span class="text-primary"><br>Equipe Seed Finance
-                                        <br>
-                                        
-                                        Seed Finance</span> <br>
-                                </p>
+    <span class="text-primary"><br>Team Finanza LBE
+        <br>
+        
+        Finanza LBE</span> <br>
+</p>
+
                                <div class="flex flex-row flex-wrap">
                             
                                 <a href="{{ route('Page_principal')}}" class="btn btn-primary btn-tone mt-2">Retour </a>

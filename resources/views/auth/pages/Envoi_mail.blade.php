@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Email Seed Finance</title>
+    <title>Email LBE Finanza</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <div class="d-flex full-height p-v-20 flex-column">
                 <div class=" d-md-flex p-h-40">
-                    <img src="assets/images/logo/logo.png" alt="">
+                    <img src="/site_web/img/logo.png" alt="">
                 </div>
                 <div class="container">
                     <div class="row align-items-center">
@@ -30,21 +30,20 @@
                             <div class="p-v-30">
                               
                                 <div class="flex ">
-                                    <h2 class="font-bold text-2xl">Verification de votre mail</h2>
+                                    <h2 class="font-bold text-2xl">Verifica la tua email</h2>
                                     <img src="assets/images/logo/envelope-solid.svg" class="w-8 h-8 ml-2" style="width: 16px; height:16px; margin-left:2px;" alt="">
                                 </div>
-                                <p class="lead m-b-30 text-lg">Un mail a été envoyer a <span class="text-blue-600">{{ $email}}</span></p>
+                                <p class="lead m-b-30 text-lg">È stata inviata un'e-mail a <span class="text-blue-600">{{ $email}}</span></p>
 
                                 <h4 class=" text-xl mb-6">
-                                    Merci de vérifier votre adresse e-mail, y compris votre dossier spam, afin de pouvoir poursuivre l'activation de votre compte.</h4>
-                               <div class="flex flex-row flex-wrap">
+                                Controlla il tuo indirizzo email, inclusa la cartella spam, in modo da poter continuare ad attivare il tuo account.</h4>  <div class="flex flex-row flex-wrap">
                                 <form action="/envoie-mail" method="post">
                                     @csrf
                                     <input type="hidden" required name="email" value="{{$email}}">
-                                    <button type="submit" class="btn btn-primary btn-tone mr-2 mt-2">Renvoyer l'email</button>
+                                    <button type="submit" class="btn btn-primary btn-tone mr-2 mt-2">Rinvia l'e-mail</button>
                                 </form>
                                 
-                                <a href="/login" class="btn btn-primary btn-tone mt-2">Retour à la connexion</a>
+                                <a href="/login" class="btn btn-primary btn-tone mt-2">Torna al login</a>
                                </div>
                             </div>
                         </div>
@@ -53,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-flex  p-h-40 justify-content-between">
+                <div class="d-none d-md-flex  p-h-40 justify-content-blogoetween">
                     <span class="">© 2019 ThemeNate</span>
                     <ul class="list-inline">
                         <li class="list-inline-item">
